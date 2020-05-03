@@ -1,0 +1,13 @@
+
+    "town_level_tilemap": {
+      "type": "tilemap",
+      "source": "assets/maps/town.json"
+    }
+    
+    "groups": ["doors", "players"],
+  "map": {
+    "key": "town_level_tilemap",
+    "tilesets": ["map_tileset"]
+  },
+  
+  "map_tileset": { "type": "image", "source": "assets/images/tileset.png" },

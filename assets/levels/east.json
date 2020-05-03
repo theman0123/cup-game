@@ -5,9 +5,10 @@
 
     "player_spritesheet": {
       "type": "spritesheet",
-      "source": "assets/images/world/player.png",
-      "frame_width": 16,
-      "frame_height": 16
+      "source": "assets/images/world/characters/fox",
+      "animations": ["idle"],
+      "frame_width": 210,
+      "frame_height": 210
     },
 
     "town_level_tilemap": {
