@@ -16,9 +16,12 @@ let config = {
   width: 640,
   height: 480,
   physics: {
-    default: 'arcade',
-    arcade: {
-      gravity: { y: 0 },
+    default: 'matter',
+    matter: {
+      debug: true,
+      gravity: {
+        y: 0,
+      },
     },
   },
 };

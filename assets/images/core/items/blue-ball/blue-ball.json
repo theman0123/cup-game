@@ -1,0 +1,170 @@
+{
+	"textures": [
+		{
+			"image": "blue-ball-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 126,
+				"h": 21
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "blue-ball(64x64)-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 22,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 19,
+						"h": 19
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "blue-ball(64x64)-0spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 22,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 22,
+						"y": 1,
+						"w": 19,
+						"h": 19
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "blue-ball(64x64)-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 22,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 43,
+						"y": 1,
+						"w": 19,
+						"h": 19
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "blue-ball(64x64)-1spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 22,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 64,
+						"y": 1,
+						"w": 19,
+						"h": 19
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "blue-ball(64x64)-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 22,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 85,
+						"y": 1,
+						"w": 19,
+						"h": 19
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "blue-ball(64x64)-2spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 22,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 106,
+						"y": 1,
+						"w": 19,
+						"h": 19
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:8e997d58e372904de0ec324b39d17f0d:b43049379c5c63769a6f432ba58bd357:35aa4e37e1dcefe28cccc7dfd77bfb03$"
+	}
+}

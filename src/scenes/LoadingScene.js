@@ -21,13 +21,7 @@ class LoadingScene extends Phaser.Scene {
           this.load.image(asset_key, asset.source);
           break;
         case 'spritesheet':
-          this.load.spritesheet(asset_key, asset.source, {
-            frameWidth: asset.frame_width,
-            frameHeight: asset.frame_height,
-            frames: asset.frames,
-            margin: asset.margin,
-            spacing: asset.spacing,
-          });
+          this.load.multiatlas(asset.name, asset.json, asset.home);
           break;
         case 'tilemap':
           this.load.tilemapTiledJSON(asset_key, asset.source);
@@ -42,7 +36,10 @@ class LoadingScene extends Phaser.Scene {
   }
 
   create(data) {
-    debugger;
+    // have player create a matter physics sprite; add it here? or worldSCene
+    // this.player = new Player('fox', 'idle/idle(210x210)-00.png');
+    // this.scene.matter.add.gameObject(this.player, 0);
+    // this.player.scale(2);
     this.scene.start(data.scene, { level_data: this.level_data });
   }
 }

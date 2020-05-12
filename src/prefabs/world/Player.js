@@ -4,11 +4,13 @@ class Player extends Prefab {
   constructor(scene, name, position, properties) {
     super(scene, name, position, properties);
 
+    this.scene.matter.add.gameObject(this);
+
     this.walking_speed = +properties.walking_speed;
 
     this.body.collideWorldBounds = true;
 
-    this.scene.physics.add.collider(this, this.scene.layers.buildings);
+    // this.scene.physics.add.collider(this, this.scene.layers.buildings);
 
     this.moving = { left: false, right: false, up: false, down: false };
 

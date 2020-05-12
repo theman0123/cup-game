@@ -1,0 +1,3220 @@
+{
+	"textures": [
+		{
+			"image": "fox-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1722,
+				"h": 450
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "walkR-itemhold/walkR-itemhold(210x210)-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 37,
+						"w": 79,
+						"h": 150
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 79,
+						"h": 150
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "walkR-itemhold/walkR-itemhold(210x210)-2spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 37,
+						"w": 79,
+						"h": 150
+					},
+					"frame": {
+						"x": 1,
+						"y": 153,
+						"w": 79,
+						"h": 150
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 1,
+						"y": 305,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-09.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 1,
+						"y": 305,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 1,
+						"y": 305,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 1,
+						"y": 305,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-02spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 79,
+						"y": 305,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-09spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 79,
+						"y": 305,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-16spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 79,
+						"y": 305,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-23spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 79,
+						"y": 305,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "walkR-itemhold/walkR-itemhold(210x210)-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 37,
+						"w": 69,
+						"h": 150
+					},
+					"frame": {
+						"x": 82,
+						"y": 1,
+						"w": 69,
+						"h": 150
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "walkR-itemhold/walkR-itemhold(210x210)-0spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 46,
+						"y": 37,
+						"w": 69,
+						"h": 150
+					},
+					"frame": {
+						"x": 82,
+						"y": 153,
+						"w": 69,
+						"h": 150
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "short-toss0/short-toss(210x210)-01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 45,
+						"w": 98,
+						"h": 145
+					},
+					"frame": {
+						"x": 153,
+						"y": 1,
+						"w": 98,
+						"h": 145
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "short-toss0/short-toss(210x210)-01spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 45,
+						"w": 98,
+						"h": 145
+					},
+					"frame": {
+						"x": 153,
+						"y": 148,
+						"w": 98,
+						"h": 145
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-05.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 157,
+						"y": 295,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-05spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 235,
+						"y": 295,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 253,
+						"y": 1,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 253,
+						"y": 1,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-26.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 253,
+						"y": 1,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-12spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 253,
+						"y": 147,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-19spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 253,
+						"y": 147,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-26spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 253,
+						"y": 147,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 313,
+						"y": 293,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-09.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 313,
+						"y": 293,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 313,
+						"y": 293,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 313,
+						"y": 293,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-02spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 331,
+						"y": 1,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-09spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 331,
+						"y": 1,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-16spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 331,
+						"y": 1,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-23spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 331,
+						"y": 1,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-05.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 331,
+						"y": 147,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-05spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 391,
+						"y": 293,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 409,
+						"y": 1,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 409,
+						"y": 1,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-26.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 409,
+						"y": 1,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-12spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 409,
+						"y": 147,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-19spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 409,
+						"y": 147,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-26spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 76,
+						"h": 144
+					},
+					"frame": {
+						"x": 409,
+						"y": 147,
+						"w": 76,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 469,
+						"y": 293,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-03spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 487,
+						"y": 1,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-04.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 487,
+						"y": 147,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-04spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 546,
+						"y": 293,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 564,
+						"y": 1,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 564,
+						"y": 1,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 564,
+						"y": 1,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-10spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 564,
+						"y": 147,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-17spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 564,
+						"y": 147,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-24spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 564,
+						"y": 147,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 623,
+						"y": 293,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 623,
+						"y": 293,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-25.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 623,
+						"y": 293,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-11spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 641,
+						"y": 1,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-18spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 641,
+						"y": 1,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-25spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 641,
+						"y": 1,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 641,
+						"y": 147,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-03spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 700,
+						"y": 293,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-04.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 718,
+						"y": 1,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-04spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 718,
+						"y": 147,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 777,
+						"y": 293,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 777,
+						"y": 293,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 777,
+						"y": 293,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-10spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 795,
+						"y": 1,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-17spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 795,
+						"y": 1,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-24spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 795,
+						"y": 1,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 795,
+						"y": 147,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 795,
+						"y": 147,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-25.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 795,
+						"y": 147,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-11spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 854,
+						"y": 293,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-18spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 854,
+						"y": 293,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-25spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 44,
+						"w": 75,
+						"h": 144
+					},
+					"frame": {
+						"x": 854,
+						"y": 293,
+						"w": 75,
+						"h": 144
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "short-toss0/short-toss(210x210)-02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 45,
+						"w": 106,
+						"h": 143
+					},
+					"frame": {
+						"x": 872,
+						"y": 1,
+						"w": 106,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "short-toss0/short-toss(210x210)-02spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 25,
+						"y": 45,
+						"w": 106,
+						"h": 143
+					},
+					"frame": {
+						"x": 872,
+						"y": 146,
+						"w": 106,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "short-toss0/short-toss(210x210)-03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 45,
+						"w": 103,
+						"h": 143
+					},
+					"frame": {
+						"x": 931,
+						"y": 291,
+						"w": 103,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "short-toss0/short-toss(210x210)-03spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 62,
+						"y": 45,
+						"w": 103,
+						"h": 143
+					},
+					"frame": {
+						"x": 980,
+						"y": 1,
+						"w": 103,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "walkR-itemhold/walkR-itemhold(210x210)-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 45,
+						"w": 97,
+						"h": 143
+					},
+					"frame": {
+						"x": 980,
+						"y": 146,
+						"w": 97,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "walkR-itemhold/walkR-itemhold(210x210)-3spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 45,
+						"w": 97,
+						"h": 143
+					},
+					"frame": {
+						"x": 1036,
+						"y": 291,
+						"w": 97,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "walkR-itemhold/walkR-itemhold(210x210)-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 45,
+						"w": 90,
+						"h": 143
+					},
+					"frame": {
+						"x": 1079,
+						"y": 146,
+						"w": 90,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "walkR-itemhold/walkR-itemhold(210x210)-1spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 43,
+						"y": 45,
+						"w": 90,
+						"h": 143
+					},
+					"frame": {
+						"x": 1085,
+						"y": 1,
+						"w": 90,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-00.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1135,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-07.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1135,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1135,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1135,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "short-toss0/short-toss(210x210)-00.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1135,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-00spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1171,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-07spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1171,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-14spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1171,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-21spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1171,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1177,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-08.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1177,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1177,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-01spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1213,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-08spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1213,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-22spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1213,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-06.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1249,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-06spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1255,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1291,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1291,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-27.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1291,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-13spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1327,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-20spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1327,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-27spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1327,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1333,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle-itemhold/idle-itemhold(210x210)-15spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1369,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-00.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1405,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.46190476,
+						"y": 0.32857143
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-07.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1405,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1405,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-21.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1405,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-00spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1411,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-07spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1411,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-14spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1411,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-21spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1411,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1447,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-08.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1447,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1447,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-01spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1483,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-08spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1483,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-22spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1483,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-06.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1489,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-06spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1525,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1561,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-20.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1561,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-27.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1561,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-13spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1567,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-20spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1567,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-27spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1567,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1645,
+						"y": 1,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "idle/idle(210x210)-15spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1639,
+						"y": 146,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "short-toss0/short-toss(210x210)-00spring-mtn-sunrise_n.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 210,
+						"h": 210
+					},
+					"spriteSourceSize": {
+						"x": 45,
+						"y": 45,
+						"w": 76,
+						"h": 143
+					},
+					"frame": {
+						"x": 1603,
+						"y": 291,
+						"w": 76,
+						"h": 143
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:81f093e09afc10ce4d868282046facc6:4ca40732f94a93c57b00b84edb0aa7a8:898e1089a56fd8f6efe8630f194844e0$"
+	}
+}

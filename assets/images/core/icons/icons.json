@@ -1,0 +1,320 @@
+{
+	"textures": [
+		{
+			"image": "icons-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 329,
+				"h": 690
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "enemies/hp-meter/willow/willowHP(400x60)-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 400,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 20,
+						"w": 270,
+						"h": 20
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 270,
+						"h": 20
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "misc/sound-on(64x64).png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 15,
+						"w": 41,
+						"h": 33
+					},
+					"frame": {
+						"x": 273,
+						"y": 1,
+						"w": 41,
+						"h": 33
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "enemies/hp-meter/willow/willowHP(400x60)-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 400,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 20,
+						"w": 270,
+						"h": 20
+					},
+					"frame": {
+						"x": 1,
+						"y": 23,
+						"w": 270,
+						"h": 20
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "items/blue-ball(64x64).png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 14,
+						"w": 34,
+						"h": 34
+					},
+					"frame": {
+						"x": 273,
+						"y": 36,
+						"w": 34,
+						"h": 34
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "enemies/hp-meter/willow/willowHP(400x60)-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 400,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 20,
+						"w": 270,
+						"h": 20
+					},
+					"frame": {
+						"x": 1,
+						"y": 45,
+						"w": 270,
+						"h": 20
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "enemies/hp-meter/willow/willowHP(400x60)-3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 400,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 20,
+						"w": 270,
+						"h": 20
+					},
+					"frame": {
+						"x": 1,
+						"y": 67,
+						"w": 270,
+						"h": 20
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "enemies/hp-meter/willow/willowHP(400x60)-4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 400,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 20,
+						"w": 270,
+						"h": 20
+					},
+					"frame": {
+						"x": 1,
+						"y": 89,
+						"w": 270,
+						"h": 20
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "enemies/hp-meter/willow/willowHP(400x60)-5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 400,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 20,
+						"w": 270,
+						"h": 20
+					},
+					"frame": {
+						"x": 1,
+						"y": 111,
+						"w": 270,
+						"h": 20
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "enemies/hp-meter/willow/willowHP(400x60)-6.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 400,
+						"h": 60
+					},
+					"spriteSourceSize": {
+						"x": 65,
+						"y": 20,
+						"w": 270,
+						"h": 20
+					},
+					"frame": {
+						"x": 1,
+						"y": 133,
+						"w": 270,
+						"h": 20
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "characters/fox(480x480).png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 480,
+						"h": 480
+					},
+					"spriteSourceSize": {
+						"x": 107,
+						"y": 107,
+						"w": 266,
+						"h": 266
+					},
+					"frame": {
+						"x": 1,
+						"y": 155,
+						"w": 266,
+						"h": 266
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "misc/sound-mute(64x64).png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 2,
+						"w": 59,
+						"h": 59
+					},
+					"frame": {
+						"x": 269,
+						"y": 155,
+						"w": 59,
+						"h": 59
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				},
+				{
+					"filename": "enemies/willow-spring(480x480).png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 480,
+						"h": 480
+					},
+					"spriteSourceSize": {
+						"x": 107,
+						"y": 107,
+						"w": 266,
+						"h": 266
+					},
+					"frame": {
+						"x": 1,
+						"y": 423,
+						"w": 266,
+						"h": 266
+					},
+					"anchor": {
+						"x": 0.5,
+						"y": 0.5
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:369ce7c61f2a439137791a70c7cb5502:bdba550eeaa63b557d7eb3d3c1794fb1:d0dcb225dd952922d6b87a09d6c72353$"
+	}
+}

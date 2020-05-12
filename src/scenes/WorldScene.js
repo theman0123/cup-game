@@ -36,7 +36,7 @@ class WorldScene extends JSONLevelScene {
     //     this.map.setCollisionByExclusion([-1]);
     //   }
     // }, this);
-    // super.create();
+    super.create();
     // this.map.objects.forEach(function (object_layer) {
     //   object_layer.objects.forEach(this.create_object, this);
     // }, this);
