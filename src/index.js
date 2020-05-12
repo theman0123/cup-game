@@ -31,7 +31,8 @@ game.scene.add('TitleScene', titleScene);
 game.scene.add('WorldScene', worldScene);
 game.scene.add('BootScene', bootScene);
 game.scene.add('LoadingScene', loadingScene);
-game.scene.start('BootScene', { scene: 'title' });
+// 'title'
+game.scene.start('BootScene', { scene: 'east' });
 
 // const config = {
 //   type: Phaser.AUTO,
