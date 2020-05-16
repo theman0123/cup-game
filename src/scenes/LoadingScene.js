@@ -13,7 +13,7 @@ class LoadingScene extends Phaser.Scene {
   }
 
   preload() {
-    let assets = this.level_data.assets;
+    let assets = this.level_data.sprites;
     for (let asset_key in assets) {
       let asset = assets[asset_key];
       switch (asset.type) {
@@ -36,10 +36,6 @@ class LoadingScene extends Phaser.Scene {
   }
 
   create(data) {
-    // have player create a matter physics sprite; add it here? or worldSCene
-    // this.player = new Player('fox', 'idle/idle(210x210)-00.png');
-    // this.scene.matter.add.gameObject(this.player, 0);
-    // this.player.scale(2);
     this.scene.start(data.scene, { level_data: this.level_data });
   }
 }

@@ -3,7 +3,9 @@ import Prefab from '../Prefab';
 class Player extends Prefab {
   constructor(scene, name, position, properties) {
     super(scene, name, position, properties);
-
+    this.properties = properties;
+    // this.scene = scene;
+    // add to physics
     this.scene.matter.add.gameObject(this);
 
     this.walking_speed = +properties.walking_speed;
@@ -13,6 +15,10 @@ class Player extends Prefab {
     // this.scene.physics.add.collider(this, this.scene.layers.buildings);
 
     this.moving = { left: false, right: false, up: false, down: false };
+
+    // create animations
+    properties.animations.map(this.createAnimations, this);
+    // this.anims.play('idle');
 
     // if (!this.scene.anims.anims.has('walking_down')) {
     //   this.scene.anims.create({
@@ -47,18 +53,37 @@ class Player extends Prefab {
     //   });
     // }
 
-    if (!this.scene.anims.anims.has('idle')) {
-      this.scene.anims.create({
-        key: 'idle',
-        frames: this.scene.anims.generateFrameNumbers(this.texture.key, {
-          frames: [3, 7, 11, 15],
-        }),
-        frameRate: 6,
-        repeat: -1,
-      });
-    }
+    // if (!this.scene.anims.anims.has('idle')) {
+    //   this.scene.anims.create({
+    //     key: 'idle',
+    //     frames: this.scene.anims.generateFrameNumbers(this.texture.key, {
+    //       frames: [3, 7, 11, 15],
+    //     }),
+    //     frameRate: 6,
+    //     repeat: -1,
+    //   });
+    // }
 
-    this.stopped_frames = [0, 1, 0, 2, 3];
+    // this.stopped_frames = [0, 1, 0, 2, 3];
+  }
+
+  createAnimations(animation) {
+    const { frame_width, frame_height, frameRate, texture } = this.properties;
+    const frames = this.scene.anims.generateFrameNames(texture, {
+      end: this.properties[animation].max,
+      zeroPad: 2,
+      prefix: `${animation}/${animation}(${frame_width}x${frame_height})-`,
+      suffix: '.png',
+    });
+    // console.log(frames);
+    // debugger;
+    this.scene.anims.create({
+      key: animation,
+      frames,
+      repeat: -1,
+      frameRate,
+    });
+    this.anims.play('idle');
   }
 
   update() {

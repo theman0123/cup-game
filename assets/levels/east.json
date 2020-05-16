@@ -4,21 +4,26 @@
   "groups": ["players"],
   "sprites": {
     "player_spritesheet": {
-      "type": "player",
+      "type": "spritesheet",
+      "group": "player",
       "name": "fox",
       "home": "assets/images/characters/fox",
       "json": "assets/images/characters/fox/fox.json",
       "source": "assets/images/characters/fox/fox-0.png",
-      "animations": ["idle"],
-      "frame_width": 210,
-      "frame_height": 210,
-      "position": {
-        "x": 100,
-        "y": 100
-      },
       "properties": {
+        "frame_width": 210,
+        "frame_height": 210,
+        "frameRate": 4,
+        "animations": ["idle"],
+        "idle": {
+          "max": 27
+        },
         "texture": "fox",
-        "group": "players"
+        "group": "players",
+        "position": {
+          "x": 100,
+          "y": 100
+        }
       }
     }
   },
