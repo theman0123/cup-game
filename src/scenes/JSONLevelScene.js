@@ -22,11 +22,14 @@ class JSONLevelScene extends Phaser.Scene {
     this.prefabs = {};
     for (let sprite_name in this.level_data.sprites) {
       let sprite_data = this.level_data.sprites[sprite_name];
+      const animations = this.cache.json.get(
+        `animations_${sprite_data.asset_name}`
+      );
       let sprite = new this.prefab_classes[sprite_data.group](
         this,
         sprite_name,
-        sprite_data.properties.position,
-        sprite_data.properties
+        sprite_data.position,
+        { ...sprite_data, ...animations }
       );
     }
 

@@ -21,14 +21,18 @@ class LoadingScene extends Phaser.Scene {
           this.load.image(asset_key, asset.source);
           break;
         case 'spritesheet':
-          this.load.multiatlas(asset.name, asset.json, asset.home);
+          this.load.multiatlas(asset.asset_name, asset.json, asset.home);
+          this.load.json(
+            `animations_${asset.asset_name}`,
+            `/assets/animations/${asset.asset_name}.json`
+          );
+
           break;
         case 'tilemap':
           this.load.tilemapTiledJSON(asset_key, asset.source);
           break;
       }
     }
-
     this.load.json(
       this.level_data.user_input.key,
       this.level_data.user_input.path

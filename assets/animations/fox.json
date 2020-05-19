@@ -1,0 +1,19 @@
+{
+  "animations": ["idle", "walkR-itemhold"],
+  "animationProperties": {
+    "idle": {
+      "frame_width": 210,
+      "frame_height": 210,
+      "frameRate": 4,
+      "max": 27,
+      "zero_pad": 2
+    },
+    "walkR-itemhold": {
+      "frame_width": 210,
+      "frame_height": 210,
+      "frameRate": 4,
+      "max": 4,
+      "zero_pad": 1
+    }
+  }
+}

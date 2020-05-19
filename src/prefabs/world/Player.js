@@ -67,16 +67,27 @@ class Player extends Prefab {
     // this.stopped_frames = [0, 1, 0, 2, 3];
   }
 
+  create() {}
+
   createAnimations(animation) {
-    const { frame_width, frame_height, frameRate, texture } = this.properties;
-    const frames = this.scene.anims.generateFrameNames(texture, {
-      end: this.properties[animation].max,
-      zeroPad: this.properties[animation].zero_pad || 2,
-      prefix: `${animation}/${animation}(${frame_width}x${frame_height})-`,
-      suffix: '.png',
-    });
+    const {
+      frame_width,
+      frame_height,
+      frameRate,
+      max,
+      zero_pad,
+    } = this.properties.animationProperties[animation];
+    const frames = this.scene.anims.generateFrameNames(
+      this.properties.asset_name,
+      {
+        end: max,
+        zeroPad: zero_pad || 2,
+        prefix: `${animation}/${animation}(${frame_width}x${frame_height})-`,
+        suffix: '.png',
+      }
+    );
     // console.log(frames);
-    debugger;
+    // debugger;
     this.scene.anims.create({
       key: animation,
       frames,

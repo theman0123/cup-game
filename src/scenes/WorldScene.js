@@ -9,7 +9,7 @@ class WorldScene extends JSONLevelScene {
     super('WorldScene');
 
     this.prefab_classes = {
-      player: Player.prototype.constructor,
+      players: Player.prototype.constructor,
       //   door: Door.prototype.constructor,
     };
   }
@@ -47,6 +47,7 @@ class WorldScene extends JSONLevelScene {
       x: object.x + object.width / 2,
       y: object.y + object.height / 2,
     };
+    debugger;
     if (this.prefab_classes.hasOwnProperty(object.type)) {
       let prefab = new this.prefab_classes[object.type](
         this,
