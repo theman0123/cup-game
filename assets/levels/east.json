@@ -14,9 +14,13 @@
         "frame_width": 210,
         "frame_height": 210,
         "frameRate": 4,
-        "animations": ["idle"],
+        "animations": ["idle", "walkR-itemhold"],
         "idle": {
           "max": 27
+        },
+        "walkR-itemhold": {
+          "max": 3,
+          "zero_pad": 1
         },
         "texture": "fox",
         "group": "players",

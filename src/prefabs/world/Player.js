@@ -71,19 +71,19 @@ class Player extends Prefab {
     const { frame_width, frame_height, frameRate, texture } = this.properties;
     const frames = this.scene.anims.generateFrameNames(texture, {
       end: this.properties[animation].max,
-      zeroPad: 2,
+      zeroPad: this.properties[animation].zero_pad || 2,
       prefix: `${animation}/${animation}(${frame_width}x${frame_height})-`,
       suffix: '.png',
     });
     // console.log(frames);
-    // debugger;
+    debugger;
     this.scene.anims.create({
       key: animation,
       frames,
       repeat: -1,
       frameRate,
     });
-    this.anims.play('idle');
+    this.anims.play('walkR-itemhold');
   }
 
   update() {
