@@ -37,6 +37,9 @@ class WorldScene extends JSONLevelScene {
     //   }
     // }, this);
     super.create();
+    this.light = this.lights.addLight(100, 100, 300);
+    this.lights.enable().setAmbientColor(0x555555);
+    // this.Player.setPipeline('Light2D');
     // this.map.objects.forEach(function (object_layer) {
     //   object_layer.objects.forEach(this.create_object, this);
     // }, this);

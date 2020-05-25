@@ -18,6 +18,7 @@ class Player extends Prefab {
 
     // create animations
     properties.animations.map(this.createAnimations, this);
+    this.setPipeline('Light2D');
     // this.anims.play('idle');
 
     // if (!this.scene.anims.anims.has('walking_down')) {
@@ -94,6 +95,7 @@ class Player extends Prefab {
       repeat: -1,
       frameRate,
     });
+
     this.anims.play('walkR-itemhold');
   }
 
