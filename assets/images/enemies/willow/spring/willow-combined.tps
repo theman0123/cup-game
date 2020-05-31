@@ -34,7 +34,7 @@
         <key>dataFormat</key>
         <string>phaser</string>
         <key>textureFileName</key>
-        <filename>spring1-layers{n}.png</filename>
+        <filename>willow-combined-{n}.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -132,7 +132,7 @@
             <key>json</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>spring1-layers.json</filename>
+                <filename>willow-combined.json</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -177,12 +177,16 @@
             <key>defaultPivotPoint</key>
             <point_f>0.5,0.5</point_f>
             <key>writePivotPoints</key>
-            <true/>
+            <false/>
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">fence-posts(400x200).png</key>
-            <key type="filename">fence-posts(400x200)_n.png</key>
+            <key type="filename">normals/combined(486x376)_n.png</key>
+            <key type="filename">sprites/combined(486x376).png</key>
+            <key type="filename">sprites/leaves1front(486x376).png</key>
+            <key type="filename">sprites/leaves2mid(486x376).png</key>
+            <key type="filename">sprites/leaves3back(486x376).png</key>
+            <key type="filename">sprites/trunk(486x376).png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -191,13 +195,13 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>100,50,200,100</rect>
+                <rect>122,94,243,188</rect>
                 <key>scale9Paddings</key>
-                <rect>100,50,200,100</rect>
+                <rect>122,94,243,188</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">fence-shadow(280x200).png</key>
+            <key type="filename">sprites/shadow(432x220).png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -206,66 +210,17 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>70,50,140,100</rect>
+                <rect>108,55,216,110</rect>
                 <key>scale9Paddings</key>
-                <rect>70,50,140,100</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">grass(864x486).png</key>
-            <key type="filename">grass(864x486)_n.png</key>
-            <key type="filename">mountains(864x486).png</key>
-            <key type="filename">mountains(864x486)_n.png</key>
-            <key type="filename">sky(864x486).png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>216,122,432,243</rect>
-                <key>scale9Paddings</key>
-                <rect>216,122,432,243</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">spring1-layers0.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>434,428,868,856</rect>
-                <key>scale9Paddings</key>
-                <rect>434,428,868,856</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">sun-yellow(1000x1000).png</key>
-            <key type="filename">sun-yellow(1000x1000)_n.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>250,250,500,500</rect>
-                <key>scale9Paddings</key>
-                <rect>250,250,500,500</rect>
+                <rect>108,55,216,110</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>.</filename>
+            <filename>normals</filename>
+            <filename>sprites</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
@@ -278,7 +233,7 @@
         <key>commonDivisorY</key>
         <uint>1</uint>
         <key>packNormalMaps</key>
-        <false/>
+        <true/>
         <key>autodetectNormalMaps</key>
         <true/>
         <key>normalMapFilter</key>
@@ -286,7 +241,7 @@
         <key>normalMapSuffix</key>
         <string></string>
         <key>normalMapSheetFileName</key>
-        <filename></filename>
+        <filename>willow-combined-{n}_n.png</filename>
         <key>exporterProperties</key>
         <map type="ExporterProperties"/>
     </struct>

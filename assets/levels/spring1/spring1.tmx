@@ -5,7 +5,7 @@
  <tileset firstgid="1367" source="mountains(864x486).tsx"/>
  <tileset firstgid="1772" source="grass(864x486).tsx"/>
  <tileset firstgid="2177" source="fence-posts(400x200).tsx"/>
- <tileset firstgid="2249" source="with-sunrise(864x486).tsx"/>
+ <tileset firstgid="2249" source="spring1_example(864x486).tsx"/>
  <tileset firstgid="2654" source="combined(486x376).tsx"/>
  <tileset firstgid="2819" source="foxREF-idle(210x210)-00.tsx"/>
  <tileset firstgid="2855" source="blue-square(32x32).tsx"/>

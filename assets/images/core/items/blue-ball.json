@@ -1,0 +1,84 @@
+{
+	"textures": [
+		{
+			"image": "blue-ball-0.png",
+			"normalMap": "blue-ball-0_n.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 63,
+				"h": 21
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "blue-ball(64x64)-0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 22,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 19,
+						"h": 19
+					}
+				},
+				{
+					"filename": "blue-ball(64x64)-1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 22,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 22,
+						"y": 1,
+						"w": 19,
+						"h": 19
+					}
+				},
+				{
+					"filename": "blue-ball(64x64)-2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 64,
+						"h": 64
+					},
+					"spriteSourceSize": {
+						"x": 22,
+						"y": 22,
+						"w": 19,
+						"h": 19
+					},
+					"frame": {
+						"x": 43,
+						"y": 1,
+						"w": 19,
+						"h": 19
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:713e07685f1ad20bf97e2763d87176b6:b43049379c5c63769a6f432ba58bd357:b0f182e31b9be1a0d035a8114790438a$"
+	}
+}

@@ -34,7 +34,7 @@
         <key>dataFormat</key>
         <string>phaser</string>
         <key>textureFileName</key>
-        <filename>../../../../../../../../pCloudDrive/cup-game/assets/images/enemies/willow/spring/static/willow-combined-{n}.png</filename>
+        <filename></filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -56,7 +56,7 @@
         <key>jxrCompressionLevel</key>
         <uint>0</uint>
         <key>ditherType</key>
-        <enum type="SettingsBase::DitherType">PngQuantLow</enum>
+        <enum type="SettingsBase::DitherType">NearestNeighbour</enum>
         <key>backgroundColor</key>
         <uint>0</uint>
         <key>libGdx</key>
@@ -82,7 +82,7 @@
         <key>atfFormats</key>
         <string></string>
         <key>textureFormat</key>
-        <enum type="SettingsBase::TextureFormat">png8</enum>
+        <enum type="SettingsBase::TextureFormat">png</enum>
         <key>borderPadding</key>
         <uint>0</uint>
         <key>maxTextureSize</key>
@@ -132,7 +132,7 @@
             <key>json</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>willow-combined.json</filename>
+                <filename>blue-ball.json</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -177,16 +177,16 @@
             <key>defaultPivotPoint</key>
             <point_f>0.5,0.5</point_f>
             <key>writePivotPoints</key>
-            <true/>
+            <false/>
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">combined(486x376).png</key>
-            <key type="filename">combined(486x376)spring-mtn-sunrise_n.png</key>
-            <key type="filename">leaves1front(486x376).png</key>
-            <key type="filename">leaves2mid(486x376).png</key>
-            <key type="filename">leaves3back(486x376).png</key>
-            <key type="filename">trunk(486x376).png</key>
+            <key type="filename">blue-ball/blue-ball(64x64)-0.png</key>
+            <key type="filename">blue-ball/blue-ball(64x64)-1.png</key>
+            <key type="filename">blue-ball/blue-ball(64x64)-2.png</key>
+            <key type="filename">blue-ball_n/blue-ball(64x64)-0_n.png</key>
+            <key type="filename">blue-ball_n/blue-ball(64x64)-1_n.png</key>
+            <key type="filename">blue-ball_n/blue-ball(64x64)-2_n.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -195,31 +195,17 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>122,94,243,188</rect>
+                <rect>16,16,32,32</rect>
                 <key>scale9Paddings</key>
-                <rect>122,94,243,188</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">shadow(432x220).png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>108,55,216,110</rect>
-                <key>scale9Paddings</key>
-                <rect>108,55,216,110</rect>
+                <rect>16,16,32,32</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>.</filename>
+            <filename>blue-ball</filename>
+            <filename>blue-ball_n</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
@@ -232,7 +218,7 @@
         <key>commonDivisorY</key>
         <uint>1</uint>
         <key>packNormalMaps</key>
-        <false/>
+        <true/>
         <key>autodetectNormalMaps</key>
         <true/>
         <key>normalMapFilter</key>

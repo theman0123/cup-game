@@ -2,10 +2,11 @@
 	"textures": [
 		{
 			"image": "willow-combined-0.png",
+			"normalMap": "willow-combined-0_n.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 800,
-				"h": 984
+				"w": 816,
+				"h": 776
 			},
 			"scale": 1,
 			"frames": [
@@ -28,35 +29,6 @@
 						"y": 1,
 						"w": 391,
 						"h": 371
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "combined(486x376)spring-mtn-sunrise_n.png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 486,
-						"h": 376
-					},
-					"spriteSourceSize": {
-						"x": 37,
-						"y": 4,
-						"w": 391,
-						"h": 371
-					},
-					"frame": {
-						"x": 394,
-						"y": 1,
-						"w": 391,
-						"h": 371
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
@@ -74,14 +46,10 @@
 						"h": 292
 					},
 					"frame": {
-						"x": 1,
-						"y": 374,
+						"x": 394,
+						"y": 1,
 						"w": 367,
 						"h": 292
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
@@ -99,39 +67,10 @@
 						"h": 267
 					},
 					"frame": {
-						"x": 1,
-						"y": 668,
+						"x": 394,
+						"y": 295,
 						"w": 391,
 						"h": 267
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
-					}
-				},
-				{
-					"filename": "shadow(432x220).png",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 432,
-						"h": 220
-					},
-					"spriteSourceSize": {
-						"x": 3,
-						"y": 11,
-						"w": 429,
-						"h": 206
-					},
-					"frame": {
-						"x": 370,
-						"y": 374,
-						"w": 429,
-						"h": 206
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				},
 				{
@@ -149,14 +88,31 @@
 						"h": 215
 					},
 					"frame": {
-						"x": 394,
-						"y": 582,
+						"x": 1,
+						"y": 374,
 						"w": 383,
 						"h": 215
+					}
+				},
+				{
+					"filename": "shadow(432x220).png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 432,
+						"h": 220
 					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 11,
+						"w": 429,
+						"h": 206
+					},
+					"frame": {
+						"x": 386,
+						"y": 564,
+						"w": 429,
+						"h": 206
 					}
 				},
 				{
@@ -174,14 +130,10 @@
 						"h": 184
 					},
 					"frame": {
-						"x": 394,
-						"y": 799,
+						"x": 1,
+						"y": 591,
 						"w": 337,
 						"h": 184
-					},
-					"anchor": {
-						"x": 0.5,
-						"y": 0.5
 					}
 				}
 			]
@@ -190,6 +142,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:a4b52b3aa5456bf70886a6ed27ce8717:52d95cb71b587d0e3ef56cb017b68154:83e4fa02383c584fe55fd9a85743f392$"
+		"smartupdate": "$TexturePacker:SmartUpdate:3b7f593337ae89aba8fd0524aaf69103:52d95cb71b587d0e3ef56cb017b68154:2aa3c1d924b89124a88cbe529ea54436$"
 	}
 }

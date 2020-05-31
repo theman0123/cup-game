@@ -10,7 +10,7 @@
       "json": "assets/images/characters/fox/fox.json",
       "position": {
         "x": 100,
-        "y": 100
+        "y": 300
       },
       "texture": "fox",
       "type": "spritesheet",

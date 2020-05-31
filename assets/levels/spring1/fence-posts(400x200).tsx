@@ -3,7 +3,7 @@
  <properties>
   <property name="collides" type="bool" value="true"/>
  </properties>
- <image source="../../images/world/stages/spring1/layers/fence-posts(400x200).png" width="400" height="200"/>
+ <image source="../../images/world/stages/spring1/sprites/fence-posts(400x200).png" width="400" height="200"/>
  <tile id="4">
   <properties>
    <property name="collides" type="bool" value="true"/>

@@ -34,7 +34,7 @@
         <key>dataFormat</key>
         <string>phaser</string>
         <key>textureFileName</key>
-        <filename>../../../../../../../pCloudDrive/cup-game/assets/images/core/items/blue-ball/blue-ball-{n}.png</filename>
+        <filename>spring1-{n}.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -132,7 +132,7 @@
             <key>json</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>blue-ball.json</filename>
+                <filename>spring1.json</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -181,12 +181,8 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">blue-ball(64x64)-0.png</key>
-            <key type="filename">blue-ball(64x64)-0spring-mtn-sunrise_n.png</key>
-            <key type="filename">blue-ball(64x64)-1.png</key>
-            <key type="filename">blue-ball(64x64)-1spring-mtn-sunrise_n.png</key>
-            <key type="filename">blue-ball(64x64)-2.png</key>
-            <key type="filename">blue-ball(64x64)-2spring-mtn-sunrise_n.png</key>
+            <key type="filename">normals/fence-posts(400x200)_n.png</key>
+            <key type="filename">sprites/fence-posts(400x200).png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -195,13 +191,17 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>16,16,32,32</rect>
+                <rect>100,50,200,100</rect>
                 <key>scale9Paddings</key>
-                <rect>16,16,32,32</rect>
+                <rect>100,50,200,100</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">blue-ball-0.png</key>
+            <key type="filename">normals/grass(864x486)_n.png</key>
+            <key type="filename">normals/mountains(864x486)_n.png</key>
+            <key type="filename">sprites/grass(864x486).png</key>
+            <key type="filename">sprites/mountains(864x486).png</key>
+            <key type="filename">sprites/sky(864x486).png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -210,16 +210,48 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>32,5,63,11</rect>
+                <rect>216,122,432,243</rect>
                 <key>scale9Paddings</key>
-                <rect>32,5,63,11</rect>
+                <rect>216,122,432,243</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">normals/sun-yellow(1000x1000)_n.png</key>
+            <key type="filename">sprites/sun-yellow(1000x1000).png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>250,250,500,500</rect>
+                <key>scale9Paddings</key>
+                <rect>250,250,500,500</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">sprites/fence-shadow(280x200).png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>70,50,140,100</rect>
+                <key>scale9Paddings</key>
+                <rect>70,50,140,100</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>.</filename>
+            <filename>sprites</filename>
+            <filename>normals</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
@@ -232,7 +264,7 @@
         <key>commonDivisorY</key>
         <uint>1</uint>
         <key>packNormalMaps</key>
-        <false/>
+        <true/>
         <key>autodetectNormalMaps</key>
         <true/>
         <key>normalMapFilter</key>
@@ -240,7 +272,7 @@
         <key>normalMapSuffix</key>
         <string></string>
         <key>normalMapSheetFileName</key>
-        <filename></filename>
+        <filename>spring1-{n}_n</filename>
         <key>exporterProperties</key>
         <map type="ExporterProperties"/>
     </struct>

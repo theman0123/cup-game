@@ -18,6 +18,7 @@ class Player extends Prefab {
 
     // create animations
     properties.animations.map(this.createAnimations, this);
+    // enable lighting system for player
     this.setPipeline('Light2D');
     // this.anims.play('idle');
 
