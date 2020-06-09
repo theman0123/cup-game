@@ -14,10 +14,35 @@ class WorldScene extends JSONLevelScene {
     };
   }
 
+  preload(level_data) {
+    // spring1-layers0.png
+    // debugger;
+    this.load.multiatlas(
+      'spring1',
+      'assets/images/world/stages/spring1/spring1.json',
+      'assets/images/world/stages/spring1'
+    );
+    this.load.tilemapTiledJSON(
+      'springtiled',
+      'assets/images/world/stages/spring1/spring1.json'
+    );
+  }
+
   create() {
-    // this.map = this.add.tilemap(this.level_data.map.key);
-    // let tileset_index = 0;
-    // this.tilesets = {};
+    // warning says: only orthogonal maps are supported in this version of Phaser
+    this.map = this.make.tilemap({ key: 'springtiled' });
+    // Loads tilemap image and creates individual tiles and metadata
+    // const tiles = levelMap.addTilesetImage('platforms', 'tiles');
+
+    // // Loads tiles onto the game
+    // const worldLayer = levelMap.createStaticLayer('Level 1', tiles);
+
+    // // Makes it so the character can stand on platform tiles
+    // worldLayer.setCollisionByProperty({ collides: true });
+
+    // this.map = this.add.tilemap(this.level_data.map.asset_name);
+    let tileset_index = 0;
+    this.tilesets = {};
     // this.map.tilesets.forEach(function (tileset) {
     //   let map_tileset = this.map.addTilesetImage(
     //     tileset.name,

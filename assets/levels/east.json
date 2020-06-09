@@ -2,6 +2,11 @@
   "comment": "a basic example below: delete comment when finished",
   "assets": {},
   "groups": ["players"],
+  "map": {
+    "asset_name": "spring1",
+    "group": "map",
+    "json": "assets/images/world/stages/spring1/.json"
+  },
   "sprites": {
     "player_spritesheet": {
       "asset_name": "fox",
