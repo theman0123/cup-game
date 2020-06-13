@@ -1,8 +1,8 @@
 {
   "textures": [
     {
-      "image": "spring10.png",
-      "normalMap": "spring10",
+      "image": "spring1-0.png",
+      "normalMap": "spring1-0_n",
       "format": "RGBA8888",
       "size": {
         "w": 866,
