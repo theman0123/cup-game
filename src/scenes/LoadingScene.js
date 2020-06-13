@@ -30,7 +30,7 @@ class LoadingScene extends Phaser.Scene {
           break;
         case 'tilemap':
           this.load.multiatlas(asset.asset_name, asset.json, asset.home);
-          this.load.tilemapTiledJSON(asset_key, asset.source);
+          this.load.tilemapTiledJSON(asset.tiled_key, asset.tiled_source);
           break;
       }
     }

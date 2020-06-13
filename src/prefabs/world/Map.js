@@ -1,8 +1,9 @@
-import Prefab from '../Prefab';
-
 class Map {
   // scene, name, position, properties
-  constructor(scene) {
+  constructor(scene, info) {
+    this.scene = scene;
+    this.scene.add.image(0, 0, info.asset_name).setOrigin(0, 0);
+    this.map = this.scene.make.tilemap({ key: info.tiled_key });
     // super(scene, name, position, properties);
     // this.properties = properties;
     // // this.scene = scene;

@@ -26,7 +26,7 @@ class JSONLevelScene extends Phaser.Scene {
         `animations_${sprite_data.asset_name}`
       );
       if (sprite_data.type === 'tilemap') {
-        let map = new this.prefab_classes[sprite_data.group](this);
+        let map = new this.prefab_classes[sprite_data.group](this, sprite_data);
       } else {
         let sprite = new this.prefab_classes[sprite_data.group](
           this,

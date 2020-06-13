@@ -5,10 +5,11 @@
   "sprites": {
     "spring1-0": {
       "asset_name": "spring1",
+      "tiled_key": "spring1-0",
       "group": "map",
       "json": "assets/images/world/stages/spring1/spring1.json",
       "home": "assets/images/world/stages/spring1",
-      "source": "assets/levels/spring1/spring1map.json",
+      "tiled_source": "assets/levels/spring1/spring1map.json",
       "type": "tilemap"
     },
     "player_spritesheet": {
