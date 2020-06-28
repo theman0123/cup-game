@@ -31,6 +31,8 @@ class LoadingScene extends Phaser.Scene {
         case 'tilemap':
           this.load.multiatlas(asset.asset_name, asset.json, asset.home);
           this.load.tilemapTiledJSON(asset.tiled_key, asset.tiled_source);
+          // this.load.image('sky', 'spring1/sky(864x486).png');
+
           break;
       }
     }

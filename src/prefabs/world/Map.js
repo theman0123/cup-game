@@ -4,6 +4,13 @@ class Map {
     this.scene = scene;
     this.scene.add.image(0, 0, info.asset_name).setOrigin(0, 0);
     this.map = this.scene.make.tilemap({ key: info.tiled_key });
+    this.skyImage = this.scene.add.sprite(0, 0, 'spring1', 'sky(864x486).png');
+    this.sky = this.map.addTilesetImage('sky(864x486).png', this.skyImage);
+    this.skyLayer = this.map.createStaticLayer('Sky', this.sky);
+    console.log(
+      this.scene.textures.get('spring1/sky(864x486).png', this.scene.textures)
+    );
+
     // super(scene, name, position, properties);
     // this.properties = properties;
     // // this.scene = scene;

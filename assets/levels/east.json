@@ -9,8 +9,11 @@
       "group": "map",
       "json": "assets/images/world/stages/spring1/spring1.json",
       "home": "assets/images/world/stages/spring1",
-      "tiled_source": "assets/levels/spring1/spring1map.json",
-      "type": "tilemap"
+      "tiled_source": "assets/levels/spring1/spring1map(1056).json",
+      "type": "tilemap",
+      "layers": {
+        "test": "erase"
+      }
     },
     "player_spritesheet": {
       "asset_name": "fox",
