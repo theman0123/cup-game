@@ -4,12 +4,12 @@
   "groups": ["players"],
   "sprites": {
     "spring1-0": {
-      "asset_name": "spring1",
-      "tiled_key": "spring1-0",
+      "asset_name": "spring1a",
+      "tiled_key": "spring1a-map",
       "group": "map",
-      "json": "assets/images/world/stages/spring1/spring1.json",
+      "json": "assets/images/world/stages/spring1/spring1a-.json",
       "home": "assets/images/world/stages/spring1",
-      "tiled_source": "assets/levels/spring1/spring1map(1056).json",
+      "tiled_source": "assets/levels/spring1/spring1a-map.json",
       "type": "tilemap",
       "layers": {
         "test": "erase"

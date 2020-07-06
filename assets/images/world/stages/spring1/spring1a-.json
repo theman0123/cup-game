@@ -1,0 +1,125 @@
+{
+	"textures": [
+		{
+			"image": "spring1a-0.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 3168,
+				"h": 1792
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "fence(1056x896).png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1056,
+						"h": 896
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1056,
+						"h": 896
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 1056,
+						"h": 896
+					}
+				},
+				{
+					"filename": "grass(1056x896).png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1056,
+						"h": 896
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1056,
+						"h": 896
+					},
+					"frame": {
+						"x": 0,
+						"y": 896,
+						"w": 1056,
+						"h": 896
+					}
+				},
+				{
+					"filename": "mountains(1056x896).png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1056,
+						"h": 896
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1056,
+						"h": 896
+					},
+					"frame": {
+						"x": 1056,
+						"y": 0,
+						"w": 1056,
+						"h": 896
+					}
+				},
+				{
+					"filename": "sky(1056x896).png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1056,
+						"h": 896
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1056,
+						"h": 896
+					},
+					"frame": {
+						"x": 1056,
+						"y": 896,
+						"w": 1056,
+						"h": 896
+					}
+				},
+				{
+					"filename": "sun-yellow(1056x896).png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 1056,
+						"h": 896
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 1056,
+						"h": 896
+					},
+					"frame": {
+						"x": 2112,
+						"y": 0,
+						"w": 1056,
+						"h": 896
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:6c0a9742efa6a88feb94485f31924880:84fb9aa30821a315841d7e821beffe24:aef15c9e79c531db59c72a65f2b6ab98$"
+	}
+}
