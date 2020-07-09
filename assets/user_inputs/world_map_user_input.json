@@ -4,5 +4,6 @@
       "callback": "scene.start_game"
     }
   },
-  "keyup": {}
+  "keyup": {},
+  "keydown": {}
 }
