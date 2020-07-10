@@ -9,8 +9,9 @@ class Map {
     this.tiles = this.map.addTilesetImage(info.tile_set_name, info.asset_name);
     info.layers.map((name) => {
       this[name] = this.map
-        .createStaticLayer(name, this.tiles)
-        .setDisplaySize(640, 480);
+        .createDynamicLayer(name, this.tiles)
+        .setDisplaySize(640, 480)
+        .setPipeline('Light2D');
     });
     // debugger;
     // this.sky = this.map

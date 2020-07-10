@@ -73,10 +73,10 @@ class WorldScene extends JSONLevelScene {
     // }, this);
   }
 
-  update() {
-    if (this.groups && this.groups.players)
-      this.groups.players.children.entries[0].update();
-  }
+  // update() {
+  // if (this.groups && this.groups.players)
+  //   this.groups.players.children.entries[0].update();
+  // }
 
   create_object(object) {
     let position = {
