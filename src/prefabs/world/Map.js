@@ -1,3 +1,4 @@
+import * as filething from '../../../assets/images/world/stages/spring1/spring1a-.json';
 class Map {
   // scene, name, position, properties
   constructor(scene, info) {
@@ -6,28 +7,34 @@ class Map {
     this.map = this.scene.make.tilemap({ key: info.tiled_key });
     debugger;
     this.tiles = this.map.addTilesetImage(info.tile_set_name, info.asset_name);
-    this.sky = this.map
-      .createDynamicLayer('sky', this.tiles)
-      .setDisplaySize(640, 480)
-      .setPipeline('Light2D'); //(0.5);
-    this.mountians = this.map
-      .createStaticLayer('mountains', this.tiles, 0, 0)
-      .setDisplaySize(640, 480)
-      .setPipeline('Light2D');
-    this.grass = this.map
-      .createStaticLayer('grass', this.tiles)
-      .setDisplaySize(640, 480)
-      .setPipeline('Light2D');
-    // .setPipeline('Light2D');
-    this.fence = this.map
-      .createStaticLayer('fence', this.tiles)
-      .setDisplaySize(640, 480)
-      .setPipeline('Light2D');
-    // this.skyImage = this.scene.add.sprite(0, 0, 'spring1', 'sky(864x486).png');
-    this.sun = this.map
-      .createStaticLayer('sun', this.tiles)
-      .setDisplaySize(640, 480)
-      .setPipeline('Light2D');
+    info.layers.map((name) => {
+      this[name] = this.map
+        .createStaticLayer(name, this.tiles)
+        .setDisplaySize(640, 480);
+    });
+    // debugger;
+    // this.sky = this.map
+    //   .createDynamicLayer('sky', this.tiles)
+    //   .setDisplaySize(640, 480)
+    //   .setPipeline('Light2D'); //(0.5);
+    // this.mountians = this.map
+    //   .createStaticLayer('mountains', this.tiles, 0, 0)
+    //   .setDisplaySize(640, 480)
+    //   .setPipeline('Light2D');
+    // this.grass = this.map
+    //   .createStaticLayer('grass', this.tiles)
+    //   .setDisplaySize(640, 480)
+    //   .setPipeline('Light2D');
+    // // .setPipeline('Light2D');
+    // this.fence = this.map
+    //   .createStaticLayer('fence', this.tiles)
+    //   .setDisplaySize(640, 480)
+    //   .setPipeline('Light2D');
+    // // this.skyImage = this.scene.add.sprite(0, 0, 'spring1', 'sky(864x486).png');
+    // this.sun = this.map
+    //   .createStaticLayer('sun', this.tiles)
+    //   .setDisplaySize(640, 480)
+    //   .setPipeline('Light2D');
     // this.setPipeline('Light2D');
     // console.log(this.map.getLayer(this.sun));
     // this.sky = this.map.addTilesetImage('sky(864x486).png', this.skyImage);
