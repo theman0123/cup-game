@@ -136,7 +136,7 @@
             </struct>
         </map>
         <key>multiPack</key>
-        <false/>
+        <true/>
         <key>forceIdenticalLayout</key>
         <false/>
         <key>outputFormat</key>
@@ -181,6 +181,11 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
+            <key type="filename">normals/fence(1056x896)_n.png</key>
+            <key type="filename">normals/grass(1056x896)_n.png</key>
+            <key type="filename">normals/mountains(1056x896)_n.png</key>
+            <key type="filename">normals/sky(1056x896)_n.png</key>
+            <key type="filename">normals/sun-yellow(1056x896)_n.png</key>
             <key type="filename">sprites/fence(1056x896).png</key>
             <key type="filename">sprites/grass(1056x896).png</key>
             <key type="filename">sprites/mountains(1056x896).png</key>
@@ -204,6 +209,7 @@
         <key>fileList</key>
         <array>
             <filename>sprites</filename>
+            <filename>normals</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
@@ -216,7 +222,7 @@
         <key>commonDivisorY</key>
         <uint>1</uint>
         <key>packNormalMaps</key>
-        <false/>
+        <true/>
         <key>autodetectNormalMaps</key>
         <true/>
         <key>normalMapFilter</key>
@@ -224,7 +230,7 @@
         <key>normalMapSuffix</key>
         <string></string>
         <key>normalMapSheetFileName</key>
-        <filename></filename>
+        <filename>spring1a_n.png</filename>
         <key>exporterProperties</key>
         <map type="ExporterProperties"/>
     </struct>

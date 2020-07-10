@@ -2,6 +2,7 @@
 	"textures": [
 		{
 			"image": "spring1a-0.png",
+			"normalMap": "spring1a_n.png",
 			"format": "RGBA8888",
 			"size": {
 				"w": 3168,
@@ -120,6 +121,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:6c0a9742efa6a88feb94485f31924880:84fb9aa30821a315841d7e821beffe24:aef15c9e79c531db59c72a65f2b6ab98$"
+		"smartupdate": "$TexturePacker:SmartUpdate:56f10b5219905c88e9a1299da3f59b48:56e7d757b7240afe22a8532aa6d0eaf8:d90e861eca88980ce37bacf397a581d4$"
 	}
 }

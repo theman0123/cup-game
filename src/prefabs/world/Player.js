@@ -105,10 +105,10 @@ class Player extends Prefab {
     if (this.body) {
       // if (this.moving.left && this.body.velocity.x <= 0) {
       // this.body.velocity.x = -1; //-this.walking_speed;
-      this.setVelocityX(5); // this works
-      if (this.body.velocity.y === 0) {
-        // this.anims.play('walking_left', true);
-      }
+      // this.setVelocityX(5); // this works
+      // if (this.body.velocity.y === 0) {
+      // this.anims.play('walking_left', true);
+      // }
       // } else if (this.moving.right && this.body.velocity.x >= 0) {
       //   this.body.velocity.x = this.walking_speed;
       //   if (this.body.velocity.y === 0) {

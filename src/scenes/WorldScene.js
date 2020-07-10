@@ -63,6 +63,7 @@ class WorldScene extends JSONLevelScene {
     //     this.map.setCollisionByExclusion([-1]);
     //   }
     // }, this);
+
     super.create();
     this.light = this.lights.addLight(600, 0, 1200).setIntensity(2); //setColor() 1000);
     this.lights.enable().setAmbientColor(0xf3c260);

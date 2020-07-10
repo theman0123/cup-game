@@ -11,9 +11,7 @@
       "home": "assets/images/world/stages/spring1",
       "tiled_source": "assets/levels/spring1/spring1a-map.json",
       "type": "tilemap",
-      "layers": {
-        "test": "erase"
-      }
+      "tile_set_name": "tiles"
     },
     "player_spritesheet": {
       "asset_name": "fox",
