@@ -7,12 +7,12 @@
       "asset_name": "spring1a",
       "tiled_key": "spring1a-map",
       "group": "map",
-      "json": "assets/images/world/stages/spring1/spring1a-.json",
+      "json": "assets/images/world/stages/spring1/spring1c-.json",
       "home": "assets/images/world/stages/spring1",
-      "tiled_source": "assets/levels/spring1/spring1a-map.json",
+      "tiled_source": "assets/levels/spring1/spring1cc-map.json",
       "type": "tilemap",
-      "tile_set_name": "tiles",
-      "layers": ["sky", "mountains", "grass", "fence", "sun"]
+      "tile_set_name": "spring1c-0",
+      "layers": ["grass-fence(640x352)"]
     },
     "player_spritesheet": {
       "asset_name": "fox",

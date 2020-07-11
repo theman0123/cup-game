@@ -181,16 +181,11 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">normals/fence(640x352)_n.png</key>
-            <key type="filename">normals/grass(640x352)_n.png</key>
+            <key type="filename">normals/grass-fence(640x352)_n.png</key>
             <key type="filename">normals/mountains(640x352)_n.png</key>
-            <key type="filename">normals/sky(640x352)_n.png</key>
-            <key type="filename">normals/sun-yellow(640x352)_n.png</key>
-            <key type="filename">sprites/fence(640x352).png</key>
-            <key type="filename">sprites/grass(640x352).png</key>
+            <key type="filename">sprites/grass-fence(640x352).png</key>
             <key type="filename">sprites/mountains(640x352).png</key>
             <key type="filename">sprites/sky(640x352).png</key>
-            <key type="filename">sprites/sun-yellow(640x352).png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>

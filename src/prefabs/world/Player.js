@@ -138,13 +138,15 @@ class Player extends Prefab {
   }
   jump() {
     debugger;
-    this.setVelocityY(-5); // this works
+    this.setVelocityY(-5);
   }
   left() {
-    this.setVelocityX(-5); // this works
+    this.setVelocityX(-10);
+    this.setFlipX(true);
   }
   right() {
-    this.setVelocityX(5); // this works
+    this.setVelocityX(10);
+    this.setFlipX(false);
   }
 
   // change_movement(direction, move) {

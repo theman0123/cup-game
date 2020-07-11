@@ -5,13 +5,13 @@
 			"normalMap": "spring1c-0_n.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 640,
-				"h": 1760
+				"w": 1920,
+				"h": 352
 			},
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "fence(640x352).png",
+					"filename": "grass-fence(640x352).png",
 					"rotated": false,
 					"trimmed": false,
 					"sourceSize": {
@@ -27,27 +27,6 @@
 					"frame": {
 						"x": 0,
 						"y": 0,
-						"w": 640,
-						"h": 352
-					}
-				},
-				{
-					"filename": "grass(640x352).png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 640,
-						"h": 352
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 0,
-						"w": 640,
-						"h": 352
-					},
-					"frame": {
-						"x": 0,
-						"y": 352,
 						"w": 640,
 						"h": 352
 					}
@@ -67,8 +46,8 @@
 						"h": 352
 					},
 					"frame": {
-						"x": 0,
-						"y": 704,
+						"x": 640,
+						"y": 0,
 						"w": 640,
 						"h": 352
 					}
@@ -88,29 +67,8 @@
 						"h": 352
 					},
 					"frame": {
-						"x": 0,
-						"y": 1056,
-						"w": 640,
-						"h": 352
-					}
-				},
-				{
-					"filename": "sun-yellow(640x352).png",
-					"rotated": false,
-					"trimmed": false,
-					"sourceSize": {
-						"w": 640,
-						"h": 352
-					},
-					"spriteSourceSize": {
-						"x": 0,
+						"x": 1280,
 						"y": 0,
-						"w": 640,
-						"h": 352
-					},
-					"frame": {
-						"x": 0,
-						"y": 1408,
 						"w": 640,
 						"h": 352
 					}
@@ -121,6 +79,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:6df57662fb7d02ff6b99c9db68d8e3c3:f54b12f40354b968b2caf7f0c016d692:795c71f07d88705fd1467af1f9f74d98$"
+		"smartupdate": "$TexturePacker:SmartUpdate:f731b00ed78ba668569a399220525b21:05fdda2ff6764cb60e118ff6eee783fb:795c71f07d88705fd1467af1f9f74d98$"
 	}
 }

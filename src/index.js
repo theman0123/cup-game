@@ -20,9 +20,13 @@ let config = {
     matter: {
       debug: true,
       gravity: {
-        y: 0,
+        y: 0.5,
       },
     },
+  },
+  fps: {
+    // target: , //60,
+    // forceSetTimeout: true,
   },
 };
 
