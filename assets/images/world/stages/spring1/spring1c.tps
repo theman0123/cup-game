@@ -34,7 +34,7 @@
         <key>dataFormat</key>
         <string>phaser</string>
         <key>textureFileName</key>
-        <filename>spring1a-{n}.png</filename>
+        <filename></filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -88,7 +88,7 @@
         <key>maxTextureSize</key>
         <QSize>
             <key>width</key>
-            <int>4096</int>
+            <int>2048</int>
             <key>height</key>
             <int>2048</int>
         </QSize>
@@ -132,7 +132,7 @@
             <key>json</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>spring1a-{n}.json</filename>
+                <filename>spring1c-{n}.json</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -149,7 +149,7 @@
             <string></string>
         </struct>
         <key>autoAliasEnabled</key>
-        <false/>
+        <true/>
         <key>trimSpriteNames</key>
         <false/>
         <key>prependSmartFolderName</key>
@@ -181,16 +181,16 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">normals/fence(1056x896)_n.png</key>
-            <key type="filename">normals/grass(1056x896)_n.png</key>
-            <key type="filename">normals/mountains(1056x896)_n.png</key>
-            <key type="filename">normals/sky(1056x896)_n.png</key>
-            <key type="filename">normals/sun-yellow(1056x896)_n.png</key>
-            <key type="filename">sprites/fence(1056x896).png</key>
-            <key type="filename">sprites/grass(1056x896).png</key>
-            <key type="filename">sprites/mountains(1056x896).png</key>
-            <key type="filename">sprites/sky(1056x896).png</key>
-            <key type="filename">sprites/sun-yellow(1056x896).png</key>
+            <key type="filename">normals/fence(640x352)_n.png</key>
+            <key type="filename">normals/grass(640x352)_n.png</key>
+            <key type="filename">normals/mountains(640x352)_n.png</key>
+            <key type="filename">normals/sky(640x352)_n.png</key>
+            <key type="filename">normals/sun-yellow(640x352)_n.png</key>
+            <key type="filename">sprites/fence(640x352).png</key>
+            <key type="filename">sprites/grass(640x352).png</key>
+            <key type="filename">sprites/mountains(640x352).png</key>
+            <key type="filename">sprites/sky(640x352).png</key>
+            <key type="filename">sprites/sun-yellow(640x352).png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -199,9 +199,9 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>264,224,528,448</rect>
+                <rect>160,88,320,176</rect>
                 <key>scale9Paddings</key>
-                <rect>264,224,528,448</rect>
+                <rect>160,88,320,176</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -230,7 +230,7 @@
         <key>normalMapSuffix</key>
         <string></string>
         <key>normalMapSheetFileName</key>
-        <filename>spring1a_n.png</filename>
+        <filename></filename>
         <key>exporterProperties</key>
         <map type="ExporterProperties"/>
     </struct>

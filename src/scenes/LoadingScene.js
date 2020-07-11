@@ -29,7 +29,6 @@ class LoadingScene extends Phaser.Scene {
 
           break;
         case 'tilemap':
-          debugger;
           this.load.multiatlas(asset.asset_name, asset.json, asset.home);
           this.load.tilemapTiledJSON(asset.tiled_key, asset.tiled_source);
           break;

@@ -101,7 +101,7 @@ class Player extends Prefab {
   }
 
   update() {
-    debugger;
+    // debugger;
     if (this.body) {
       // if (this.moving.left && this.body.velocity.x <= 0) {
       // this.body.velocity.x = -1; //-this.walking_speed;
@@ -135,6 +135,16 @@ class Player extends Prefab {
       //   // this.setFrame(this.stopped_frames[this.body.facing - 10]);
       // }
     }
+  }
+  jump() {
+    debugger;
+    this.setVelocityY(-5); // this works
+  }
+  left() {
+    this.setVelocityX(-5); // this works
+  }
+  right() {
+    this.setVelocityX(5); // this works
   }
 
   // change_movement(direction, move) {

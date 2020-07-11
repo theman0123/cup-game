@@ -5,6 +5,14 @@ class UserInput {
     this.enabled = false;
   }
 
+  // this.keyObj = this.input.keyboard.addKey('W'); // Get key object
+  // this.keyObj.on('down', function (event) {
+  //   console.log('w');
+  // });
+  // this.keyObj.on('up', function (event) {
+  //   /* ... */
+  // });
+
   set_input(user_input_data) {
     this.scene.input.keyboard.removeAllListeners('keydown');
     this.scene.input.keyboard.removeAllListeners('keyup');
@@ -19,17 +27,28 @@ class UserInput {
 
   process_input(event) {
     if (this.enabled) {
-      let user_input = this.user_inputs[event.type][event.key];
+      const user_input = this.user_inputs[event.type][event.key];
+      const { objectClass, playerPriority } = this.user_inputs[event.type];
       if (user_input) {
-        let context = undefined;
-        let callback_data = user_input.callback.split('.');
-        if (callback_data[0] === 'scene') {
-          context = this.scene;
-        } else {
-          context = this.scene.prefabs[callback_data[0]];
-        }
-        let method = context[callback_data[1]];
-        method.apply(context, user_input.args);
+        const { method } = user_input;
+        let classMethod;
+        let context;
+        context = this.scene[objectClass][playerPriority];
+        classMethod = context[method];
+        classMethod.apply(context, user_input.args);
+
+        // let callback_data = user_input.callback.split('.');
+        // if (objectClass === 'playe') {
+        // } else {
+        //   context = this.scene.prefabs[callback_data[0]];
+        // }
+        // if (user_input.hasOwnProperty('playerPriority')) {
+        // }
+        // if (!user_input.hasOwnProperty('playerPriority')) {
+        //   method = context[callback_data[1]];
+        // }
+        // debugger;
+        // context is sprite
       }
     }
   }

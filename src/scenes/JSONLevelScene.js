@@ -12,12 +12,22 @@ class JSONLevelScene extends Phaser.Scene {
   }
 
   create() {
+    this.players = [];
     this.groups = {};
-    this.level_data.groups.forEach(function (group_name) {
-      this.groups[group_name] = this.add.group({
-        defaultKey: group_name,
-      });
-    }, this);
+    let position = 0;
+    this.level_data.groups.forEach((group_name) => {
+      // debugger; // make player on this.player[0] not aad.group
+      // if (group_name === 'players') {
+      //   this.players[position] = this.add.sprite({
+      //     defaultKey: group_name,
+      //   });
+      // }
+      if (group_name !== 'players') {
+        this.groups[group_name] = this.add.group({
+          defaultKey: group_name,
+        });
+      }
+    });
 
     this.prefabs = {};
     for (let sprite_name in this.level_data.sprites) {
@@ -27,12 +37,16 @@ class JSONLevelScene extends Phaser.Scene {
       );
       if (sprite_data.type === 'tilemap') {
         let map = new this.prefab_classes[sprite_data.group](this, sprite_data);
-      } else {
-        let sprite = new this.prefab_classes[sprite_data.group](
+      }
+      if (sprite_data.type === 'spritesheet') {
+        this.players[position] = new this.prefab_classes[sprite_data.group](
           this,
           sprite_name,
           sprite_data.position,
-          { ...sprite_data, ...animations }
+          {
+            ...sprite_data,
+            ...animations,
+          }
         );
       }
     }

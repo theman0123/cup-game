@@ -1,9 +1,16 @@
 {
   "keydown": {
-    "Enter": {
-      "callback": "scene.start_game"
+    "objectClass": "players",
+    "playerPriority": 0,
+    "ArrowUp": {
+      "method": "jump"
+    },
+    "ArrowLeft": {
+      "method": "left"
+    },
+    "ArrowRight": {
+      "method": "right"
     }
   },
-  "keyup": {},
-  "keydown": {}
+  "keyup": {}
 }
