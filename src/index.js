@@ -1,4 +1,5 @@
 import Phaser from 'phaser';
+import PhaserMatterCollisionPlugin from 'phaser-matter-collision-plugin';
 import TitleScene from './scenes/TitleScene';
 import WorldScene from './scenes/WorldScene';
 import BootScene from './scenes/BootScene';
@@ -19,14 +20,24 @@ let config = {
     default: 'matter',
     matter: {
       debug: true,
+      enableSleep: true,
       gravity: {
-        y: 0.5,
+        y: 0,
       },
     },
   },
   fps: {
     // target: , //60,
     // forceSetTimeout: true,
+  },
+  plugins: {
+    scene: [
+      {
+        plugin: PhaserMatterCollisionPlugin, // The plugin class
+        key: 'matterCollision', // Where to store in Scene.Systems, e.g. scene.sys.matterCollision
+        mapping: 'matterCollision', // Where to store in the Scene, e.g. scene.matterCollision
+      },
+    ],
   },
 };
 

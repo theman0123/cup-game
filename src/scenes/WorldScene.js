@@ -16,64 +16,28 @@ class WorldScene extends JSONLevelScene {
     };
   }
 
-  preload(level_data) {
-    // spring1-layers0.png
-    // debugger;
-    // this.load.multiatlas(
-    //   'spring1',
-    //   'assets/images/world/stages/spring1/spring1.json',
-    //   'assets/images/world/stages/spring1'
-    // );
-    // this.load.tilemapTiledJSON(
-    //   'springtiled',
-    //   'assets/images/world/stages/spring1/spring1.json'
-    // );
-  }
-
   create() {
-    // warning says: only orthogonal maps are supported in this version of Phaser
-    // this.map = this.make.tilemap({ key: 'springtiled' });
-    // Loads tilemap image and creates individual tiles and metadata
-    // const tiles = levelMap.addTilesetImage('platforms', 'tiles');
-
-    // // Loads tiles onto the game
-    // const worldLayer = levelMap.createStaticLayer('Level 1', tiles);
-
-    // // Makes it so the character can stand on platform tiles
-    // worldLayer.setCollisionByProperty({ collides: true });
-
-    // this.map = this.add.tilemap(this.level_data.map.asset_name);
-    // let tileset_index = 0;
-    // this.tilesets = {};
-    // this.map.tilesets.forEach(function (tileset) {
-    //   let map_tileset = this.map.addTilesetImage(
-    //     tileset.name,
-    //     this.level_data.map.tilesets[tileset_index]
-    //   );
-    //   this.tilesets[this.level_data.map.tilesets[tileset_index]] = map_tileset;
-    //   tileset_index += 1;
-    // }, this);
-    // this.layers = {};
-    // this.map.layers.forEach(function (layer) {
-    //   this.layers[layer.name] = this.map.createStaticLayer(
-    //     layer.name,
-    //     this.tilesets[layer.properties.tileset]
-    //   );
-    //   if (layer.properties.collision) {
-    //     this.map.setCollisionByExclusion([-1]);
-    //   }
-    // }, this);
-
     super.create();
     this.light = this.lights.addLight(600, 0, 1200).setIntensity(2); //setColor() 1000);
     this.lights.enable().setAmbientColor(0xf3c260);
     this.cameras.main.startFollow(this.players[0]);
     this.cameras.main.setZoom(1.5);
+
+    // try adding tiles to this.matter.add.gameObject(tile);
+    // this way not quite working
+    // const colliderGroup = this.matter.add.gameObject(
+    //   this.mapLayers['grass-fence(640x352)'].setCollisionByProperty({
+    //     collides: true,
+    //   })
+    // );
+    // this.colliderGroup.map
+    // this.matter.add.gameObject(cg)
+
+    // this.matterCollision.addOnCollideStart({
+    //   objectA: this.players[0],
+    //   objectB: this.layers['grass-fence(640x352)'],
+    // });
     // debugger;
-    // this.Player.setPipeline('Light2D');
-    // this.map.objects.forEach(function (object_layer) {
-    //   object_layer.objects.forEach(this.create_object, this);
-    // }, this);
   }
 
   // update() {
