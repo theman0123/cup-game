@@ -15,7 +15,7 @@ import {
 export class JSONLevelScene extends Phaser.Scene {
   level_data: LevelData | undefined;
   players: Players = [];
-  prefabs: Prefabs | undefined;
+  prefabs: Prefabs = {};
   prefab_classes: PrefabClasses | undefined;
   groups: Groups = {};
   map: Phaser.Tilemaps.Tilemap | undefined;

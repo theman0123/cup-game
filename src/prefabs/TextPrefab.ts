@@ -1,5 +1,14 @@
+import { GameScene, XY, PrefabProperties } from 'interfaces';
+
 class TextPrefab extends Phaser.GameObjects.Text {
-  constructor(scene, name, position, properties) {
+  scene: GameScene;
+
+  constructor(
+    scene: GameScene,
+    name: string,
+    position: XY,
+    properties: PrefabTextProperties
+  ) {
     super(scene, position.x, position.y, properties.text, properties.style);
 
     this.scene = scene;
