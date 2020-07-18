@@ -6,21 +6,23 @@ class Player extends Prefab {
     this.properties = properties;
     // this.scene = scene;
     // add to physics
-    this.scene.matter.add.gameObject(this);
+    // this.scene.matter.add.gameObject(this);
 
     this.walking_speed = +properties.walking_speed;
 
+    scene.physics.world.enable(this);
     this.body.collideWorldBounds = true;
 
+    this.body.setMaxSpeed(200);
+    this.setDisplayOrigin(0, 0);
     // this.scene.physics.add.collider(this, this.scene.layers.buildings);
 
-    this.moving = { left: false, right: false, up: false, down: false };
+    // this.moving = { left: false, right: false, up: false, down: false };
 
     // create animations
     properties.animations.map(this.createAnimations, this);
     // enable lighting system for player
     this.setPipeline('Light2D');
-    // this.anims.play('idle');
 
     // if (!this.scene.anims.anims.has('walking_down')) {
     //   this.scene.anims.create({
@@ -88,8 +90,6 @@ class Player extends Prefab {
         suffix: '.png',
       }
     );
-    // console.log(frames);
-    // debugger;
     this.scene.anims.create({
       key: animation,
       frames,
@@ -97,56 +97,39 @@ class Player extends Prefab {
       frameRate,
     });
 
-    this.anims.play('walkR-itemhold');
+    this.anims.play('idle');
   }
 
   update() {
     // debugger;
-    if (this.body) {
-      // if (this.moving.left && this.body.velocity.x <= 0) {
-      // this.body.velocity.x = -1; //-this.walking_speed;
-      // this.setVelocityX(5); // this works
-      // if (this.body.velocity.y === 0) {
-      // this.anims.play('walking_left', true);
-      // }
-      // } else if (this.moving.right && this.body.velocity.x >= 0) {
-      //   this.body.velocity.x = this.walking_speed;
-      //   if (this.body.velocity.y === 0) {
-      //     // this.anims.play('walking_right', true);
-      //   }
-      // } else {
-      //   this.body.velocity.x = 0;
-      // }
-      // if (this.moving.up && this.body.velocity.y <= 0) {
-      //   this.body.velocity.y = -this.walking_speed;
-      //   if (this.body.velocity.x === 0) {
-      //     // this.anims.play('walking_up', true);
-      //   }
-      // } else if (this.moving.down && this.body.velocity.y >= 0) {
-      //   this.body.velocity.y = this.walking_speed;
-      //   if (this.body.velocity.x === 0) {
-      //     // this.anims.play('walking_down', true);
-      //   }
-      // } else {
-      //   this.body.velocity.y = 0;
-      // }
-      // if (this.body.velocity.x === 0 && this.body.velocity.y === 0) {
-      //   this.anims.stop();
-      //   // this.setFrame(this.stopped_frames[this.body.facing - 10]);
-      // }
-    }
+    // if (this.body) {
+    // }
   }
+
+  idle() {
+    this.body.setVelocityX(0);
+    this.anims.play('idle');
+  }
+
   jump() {
     debugger;
-    this.setVelocityY(-5);
+    this.body.setVelocityY(-180);
   }
   left() {
-    this.setVelocityX(-10);
+    this.body.setVelocityX(-150);
     this.setFlipX(true);
+    this.playWalkAnim();
   }
   right() {
-    this.setVelocityX(10);
+    this.body.setVelocityX(150);
     this.setFlipX(false);
+    this.playWalkAnim();
+  }
+
+  playWalkAnim() {
+    if (this.anims.currentAnim.key !== 'walkR-itemhold') {
+      this.anims.play('walkR-itemhold');
+    }
   }
 
   // change_movement(direction, move) {

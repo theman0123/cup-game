@@ -17,12 +17,11 @@ let config = {
   width: 640,
   height: 480,
   physics: {
-    default: 'matter',
-    matter: {
+    default: 'arcade',
+    arcade: {
       debug: true,
-      enableSleep: true,
       gravity: {
-        y: 0,
+        y: 300,
       },
     },
   },
@@ -32,11 +31,11 @@ let config = {
   },
   plugins: {
     scene: [
-      {
-        plugin: PhaserMatterCollisionPlugin, // The plugin class
-        key: 'matterCollision', // Where to store in Scene.Systems, e.g. scene.sys.matterCollision
-        mapping: 'matterCollision', // Where to store in the Scene, e.g. scene.matterCollision
-      },
+      // {
+      //   plugin: PhaserMatterCollisionPlugin, // The plugin class
+      //   key: 'matterCollision', // Where to store in Scene.Systems, e.g. scene.sys.matterCollision
+      //   mapping: 'matterCollision', // Where to store in the Scene, e.g. scene.matterCollision
+      // },
     ],
   },
 };

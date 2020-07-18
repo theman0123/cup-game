@@ -5,7 +5,7 @@ class Prefab extends Phaser.GameObjects.Sprite {
     this.scene = scene;
     this.name = name;
     this.scene.add.existing(this);
-    debugger;
+    // debugger;
     // if (properties.group === 'players') {
     //   this.scene.players[0].add(this);
     // }
@@ -22,7 +22,6 @@ class Prefab extends Phaser.GameObjects.Sprite {
 
     this.scene.prefabs[name] = this;
   }
-  test() {}
 }
 
 export default Prefab;

@@ -20,8 +20,8 @@ class WorldScene extends JSONLevelScene {
     super.create();
     this.light = this.lights.addLight(600, 0, 1200).setIntensity(2); //setColor() 1000);
     this.lights.enable().setAmbientColor(0xf3c260);
-    this.cameras.main.startFollow(this.players[0]);
-    this.cameras.main.setZoom(1.5);
+    // this.cameras.main.startFollow(this.players[0]);
+    // this.cameras.main.setZoom(1.5);
 
     // try adding tiles to this.matter.add.gameObject(tile);
     // this way not quite working

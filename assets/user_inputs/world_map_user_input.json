@@ -1,7 +1,7 @@
 {
+  "objectClass": "players",
+  "playerPriority": 0,
   "keydown": {
-    "objectClass": "players",
-    "playerPriority": 0,
     "ArrowUp": {
       "method": "jump"
     },
@@ -12,5 +12,12 @@
       "method": "right"
     }
   },
-  "keyup": {}
+  "keyup": {
+    "ArrowLeft": {
+      "method": "idle"
+    },
+    "ArrowRight": {
+      "method": "idle"
+    }
+  }
 }
