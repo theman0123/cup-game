@@ -1,5 +1,19 @@
+import {
+  UserInputJsonWorldMap,
+  EventTypes,
+  KeyTypes,
+  KeyValue,
+} from 'interfaces';
+
+interface MyScene extends Phaser.Scene {
+  [key: string]: any;
+}
 class UserInput {
-  constructor(scene) {
+  enabled: boolean;
+  scene: MyScene;
+  user_inputs: UserInputJsonWorldMap | undefined;
+
+  constructor(scene: Phaser.Scene) {
     this.scene = scene;
 
     this.enabled = false;
@@ -29,7 +43,7 @@ class UserInput {
   //   /* ... */
   // });
 
-  set_input(user_input_data) {
+  set_input(user_input_data: UserInputJsonWorldMap) {
     this.scene.input.keyboard.removeAllListeners('keydown');
     this.scene.input.keyboard.removeAllListeners('keyup');
 
@@ -55,8 +69,8 @@ class UserInput {
   //   return !this.cursorKeys.right.isDown && !this.cursorKeys.left.isDown;
   // }
 
-  getClassMethod(method, objectClass, playerPriority) {
-    let classMethod;
+  getClassMethod(method: string, objectClass: string, playerPriority: number) {
+    let classMethod: string;
     let context;
     context = this.scene[objectClass][playerPriority];
     classMethod = context[method];
@@ -64,10 +78,11 @@ class UserInput {
     return { classMethod: context[method], classContext: context };
   }
 
-  process_input(event) {
-    if (this.enabled) {
-      const user_input = this.user_inputs[event.type][event.key];
-      const { objectClass, playerPriority } = this.user_inputs;
+  process_input(event: { type: EventTypes; key: KeyTypes }) {
+    if (this.enabled && this.user_inputs) {
+      const user_input: KeyValue = this.user_inputs[event.type][event.key];
+      const { objectClass, playerPriority } = this
+        .user_inputs as UserInputJsonWorldMap;
       debugger;
       if (user_input && user_input.method) {
         const { classMethod, classContext } = this.getClassMethod(
@@ -75,7 +90,7 @@ class UserInput {
           objectClass,
           playerPriority
         );
-        classMethod.apply(classContext, user_input.args);
+        classMethod.apply(classContext); // user_input.args to pass arguments
       }
     }
   }

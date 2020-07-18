@@ -1,5 +1,25 @@
+import { GameScene } from 'interfaces';
+import JSONLevelScene from 'scenes/JSONLevelScene';
+
+interface Properties {
+  group: string;
+  scale: XY;
+  anchor: XY;
+  texture: string;
+  frame: number;
+}
+
+interface XY {
+  x: number;
+  y: number;
+}
 class Prefab extends Phaser.GameObjects.Sprite {
-  constructor(scene, name, position, properties) {
+  constructor(
+    scene: JSONLevelScene,
+    name: string,
+    position: { x: number; y: number },
+    properties: Properties
+  ) {
     super(scene, position.x, position.y, properties.texture, properties.frame);
 
     this.scene = scene;
