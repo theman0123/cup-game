@@ -16,7 +16,7 @@
     "strict": true,
     "noUnusedLocals": true,
     "target": "es5",
-    "typeRoots": ["node_modules/@types"],
+    "typeRoots": ["./node_modules/@types", "./node_modules/phaser/types"],
     "lib": ["es2016", "dom"],
     "types": ["Phaser"]
   },

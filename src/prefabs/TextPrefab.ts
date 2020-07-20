@@ -1,4 +1,4 @@
-import { GameScene, XY, PrefabProperties } from 'interfaces';
+import { GameScene, XY, PrefabTextProperties } from 'interfaces';
 
 class TextPrefab extends Phaser.GameObjects.Text {
   scene: GameScene;

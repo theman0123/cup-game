@@ -1,11 +1,14 @@
 import JSONLevelScene from './JSONLevelScene';
-import Prefab from '../prefabs/Prefab';
-import TextPrefab from '../prefabs/TextPrefab';
 import Player from '../prefabs/world/Player';
 import Map from '../prefabs/world/Map';
+import { PrefabProperties } from 'interfaces';
 // import Door from '../prefabs/world/Door';
 
 class WorldScene extends JSONLevelScene {
+  light: Phaser.GameObjects.Light = this.lights
+    .addLight(600, 0, 1200)
+    .setIntensity(2); //setColor() 1000);
+
   constructor() {
     super('WorldScene');
 
@@ -18,7 +21,6 @@ class WorldScene extends JSONLevelScene {
 
   create() {
     super.create();
-    this.light = this.lights.addLight(600, 0, 1200).setIntensity(2); //setColor() 1000);
     this.lights.enable().setAmbientColor(0xf3c260);
     // this.cameras.main.startFollow(this.players[0]);
     // this.cameras.main.setZoom(1.5);
@@ -45,14 +47,25 @@ class WorldScene extends JSONLevelScene {
   //   this.groups.players.children.entries[0].update();
   // }
 
-  create_object(object) {
+  create_object(object: {
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+    type: string;
+    name: string;
+    properties: PrefabProperties;
+  }) {
     let position = {
       x: object.x + object.width / 2,
       y: object.y + object.height / 2,
     };
     // debugger;
-    if (this.prefab_classes.hasOwnProperty(object.type)) {
-      let prefab = new this.prefab_classes[object.type](
+    if (
+      this.prefab_classes &&
+      this.prefab_classes.hasOwnProperty(object.type)
+    ) {
+      new this.prefab_classes[object.type](
         this,
         object.name,
         position,

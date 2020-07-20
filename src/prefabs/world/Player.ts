@@ -1,16 +1,26 @@
 import Prefab from '../Prefab';
+import { PrefabSpriteProperties, GameScene, XY } from 'interfaces';
 
 class Player extends Prefab {
-  constructor(scene, name, position, properties) {
+  properties: PrefabSpriteProperties;
+  walking_speed: number;
+  body: Phaser.Physics.Arcade.Body;
+
+  constructor(
+    scene: GameScene,
+    name: string,
+    position: XY,
+    properties: PrefabSpriteProperties
+  ) {
     super(scene, name, position, properties);
     this.properties = properties;
-    // this.scene = scene;
-    // add to physics
-    // this.scene.matter.add.gameObject(this);
+    this.scene = scene;
 
     this.walking_speed = +properties.walking_speed;
 
+    this.body = new Phaser.Physics.Arcade.Body(scene.physics.world, this);
     scene.physics.world.enable(this);
+
     this.body.collideWorldBounds = true;
 
     this.body.setMaxSpeed(200);
@@ -23,57 +33,11 @@ class Player extends Prefab {
     properties.animations.map(this.createAnimations, this);
     // enable lighting system for player
     this.setPipeline('Light2D');
-
-    // if (!this.scene.anims.anims.has('walking_down')) {
-    //   this.scene.anims.create({
-    //     key: 'walking_down',
-    //     frames: this.scene.anims.generateFrameNumbers(this.texture.key, {
-    //       frames: [0, 4, 8, 12],
-    //     }),
-    //     frameRate: 6,
-    //     repeat: -1,
-    //   });
-    // }
-
-    // if (!this.scene.anims.anims.has('walking_up')) {
-    //   this.scene.anims.create({
-    //     key: 'walking_up',
-    //     frames: this.scene.anims.generateFrameNumbers(this.texture.key, {
-    //       frames: [1, 5, 9, 13],
-    //     }),
-    //     frameRate: 6,
-    //     repeat: -1,
-    //   });
-    // }
-
-    // if (!this.scene.anims.anims.has('walking_left')) {
-    //   this.scene.anims.create({
-    //     key: 'walking_left',
-    //     frames: this.scene.anims.generateFrameNumbers(this.texture.key, {
-    //       frames: [2, 6, 10, 14],
-    //     }),
-    //     frameRate: 6,
-    //     repeat: -1,
-    //   });
-    // }
-
-    // if (!this.scene.anims.anims.has('idle')) {
-    //   this.scene.anims.create({
-    //     key: 'idle',
-    //     frames: this.scene.anims.generateFrameNumbers(this.texture.key, {
-    //       frames: [3, 7, 11, 15],
-    //     }),
-    //     frameRate: 6,
-    //     repeat: -1,
-    //   });
-    // }
-
-    // this.stopped_frames = [0, 1, 0, 2, 3];
   }
 
   create() {}
 
-  createAnimations(animation) {
+  createAnimations(animation: string) {
     const {
       frame_width,
       frame_height,
@@ -131,10 +95,6 @@ class Player extends Prefab {
       this.anims.play('walkR-itemhold');
     }
   }
-
-  // change_movement(direction, move) {
-  //   this.moving[direction] = move;
-  // }
 }
 
 export default Player;

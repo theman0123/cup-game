@@ -70,10 +70,8 @@ class UserInput {
   // }
 
   getClassMethod(method: string, objectClass: string, playerPriority: number) {
-    let classMethod: string;
     let context;
     context = this.scene[objectClass][playerPriority];
-    classMethod = context[method];
 
     return { classMethod: context[method], classContext: context };
   }

@@ -1,4 +1,9 @@
+type KeyTypes = 'title' | 'east';
+
 class BootScene extends Phaser.Scene {
+  sceneData: { scene: string } = { scene: '' };
+  levels: { [key in KeyTypes]: { key: string; path: string } };
+
   constructor() {
     super({ key: 'BootScene' });
     this.levels = {
@@ -11,22 +16,24 @@ class BootScene extends Phaser.Scene {
     };
   }
 
-  init(data) {
-    this.data = data;
+  init(data: { scene: string }) {
+    this.sceneData = data;
   }
 
   preload() {
     for (let level_name in this.levels) {
+      // @ts-ignore
       let level = this.levels[level_name];
       this.load.json(level_name, level.path);
     }
   }
 
-  create(data) {
-    let level_data = this.cache.json.get(this.data.scene);
+  create(data: object) {
+    let level_data = this.cache.json.get(this.sceneData.scene);
     this.scene.start('LoadingScene', {
       level_data: level_data,
-      scene: this.levels[this.data.scene].key,
+      // @ts-ignore
+      scene: this.levels[this.sceneData.scene].key,
     });
   }
 }

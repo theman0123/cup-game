@@ -1,5 +1,3 @@
-import Prefab from '../prefabs/Prefab';
-import TextPrefab from '../prefabs/TextPrefab';
 import UserInput from '../plugins/UserInput';
 import {
   LevelData,
