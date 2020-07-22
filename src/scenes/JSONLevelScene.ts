@@ -17,6 +17,7 @@ export class JSONLevelScene extends Phaser.Scene {
   prefab_classes: PrefabClasses | undefined;
   groups: Groups = {};
   map: Phaser.Tilemaps.Tilemap | undefined;
+  mapLayers: { [key: string]: any } | undefined;
   user_input: Input | undefined;
   user_input_data: UserInputJson | undefined;
 

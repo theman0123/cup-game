@@ -5,9 +5,7 @@ import { PrefabProperties } from 'interfaces';
 // import Door from '../prefabs/world/Door';
 
 class WorldScene extends JSONLevelScene {
-  light: Phaser.GameObjects.Light = this.lights
-    .addLight(600, 0, 1200)
-    .setIntensity(2); //setColor() 1000);
+  light: Phaser.GameObjects.Light | undefined;
 
   constructor() {
     super('WorldScene');
@@ -22,8 +20,19 @@ class WorldScene extends JSONLevelScene {
   create() {
     super.create();
     this.lights.enable().setAmbientColor(0xf3c260);
+    this.lights.addLight(600, 0, 1200).setIntensity(2); //setColor() 1000);
     // this.cameras.main.startFollow(this.players[0]);
-    // this.cameras.main.setZoom(1.5);
+    // this.cameras.main.setZoom(0.5);
+    if (this.mapLayers !== undefined) {
+      debugger;
+      this.physics.add.collider(
+        this.players[0],
+        this.mapLayers['grass-fence(640x352)'],
+        function () {
+          console.log('collision!');
+        }
+      );
+    }
 
     // try adding tiles to this.matter.add.gameObject(tile);
     // this way not quite working

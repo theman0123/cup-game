@@ -28,7 +28,7 @@ class Map {
       debugger;
       layer.setOrigin(0, 0);
       layer.setDisplaySize(1920, this.scene.sys.game.config.height as number);
-
+      layer.setCollisionByProperty({ collision: true, collides: true });
       // @ts-ignore
       this.scene.mapLayers[name] = layer;
       //.setDisplaySize(scene)
