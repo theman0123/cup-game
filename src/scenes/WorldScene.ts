@@ -21,18 +21,33 @@ class WorldScene extends JSONLevelScene {
     super.create();
     this.lights.enable().setAmbientColor(0xf3c260);
     this.lights.addLight(600, 0, 1200).setIntensity(2); //setColor() 1000);
-    // this.cameras.main.startFollow(this.players[0]);
+    this.cameras.main.startFollow(this.players[0]);
     // this.cameras.main.setZoom(0.5);
     if (this.mapLayers !== undefined) {
-      debugger;
       this.physics.add.collider(
         this.players[0],
-        this.mapLayers['grass-fence(640x352)'],
+        this.mapLayers.foreground,
         function () {
           console.log('collision!');
         }
       );
     }
+
+    if (this.map) {
+      debugger;
+      // @ts-ignore
+      debugGraphics ? debugGraphics.clear() : null;
+      let debugGraphics = this.add.graphics().setScale(2);
+      this.mapLayers!.foreground.renderDebug(
+        debugGraphics,
+        {
+          collidingTileColor: new Phaser.Display.Color(243, 134, 48, 200),
+        }
+        // @ts-ignore
+        // [this.mapLayers.foreground]
+      );
+    }
+    debugger;
 
     // try adding tiles to this.matter.add.gameObject(tile);
     // this way not quite working

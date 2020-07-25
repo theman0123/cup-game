@@ -12,7 +12,7 @@
       "tiled_source": "assets/levels/spring1/spring1cc-map.json",
       "type": "tilemap",
       "tile_set_name": "spring1c-0",
-      "layers": ["grass-fence(640x352)"]
+      "layers": ["backdrop", "background", "foreground"]
     },
     "player_spritesheet": {
       "asset_name": "fox",

@@ -21,9 +21,10 @@ class Player extends Prefab {
     this.body = new Phaser.Physics.Arcade.Body(scene.physics.world, this);
     scene.physics.world.enable(this);
 
-    this.body.collideWorldBounds = true;
+    // this.body.collideWorldBounds = true;
 
     this.body.setMaxSpeed(200);
+
     this.setDisplayOrigin(0, 0);
     // this.scene.physics.add.collider(this, this.scene.layers.buildings);
 
@@ -32,6 +33,8 @@ class Player extends Prefab {
     // create animations
     properties.animations.map(this.createAnimations, this);
     // enable lighting system for player
+    // this.setPipeline('Light2D');
+    // this.setDepth(-1);
     this.setPipeline('Light2D');
   }
 
@@ -76,8 +79,8 @@ class Player extends Prefab {
   }
 
   jump() {
-    debugger;
-    this.body.setVelocityY(-180);
+    // debugger;
+    this.body.setVelocityY(-280);
   }
   left() {
     this.body.setVelocityX(-150);

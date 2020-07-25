@@ -22,13 +22,24 @@ class Map {
     // @ts-ignore
     this.scene.mapLayers = {};
     info.layers.map((name) => {
-      const layer = this.map
-        .createDynamicLayer(name, this.tiles)
-        .setPipeline('Light2D'); // pipeline in development takes 600% cpu for arcade physics
-      debugger;
-      layer.setOrigin(0, 0);
-      layer.setDisplaySize(1920, this.scene.sys.game.config.height as number);
-      layer.setCollisionByProperty({ collision: true, collides: true });
+      if (name === 'foreground') {
+        const layer = this.map
+          .createDynamicLayer(name, this.tiles)
+          .setPipeline('Light2D'); // pipeline in development takes 600% cpu for arcade physics
+
+        layer.setOrigin(0, 0);
+        layer.setScale(2);
+        // layer.setDisplaySize(1920, this.scene.sys.game.config.height as number);
+        // @ts-ignore
+        // layer.setCollisionByExclusion(-1, true);
+        layer.setCollisionByProperty({ collision: true });
+      }
+      // if (name !== 'foreground') {
+      //   const layer = this.map.createStaticLayer(name, this.tiles);
+
+      //   layer.setOrigin(0, 0);
+      //   layer.setDisplaySize(1920, this.scene.sys.game.config.height as number);
+      // }
       // @ts-ignore
       this.scene.mapLayers[name] = layer;
       //.setDisplaySize(scene)
@@ -38,6 +49,7 @@ class Map {
       // this.scene.matter.add.gameObject(this[name]);
       // this[name].setCollisionByExlusion([-1, 0]);
     });
+    this.scene.map = this.map;
   }
 }
 // .setDisplaySize(640, 480)
