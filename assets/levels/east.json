@@ -11,8 +11,7 @@
       "home": "assets/images/world/stages/spring1",
       "tiled_source": "assets/levels/spring1/spring1cc-map.json",
       "type": "tilemap",
-      "tile_set_name": "spring1c-0",
-      "layers": ["backdrop", "background", "foreground"]
+      "tile_set_name": "spring1c-0"
     },
     "player_spritesheet": {
       "asset_name": "fox",
@@ -26,6 +25,12 @@
       "texture": "fox",
       "type": "spritesheet",
       "source": "assets/images/characters/fox/fox-0.png"
+    },
+    "sun-yellow": {
+      "asset_name": "sun-yellow",
+      "group": "image",
+      "type": "image",
+      "source": "assets/images/world/stages/spring1/in-motion/sun-yellow(640x352).png"
     }
   },
   "user_input": {

@@ -9,6 +9,7 @@ import {
   UserInput as Input,
   Players,
 } from 'interfaces';
+import Map from 'prefabs/world/Map';
 
 export class JSONLevelScene extends Phaser.Scene {
   level_data: LevelData | undefined;
@@ -17,6 +18,7 @@ export class JSONLevelScene extends Phaser.Scene {
   prefab_classes: PrefabClasses | undefined;
   groups: Groups = {};
   map: Phaser.Tilemaps.Tilemap | undefined;
+  MapClass: Map | undefined;
   mapLayers: { [key: string]: any } | undefined;
   user_input: Input | undefined;
   user_input_data: UserInputJson | undefined;
@@ -49,27 +51,39 @@ export class JSONLevelScene extends Phaser.Scene {
         }
       });
 
-      for (let sprite_name in this.level_data.sprites) {
-        let sprite_data = this.level_data.sprites[sprite_name];
-        const animations: object = this.cache.json.get(
-          `animations_${sprite_data.asset_name}`
-        );
-        if (sprite_data.type === 'tilemap' && this.prefab_classes) {
-          this.map = new this.prefab_classes[sprite_data.group](
-            this,
-            sprite_data
+      if (this.prefab_classes) {
+        for (let sprite_name in this.level_data.sprites) {
+          let sprite_data = this.level_data.sprites[sprite_name];
+          const animations: object = this.cache.json.get(
+            `animations_${sprite_data.asset_name}`
           );
-        }
-        if (sprite_data.type === 'spritesheet' && this.prefab_classes) {
-          this.players[position] = new this.prefab_classes[sprite_data.group](
-            this,
-            sprite_name,
-            sprite_data.position,
-            {
-              ...sprite_data,
-              ...animations,
-            }
-          );
+          if (sprite_data.type === 'image') {
+            const name = sprite_data.asset_name;
+            // @ts-ignore
+            this[name] = this.add.image(0, 0, name);
+
+            // new this.prefab_classes[sprite_data.group](
+            //   this,
+            //   sprite_data
+            // );
+          }
+          if (sprite_data.type === 'tilemap') {
+            this.MapClass = new this.prefab_classes[sprite_data.group](
+              this,
+              sprite_data
+            );
+          }
+          if (sprite_data.type === 'spritesheet') {
+            this.players[position] = new this.prefab_classes[sprite_data.group](
+              this,
+              sprite_name,
+              sprite_data.position,
+              {
+                ...sprite_data,
+                ...animations,
+              }
+            );
+          }
         }
       }
       this.user_input_data = this.cache.json.get(

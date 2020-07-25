@@ -25,7 +25,7 @@ class Player extends Prefab {
 
     this.body.setMaxSpeed(200);
 
-    this.setDisplayOrigin(0, 0);
+    this.setDisplayOrigin(500, 500);
     // this.scene.physics.add.collider(this, this.scene.layers.buildings);
 
     // this.moving = { left: false, right: false, up: false, down: false };
@@ -36,6 +36,7 @@ class Player extends Prefab {
     // this.setPipeline('Light2D');
     // this.setDepth(-1);
     this.setPipeline('Light2D');
+    this.setDepth(1);
   }
 
   create() {}
