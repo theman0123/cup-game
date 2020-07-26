@@ -23,11 +23,11 @@ class WorldScene extends JSONLevelScene {
     this.lights.enable().setAmbientColor(0xf3c260);
     this.lights.addLight(600, 0, 1200).setIntensity(1);
 
-    // if (this.map && this.MapClass) {
-    //   this.map.objects.map((object) =>
-    //     this.MapClass!.handleObjectLayers(object)
-    //   ); //.Objectlayers.map((layer) => this.handleLayers(layer));
-    // }
+    if (this.map && this.MapClass) {
+      this.map.objects.map((object) =>
+        this.MapClass!.handleObjectLayers(object)
+      ); //.Objectlayers.map((layer) => this.handleLayers(layer));
+    }
 
     // @ts-ignore
     // this.add.tween({
@@ -40,12 +40,12 @@ class WorldScene extends JSONLevelScene {
     // });
     //setColor() 1000);
     this.mainCamera = this.cameras.main;
-    // this.cameras.main.setBounds(
-    //   0,
-    //   0,
-    //   this.sys.game.config.width as number,
-    //   this.sys.game.config.height as number
-    // );
+    this.cameras.main.setBounds(
+      0,
+      0,
+      (this.sys.game.config.width as number) * 2,
+      (this.sys.game.config.height as number) * 2
+    );
     this.cameras.main.fadeIn(1000);
     // this.cameras.main.setBounds(0,0, this.scene //.width, this.game.sys.height);
     // won't follow player after setting bounds?....
@@ -78,18 +78,18 @@ class WorldScene extends JSONLevelScene {
     if (this.mapLayers) {
       // @ts-ignore
       debugGraphics ? debugGraphics.clear() : null;
-      const debugGraphics = this.add.graphics().setAlpha(0.75); //.setScale(2);
+      const debugGraphics = this.add.graphics(); //.setAlpha(0.75); //.setScale(2);
       debugger;
       // @ts-ignore
-      this.map.renderDebug(
+      this.mapLayers.foreground.renderDebug(
         debugGraphics,
         {
-          tileColor: new Phaser.Display.Color(40, 39, 37, 255),
+          tileColor: null, //new Phaser.Display.Color(40, 39, 37, 255),
           collidingTileColor: new Phaser.Display.Color(243, 134, 48, 200),
           faceColor: null,
-        },
+        }
         // @ts-ignore
-        [this.mapLayers.foreground as Phaser.Tilemaps.DynamicTilemapLayer]
+        // [this.mapLayers.foreground as Phaser.Tilemaps.DynamicTilemapLayer]
       );
     }
 

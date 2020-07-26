@@ -27,35 +27,42 @@ class Map {
   }
 
   handleLayers(layer: { name: string }) {
+    let newLayer:
+      | Phaser.Tilemaps.DynamicTilemapLayer
+      | Phaser.Tilemaps.StaticTilemapLayer;
     const { name } = layer;
     if (name === 'foreground') {
-      const layer = this.map
+      newLayer = this.map
         .createDynamicLayer(name, this.tiles)
         .setPipeline('Light2D');
 
-      layer.setOrigin(0, 0);
-      layer.setDepth(1);
-      layer.setCollisionByProperty({ collision: true });
-      // layer.setScale(2);
-      // layer.setDisplaySize(1920, this.scene.sys.game.config.height as number);
+      newLayer.setOrigin(0, 0);
+      // newLayer.setDepth(1);
+      // newLayer.setDisplaySize(
+      //   (this.scene.sys.game.config.width as number) * 2,
+      //   (this.scene.sys.game.config.height as number) * 2
+      // );
+      newLayer.setCollisionByProperty({ collision: true });
       // @ts-ignore
       // layer.setCollisionByExclusion(-1, true);
     }
     if (name === 'background') {
-      const layer = this.map.createStaticLayer(name, this.tiles);
+      newLayer = this.map.createStaticLayer(name, this.tiles);
 
-      layer.setOrigin(0, 0);
+      newLayer.setOrigin(0, 0);
       // layer.setDisplaySize(1920, this.scene.sys.game.config.height as number);
     }
     if (name === 'backdrop') {
-      const layer = this.map.createStaticLayer(name, this.tiles);
+      newLayer = this.map.createStaticLayer(name, this.tiles);
 
-      layer.setOrigin(0, 0);
-      layer.setDepth(-1);
+      newLayer.setOrigin(0, 0);
+      // newLayer.setDepth(-1);
       // layer.setDisplaySize(1920, this.scene.sys.game.config.height as number);
     }
     // @ts-ignore
-    this.scene.mapLayers[name] = layer;
+    newLayer.setScale(2);
+    // @ts-ignore
+    this.scene.mapLayers[name] = newLayer;
     //.setDisplaySize(scene)
     // debugger;
     // .setCollision(true)
@@ -65,12 +72,12 @@ class Map {
   }
 
   handleObjectLayers(object: { [key: string]: any }) {
-    // debugger;
+    debugger;
     const start = object.objects.find(
-      (obj: { name: string }) => obj.name === 'start'
+      (obj: { name: string }) => obj.name === 'Start'
     );
     const end = object.objects.find(
-      (obj: { name: string }) => obj.name === 'end'
+      (obj: { name: string }) => obj.name === 'End'
     );
     // @ts-ignore
     this.scene[object.name].setDepth(-1);
@@ -80,7 +87,7 @@ class Map {
     // @ts-ignore
     this.scene.sunLight = this.scene.lights
       .addLight(600, 0, 1200)
-      .setIntensity(1);
+      .setIntensity(0.2);
     // @ts-ignore
     this.scene.tween = this.scene.tweens.add({
       // @ts-ignore
@@ -98,7 +105,7 @@ class Map {
     this.scene.tweenLight = this.scene.tweens.add({
       // @ts-ignore
       targets: [this.scene.sunLight],
-      intensity: 2,
+      intensity: 1.5,
       // delay: 1000,
       ease: 'Cubic', // 'Linear', 'Cubic', 'Elastic', 'Bounce', 'Back'
       duration: 5000,

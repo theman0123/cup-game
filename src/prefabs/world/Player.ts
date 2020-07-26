@@ -21,11 +21,13 @@ class Player extends Prefab {
     this.body = new Phaser.Physics.Arcade.Body(scene.physics.world, this);
     scene.physics.world.enable(this);
 
+    this.body.setSize(50, 150);
+
     // this.body.collideWorldBounds = true;
 
     this.body.setMaxSpeed(200);
 
-    this.setDisplayOrigin(500, 500);
+    this.setPosition(100, 100);
     // this.scene.physics.add.collider(this, this.scene.layers.buildings);
 
     // this.moving = { left: false, right: false, up: false, down: false };
