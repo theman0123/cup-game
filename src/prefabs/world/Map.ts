@@ -31,15 +31,15 @@ class Map {
     if (name === 'foreground') {
       const layer = this.map
         .createDynamicLayer(name, this.tiles)
-        .setPipeline('Light2D'); // pipeline in development takes 600% cpu for arcade physics
+        .setPipeline('Light2D');
 
       layer.setOrigin(0, 0);
       layer.setDepth(1);
+      layer.setCollisionByProperty({ collision: true });
       // layer.setScale(2);
       // layer.setDisplaySize(1920, this.scene.sys.game.config.height as number);
       // @ts-ignore
       // layer.setCollisionByExclusion(-1, true);
-      layer.setCollisionByProperty({ collision: true });
     }
     if (name === 'background') {
       const layer = this.map.createStaticLayer(name, this.tiles);
@@ -65,7 +65,7 @@ class Map {
   }
 
   handleObjectLayers(object: { [key: string]: any }) {
-    debugger;
+    // debugger;
     const start = object.objects.find(
       (obj: { name: string }) => obj.name === 'start'
     );
@@ -76,16 +76,32 @@ class Map {
     this.scene[object.name].setDepth(-1);
     // @ts-ignore
     this.scene[object.name].setPosition(start.x, start.y);
-
+    // set up light with tween image
+    // @ts-ignore
+    this.scene.sunLight = this.scene.lights
+      .addLight(600, 0, 1200)
+      .setIntensity(1);
     // @ts-ignore
     this.scene.tween = this.scene.tweens.add({
       // @ts-ignore
-      targets: this.scene[object.name],
+      targets: [this.scene[object.name], this.scene.sunLight],
       x: end.x,
       y: end.y,
-      delay: 1000,
-      ease: 'Linear', // 'Cubic', 'Elastic', 'Bounce', 'Back'
-      duration: 1000,
+      // delay: 1000,
+      ease: 'Cubic', // 'Linear', 'Cubic', 'Elastic', 'Bounce', 'Back'
+      duration: 5000,
+      repeat: -1, // -1: infinity
+      yoyo: true,
+    });
+
+    // @ts-ignore
+    this.scene.tweenLight = this.scene.tweens.add({
+      // @ts-ignore
+      targets: [this.scene.sunLight],
+      intensity: 2,
+      // delay: 1000,
+      ease: 'Cubic', // 'Linear', 'Cubic', 'Elastic', 'Bounce', 'Back'
+      duration: 5000,
       repeat: -1, // -1: infinity
       yoyo: true,
     });
@@ -94,12 +110,8 @@ class Map {
     //   t.updateTo('y', end.y, true);
     // });
     // @ts-ignore
-    this.scene.tween.play();
+    // this.scene.tween.play();
     // console.log(tween.isPlaying()); // true
-
-    // @ts-ignore
-
-    debugger;
   }
 }
 // .setDisplaySize(640, 480)
