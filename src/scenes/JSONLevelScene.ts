@@ -10,8 +10,10 @@ import {
   Players,
 } from 'interfaces';
 import Map from 'prefabs/world/Map';
+// import { Bullets } from './Bullets';
 
 export class JSONLevelScene extends Phaser.Scene {
+  items: any; // ???????
   level_data: LevelData | undefined;
   players: Players = [];
   prefabs: Prefabs = {};
@@ -73,6 +75,17 @@ export class JSONLevelScene extends Phaser.Scene {
               sprite_data
             );
           }
+
+          if (sprite_data.type === 'items') {
+            // this.groups = new Bullets(sprite_data.group)
+            this.items = new this.prefab_classes[sprite_data.group](
+              this,
+              sprite_data
+            );
+          }
+          // this.scene.playerItems.forEach((item) => {
+          //  this.scene.groups[item] =
+          // });
           if (sprite_data.type === 'spritesheet') {
             this.players[position] = new this.prefab_classes[sprite_data.group](
               this,

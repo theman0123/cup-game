@@ -39,6 +39,12 @@ class Player extends Prefab {
     // this.setDepth(-1);
     this.setPipeline('Light2D');
     this.setDepth(1);
+
+    this.body.setBounce(0.2, 0.2);
+    this.body.setMass(0.7);
+    this.body.setDrag(0.5, 0.5);
+    // this.body.setAngularDrag(5);
+    // this.setupItems();
   }
 
   create() {}
@@ -83,15 +89,16 @@ class Player extends Prefab {
 
   jump() {
     // debugger;
-    this.body.setVelocityY(-280);
+    this.body.setVelocityY(-480);
+    this.body.setVelocityX(250);
   }
   left() {
-    this.body.setVelocityX(-150);
+    this.body.setVelocityX(-250);
     this.setFlipX(true);
     this.playWalkAnim();
   }
   right() {
-    this.body.setVelocityX(150);
+    this.body.setVelocityX(250);
     this.setFlipX(false);
     this.playWalkAnim();
   }
@@ -101,6 +108,10 @@ class Player extends Prefab {
       this.anims.play('walkR-itemhold');
     }
   }
+
+  // setupItems(): void {
+  //   console.log(this.properties);
+  // }
 }
 
 export default Player;

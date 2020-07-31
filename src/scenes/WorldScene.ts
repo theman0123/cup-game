@@ -44,7 +44,7 @@ class WorldScene extends JSONLevelScene {
       0,
       0,
       (this.sys.game.config.width as number) * 2,
-      (this.sys.game.config.height as number) * 2
+      352 * 2
     );
     this.cameras.main.fadeIn(1000);
     // this.cameras.main.setBounds(0,0, this.scene //.width, this.game.sys.height);
@@ -64,13 +64,7 @@ class WorldScene extends JSONLevelScene {
     // collision between players and tiles
     if (this.mapLayers) {
       // const test =
-      this.physics.add.collider(
-        this.players[0],
-        this.mapLayers.foreground,
-        function () {
-          console.log('collision!');
-        }
-      );
+      this.physics.add.collider(this.players[0], this.mapLayers.foreground);
       // console.log(test);
       // debugger;
     }
