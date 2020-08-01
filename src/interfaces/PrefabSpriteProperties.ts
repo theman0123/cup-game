@@ -14,5 +14,7 @@ interface AnimationDetails {
   frame_height: number;
   frameRate: number;
   max: number;
+  prefix: string;
+  repeat: number;
   zero_pad: number;
 }

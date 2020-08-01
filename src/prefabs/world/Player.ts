@@ -41,8 +41,10 @@ class Player extends Prefab {
     this.setDepth(1);
 
     this.body.setBounce(0.2, 0.2);
-    this.body.setMass(0.7);
-    this.body.setDrag(0.5, 0.5);
+    this.body.setMass(0.9);
+
+    // this.body.setAllowDrag(false);
+    // this.body.setDrag(0.5, 0.5);
     // this.body.setAngularDrag(5);
     // this.setupItems();
   }
@@ -50,26 +52,27 @@ class Player extends Prefab {
   create() {}
 
   createAnimations(animation: string) {
+    if (animation === 'short-toss') debugger;
     const {
-      frame_width,
-      frame_height,
       frameRate,
       max,
       zero_pad,
+      prefix,
+      repeat,
     } = this.properties.animationProperties[animation];
     const frames = this.scene.anims.generateFrameNames(
       this.properties.asset_name,
       {
         end: max,
         zeroPad: zero_pad || 2,
-        prefix: `${animation}/${animation}(${frame_width}x${frame_height})-`,
+        prefix: prefix,
         suffix: '.png',
       }
     );
     this.scene.anims.create({
       key: animation,
       frames,
-      repeat: -1,
+      repeat,
       frameRate,
     });
 
@@ -84,16 +87,29 @@ class Player extends Prefab {
 
   idle() {
     this.body.setVelocityX(0);
+    // this.body.setAccelerationX(0);
     this.anims.play('idle');
   }
 
+  throw() {
+    // this.equipped
+    console.log('throw');
+    this.anims.play('short-toss', true);
+    this.on('animationcomplete', () => {
+      debugger;
+      this.anims.play('idle', true);
+    });
+  }
+
   jump() {
-    // debugger;
-    this.body.setVelocityY(-480);
-    this.body.setVelocityX(250);
+    if (this.body.blocked.down) {
+      this.body.setVelocityY(-480);
+    }
   }
   left() {
     this.body.setVelocityX(-250);
+    // this.body.acceleration.x -= 20;
+
     this.setFlipX(true);
     this.playWalkAnim();
   }
@@ -104,8 +120,9 @@ class Player extends Prefab {
   }
 
   playWalkAnim() {
-    if (this.anims.currentAnim.key !== 'walkR-itemhold') {
-      this.anims.play('walkR-itemhold');
+    const { key } = this.anims.currentAnim;
+    if (key !== 'walk' && key !== 'short-toss') {
+      this.anims.play('walk');
     }
   }
 

@@ -34,7 +34,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin({
-      root: path.resolve(__dirname, '../'),
+      root: path.resolve(__dirname, '/'),
     }),
     new webpack.DefinePlugin({
       CANVAS_RENDERER: JSON.stringify(true),
@@ -43,6 +43,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
     }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
   ],
 
   optimization: {

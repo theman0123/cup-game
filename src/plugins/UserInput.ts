@@ -76,12 +76,12 @@ class UserInput {
     return { classMethod: context[method], classContext: context };
   }
 
-  process_input(event: { type: EventTypes; key: KeyTypes }) {
+  process_input(event: { type: EventTypes; code: KeyTypes }) {
     if (this.enabled && this.user_inputs) {
-      const user_input: KeyValue = this.user_inputs[event.type][event.key];
+      const user_input: KeyValue = this.user_inputs[event.type][event.code];
       const { objectClass, playerPriority } = this
         .user_inputs as UserInputJsonWorldMap;
-      debugger;
+      // debugger;
       if (user_input && user_input.method) {
         const { classMethod, classContext } = this.getClassMethod(
           user_input.method,

@@ -1,19 +1,32 @@
 {
-  "animations": ["idle", "walkR-itemhold"],
+  "animations": ["idle", "walk", "short-toss"],
   "animationProperties": {
     "idle": {
+      "prefix": "idle-itemhold/idle-itemhold(210x210)-",
       "frame_width": 210,
       "frame_height": 210,
-      "frameRate": 4,
+      "frameRate": 6,
       "max": 27,
-      "zero_pad": 2
+      "zero_pad": 2,
+      "repeat": -1
     },
-    "walkR-itemhold": {
+    "walk": {
+      "prefix": "walkR-itemhold/walkR-itemhold(210x210)-",
       "frame_width": 210,
       "frame_height": 210,
-      "frameRate": 4,
+      "frameRate": 6,
       "max": 4,
-      "zero_pad": 1
+      "zero_pad": 1,
+      "repeat": -1
+    },
+    "short-toss": {
+      "prefix": "short-toss0/short-toss(210x210)-",
+      "frame_width": 210,
+      "frame_height": 210,
+      "frameRate": 8,
+      "max": 3,
+      "zero_pad": 2,
+      "repeat": 0
     }
   }
 }
