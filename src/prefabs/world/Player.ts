@@ -21,8 +21,8 @@ class Player extends Prefab {
     this.body = new Phaser.Physics.Arcade.Body(scene.physics.world, this);
     scene.physics.world.enable(this);
 
+    this.setScale(0.5);
     this.body.setSize(50, 150);
-
     // this.body.collideWorldBounds = true;
 
     this.body.setMaxSpeed(200);
@@ -35,14 +35,13 @@ class Player extends Prefab {
     // create animations
     properties.animations.map(this.createAnimations, this);
     // enable lighting system for player
-    // this.setPipeline('Light2D');
-    // this.setDepth(-1);
     this.setPipeline('Light2D');
     this.setDepth(1);
 
-    this.body.setBounce(0.2, 0.2);
+    // this.body.setBounce(0.1, 0.1);
     this.body.setMass(0.9);
 
+    // this.setDepth(-1);
     // this.body.setAllowDrag(false);
     // this.body.setDrag(0.5, 0.5);
     // this.body.setAngularDrag(5);

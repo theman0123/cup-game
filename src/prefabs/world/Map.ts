@@ -36,31 +36,29 @@ class Map {
         .createDynamicLayer(name, this.tiles)
         .setPipeline('Light2D');
 
-      newLayer.setOrigin(0, 0);
-      // newLayer.setDepth(1);
-      // newLayer.setDisplaySize(
-      //   (this.scene.sys.game.config.width as number) * 2,
-      //   (this.scene.sys.game.config.height as number) * 2
-      // );
+      newLayer.setDepth(1);
+
       newLayer.setCollisionByProperty({ collision: true });
       // @ts-ignore
-      // layer.setCollisionByExclusion(-1, true);
+      debugGraphics ? debugGraphics.clear() : null;
+      const debugGraphics = this.scene.add.graphics(); //.setAlpha(0.75); //.setScale(2);
+      newLayer.renderDebug(debugGraphics, {
+        tileColor: null, //new Phaser.Display.Color(40, 39, 37, 255),
+        collidingTileColor: new Phaser.Display.Color(243, 134, 48, 200),
+        faceColor: null,
+      });
+      debugGraphics.depth = 1;
     }
     if (name === 'background') {
       newLayer = this.map.createStaticLayer(name, this.tiles);
-
-      newLayer.setOrigin(0, 0);
-      // layer.setDisplaySize(1920, this.scene.sys.game.config.height as number);
     }
     if (name === 'backdrop') {
       newLayer = this.map.createStaticLayer(name, this.tiles);
 
-      newLayer.setOrigin(0, 0);
-      // newLayer.setDepth(-1);
-      // layer.setDisplaySize(1920, this.scene.sys.game.config.height as number);
+      newLayer.setDepth(-1);
     }
     // @ts-ignore
-    newLayer.setScale(2);
+    // newLayer.setScale(2);
     // @ts-ignore
     this.scene.mapLayers[name] = newLayer;
     //.setDisplaySize(scene)

@@ -64,27 +64,22 @@ class WorldScene extends JSONLevelScene {
     // collision between players and tiles
     if (this.mapLayers) {
       // const test =
-      this.physics.add.collider(this.players[0], this.mapLayers.foreground);
+      this.physics.add.collider(
+        this.players[0],
+        this.mapLayers.foreground as Phaser.GameObjects.GameObject
+        // (objA, objB) => {
+        // play landing animation when collision with ground;
+        // if pressing left/right, play walk animation (i.e. after 2nd frame)
+        //   console.log('collision')
+        // }
+      );
       // console.log(test);
       // debugger;
     }
 
-    if (this.mapLayers) {
-      // @ts-ignore
-      debugGraphics ? debugGraphics.clear() : null;
-      const debugGraphics = this.add.graphics(); //.setAlpha(0.75); //.setScale(2);
-      debugger;
-      // @ts-ignore
-      this.mapLayers.foreground.renderDebug(
-        debugGraphics,
-        {
-          tileColor: null, //new Phaser.Display.Color(40, 39, 37, 255),
-          collidingTileColor: new Phaser.Display.Color(243, 134, 48, 200),
-          faceColor: null,
-        }
-        // @ts-ignore
-        // [this.mapLayers.foreground as Phaser.Tilemaps.DynamicTilemapLayer]
-      );
+    debugger;
+    if (!this.game.scale.isFullscreen) {
+      this.fullScreenPrompt();
     }
 
     // @ts-ignore
@@ -128,6 +123,24 @@ class WorldScene extends JSONLevelScene {
         object.properties
       );
     }
+  }
+
+  fullScreenPrompt(): void {
+    const helloButton = this.add
+      .text(100, 300, 'FullScreen', {
+        fill: '#fff',
+      })
+      .setDepth(2);
+    helloButton.setInteractive();
+    helloButton.on('pointerover', () => {
+      console.log('pointerover');
+    });
+    helloButton.on('pointerdown', () => {
+      console.log('pointerdown');
+      this.game.scale.startFullscreen();
+      helloButton.destroy();
+    });
+    // Phaser.Display.Align.In.Center(helloButton, pic);
   }
 }
 

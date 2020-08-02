@@ -13,6 +13,7 @@ let loadingScene = new LoadingScene();
 let config = {
   type: Phaser.AUTO,
   parent: 'cup-game',
+  pixelArt: true,
   width: 640,
   height: 480,
   physics: {
@@ -30,6 +31,10 @@ let config = {
   },
   plugins: {
     scene: [],
+  },
+  scale: {
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH,
   },
 };
 

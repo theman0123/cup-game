@@ -10,6 +10,7 @@ import {
   Players,
 } from 'interfaces';
 import Map from 'prefabs/world/Map';
+import { MapLayers } from 'interfaces/GameScene';
 // import { Bullets } from './Bullets';
 
 export class JSONLevelScene extends Phaser.Scene {
@@ -21,7 +22,7 @@ export class JSONLevelScene extends Phaser.Scene {
   groups: Groups = {};
   map: Phaser.Tilemaps.Tilemap | undefined;
   MapClass: Map | undefined;
-  mapLayers: { [key: string]: any } | undefined;
+  mapLayers: MapLayers | undefined;
   user_input: Input | undefined;
   user_input_data: UserInputJson | undefined;
 
@@ -34,9 +35,8 @@ export class JSONLevelScene extends Phaser.Scene {
   }
 
   create() {
-    this.players;
-    this.groups;
     let position = 0;
+
     if (this.level_data) {
       this.level_data.groups.forEach((group_name) => {
         if (group_name !== 'players') {
@@ -108,11 +108,11 @@ export class JSONLevelScene extends Phaser.Scene {
     this.user_input && this.user_input.set_input(this.user_input_data);
   }
 
-  update() {
-    for (let prefab_name in this.prefabs) {
-      this.prefabs[prefab_name].update();
-    }
-  }
+  // update() {
+  // for (let prefab_name in this.prefabs) {
+  //   this.prefabs[prefab_name].update();
+  // }
+  // }
 }
 
 export default JSONLevelScene;
