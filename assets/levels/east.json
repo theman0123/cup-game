@@ -19,6 +19,7 @@
       "json": "assets/images/core/items/blue-ball.json",
       "type": "items",
       "group": "items",
+      "asset_name": "sphere",
       "maxQuantity": 5
     },
     "player_spritesheet": {

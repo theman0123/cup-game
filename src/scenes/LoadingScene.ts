@@ -26,6 +26,7 @@ class LoadingScene extends Phaser.Scene {
           case 'image':
             this.load.image(asset_key, asset.source);
             break;
+          case 'items':
           case 'spritesheet':
             this.load.multiatlas(asset.asset_name, asset.json, asset.home);
             this.load.json(

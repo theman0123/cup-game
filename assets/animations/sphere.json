@@ -1,0 +1,14 @@
+{
+  "animations": ["plain", "walk", "short-toss"],
+  "animationProperties": {
+    "plain": {
+      "prefix": "blue-ball-",
+      "frame_width": 64,
+      "frame_height": 64,
+      "frameRate": 6,
+      "max": 2,
+      "zero_pad": 2,
+      "repeat": -1
+    }
+  }
+}
