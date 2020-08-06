@@ -1,5 +1,6 @@
 import JSONLevelScene from './JSONLevelScene';
 import Player from '../prefabs/world/Player';
+import { Bullets } from '../prefabs/world/Bullets';
 import Map from '../prefabs/world/Map';
 import { PrefabProperties } from 'interfaces';
 // import Door from '../prefabs/world/Door';
@@ -13,6 +14,7 @@ class WorldScene extends JSONLevelScene {
     this.prefab_classes = {
       players: Player.prototype.constructor,
       map: Map.prototype.constructor,
+      items: Bullets.prototype.constructor,
       //   door: Door.prototype.constructor,
     };
   }
@@ -43,8 +45,8 @@ class WorldScene extends JSONLevelScene {
     this.cameras.main.setBounds(
       0,
       0,
-      (this.sys.game.config.width as number) * 2,
-      352 * 2
+      this.sys.game.config.width as number,
+      this.sys.game.config.height as number
     );
     this.cameras.main.fadeIn(1000);
     // this.cameras.main.setBounds(0,0, this.scene //.width, this.game.sys.height);

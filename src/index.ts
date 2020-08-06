@@ -14,8 +14,8 @@ let config = {
   type: Phaser.AUTO,
   parent: 'cup-game',
   pixelArt: true,
-  width: 640,
-  height: 480,
+  width: 600,
+  height: 352,
   physics: {
     default: 'arcade',
     arcade: {

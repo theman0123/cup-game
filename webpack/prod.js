@@ -8,7 +8,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 module.exports = merge(base, {
   mode: 'production',
   output: {
-    path: path.resolve(__dirname, '/dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.min.js',
   },
   devtool: false,

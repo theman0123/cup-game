@@ -13,15 +13,13 @@
       "type": "tilemap",
       "tile_set_name": "spring1c-0"
     },
-    "projectiles": {
-      "sphere": {
-        "texture": "assets/images/core/items/blue-ball-0.png",
-        "home": "assets/images/core/items",
-        "json": "assets/images/core/items/blue-ball.json",
-        "type": "items",
-        "group": "items",
-        "maxQuantity": 5
-      }
+    "sphere": {
+      "texture": "assets/images/core/items/blue-ball-0.png",
+      "home": "assets/images/core/items",
+      "json": "assets/images/core/items/blue-ball.json",
+      "type": "items",
+      "group": "items",
+      "maxQuantity": 5
     },
     "player_spritesheet": {
       "asset_name": "fox",

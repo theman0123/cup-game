@@ -1,11 +1,7 @@
-class Bullet extends Phaser.Physics.Arcade.Sprite {
-  constructor(
-    scene: Phaser.Scene,
-    x: number,
-    y: number,
-    info: { texture: string }
-  ) {
-    super(scene, x, y, info.texture);
+export class Bullet extends Phaser.Physics.Arcade.Sprite {
+  constructor(scene: Phaser.Scene, x: number, y: number, texture: string) {
+    super(scene, x, y, texture);
+    debugger; // info
   }
 
   fire(x: number, y: number) {
@@ -14,7 +10,7 @@ class Bullet extends Phaser.Physics.Arcade.Sprite {
     this.setActive(true);
     this.setVisible(true);
 
-    this.setVelocityY(-300);
+    this.setVelocityX(300);
   }
 
   preUpdate(time: any, delta: any) {
@@ -27,13 +23,13 @@ class Bullet extends Phaser.Physics.Arcade.Sprite {
   }
 }
 
-class Bullets extends Phaser.Physics.Arcade.Group {
+export class Bullets extends Phaser.Physics.Arcade.Group {
   constructor(
     scene: Phaser.Scene,
     info: { texture: string; maxQuantity: number }
   ) {
     super(scene.physics.world, scene);
-
+    debugger; // info
     this.createMultiple({
       frameQuantity: info.maxQuantity,
       key: info.texture,
@@ -41,6 +37,8 @@ class Bullets extends Phaser.Physics.Arcade.Group {
       visible: false,
       classType: Bullet,
     });
+
+    this.fireBullet(0, 0);
   }
 
   fireBullet(x: number, y: number) {
