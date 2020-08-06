@@ -17,7 +17,7 @@
       "texture": "assets/images/core/items/blue-ball-0.png",
       "home": "assets/images/core/items",
       "json": "assets/images/core/items/blue-ball.json",
-      "type": "items",
+      "type": "spritesheet",
       "group": "items",
       "asset_name": "sphere",
       "maxQuantity": 5

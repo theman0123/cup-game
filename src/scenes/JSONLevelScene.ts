@@ -87,15 +87,22 @@ export class JSONLevelScene extends Phaser.Scene {
           //  this.scene.groups[item] =
           // });
           if (sprite_data.type === 'spritesheet') {
-            this.players[position] = new this.prefab_classes[sprite_data.group](
-              this,
-              sprite_name,
-              sprite_data.position,
-              {
+            if (sprite_data.group === 'players') {
+              this.players[position] = new this.prefab_classes[
+                sprite_data.group
+              ](this, sprite_name, sprite_data.position, {
                 ...sprite_data,
                 ...animations,
-              }
-            );
+              });
+            }
+            if (sprite_data.group === 'items') {
+              this.items = new this.prefab_classes[sprite_data.group](
+                this,
+                sprite_name,
+                sprite_data.position,
+                { ...sprite_data, ...animations }
+              );
+            }
           }
         }
       }
