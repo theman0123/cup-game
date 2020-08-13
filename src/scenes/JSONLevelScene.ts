@@ -59,6 +59,7 @@ export class JSONLevelScene extends Phaser.Scene {
           const animations: object = this.cache.json.get(
             `animations_${sprite_data.asset_name}`
           );
+          debugger;
           if (sprite_data.type === 'image') {
             const name = sprite_data.asset_name;
             // @ts-ignore
@@ -98,8 +99,7 @@ export class JSONLevelScene extends Phaser.Scene {
             if (sprite_data.group === 'items') {
               this.items = new this.prefab_classes[sprite_data.group](
                 this,
-                sprite_name,
-                sprite_data.position,
+                { name: sprite_name, maxQuantity: sprite_data.maxQuantity },
                 { ...sprite_data, ...animations }
               );
             }

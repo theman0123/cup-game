@@ -1,4 +1,5 @@
 import { PrefabProperties } from './PrefabProperties';
+import { Item } from './Item';
 
 export interface PrefabSpriteProperties
   extends PrefabProperties,
@@ -7,6 +8,7 @@ export interface PrefabSpriteProperties
   animations: Array<string>;
   animationProperties: { [key: string]: AnimationDetails };
   asset_name: string;
+  items: Item;
 }
 
 interface AnimationDetails {

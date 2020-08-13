@@ -1,7 +1,8 @@
 import Prefab from '../Prefab';
-import { PrefabSpriteProperties, GameScene, XY } from 'interfaces';
+import { PrefabSpriteProperties, GameScene, XY, Item } from 'interfaces';
 
 class Player extends Prefab {
+  items: Item | undefined;
   properties: PrefabSpriteProperties;
   walking_speed: number;
   body: Phaser.Physics.Arcade.Body;
@@ -15,6 +16,7 @@ class Player extends Prefab {
     super(scene, name, position, properties);
     this.properties = properties;
     this.scene = scene;
+    this.items = properties.items;
 
     this.walking_speed = +properties.walking_speed;
 
@@ -94,6 +96,7 @@ class Player extends Prefab {
     // this.equipped
     console.log('throw');
     this.anims.play('short-toss', true);
+    this.useItem();
     this.on('animationcomplete', () => {
       debugger;
       this.anims.play('idle', true);
@@ -122,6 +125,11 @@ class Player extends Prefab {
     const { key } = this.anims.currentAnim;
     if (key !== 'walk' && key !== 'short-toss') {
       this.anims.play('walk');
+    }
+  }
+  useItem(): void {
+    if (this.items?.equipped) {
+      this.items.equipped[this.items.equipped.use]();
     }
   }
 

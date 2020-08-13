@@ -88,7 +88,7 @@
 641,642,643,644,645,646,647,648,649,650,651,652,653,654,655,656,657,658,659,660
 </data>
  </layer>
- <objectgroup id="4" name="sun-yellow">
+ <objectgroup id="4" name="light-source">
   <object id="5" name="Start" x="561" y="387">
    <point/>
   </object>

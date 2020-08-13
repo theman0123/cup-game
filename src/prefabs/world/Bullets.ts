@@ -1,3 +1,5 @@
+import { PrefabSpriteProperties } from 'interfaces';
+
 export class Bullet extends Phaser.Physics.Arcade.Sprite {
   constructor(scene: Phaser.Scene, x: number, y: number, texture: string) {
     super(scene, x, y, texture);
@@ -17,6 +19,7 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
     super.preUpdate(time, delta);
 
     if (this.y <= -32) {
+      // this.anims.play('sphere-default');
       debugger;
       this.setActive(false);
       this.setVisible(false);
@@ -25,12 +28,40 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
 }
 
 export class Bullets extends Phaser.Physics.Arcade.Group {
+  properties: PrefabSpriteProperties;
+
   constructor(
     scene: Phaser.Scene,
-    info: { name: string; maxQuantity: number }
+    info: { name: string; maxQuantity: number },
+    properties: PrefabSpriteProperties
   ) {
     super(scene.physics.world, scene);
+    this.properties = properties;
+    const {
+      max,
+      zero_pad,
+      prefix,
+      repeat,
+      frameRate,
+    } = this.properties.animationProperties.plain;
     debugger; // info
+
+    const frames = this.scene.anims.generateFrameNames(
+      this.properties.asset_name,
+      {
+        end: max,
+        zeroPad: zero_pad || 2,
+        prefix: prefix,
+        suffix: '.png',
+      }
+    );
+    this.scene.anims.create({
+      key: 'sphere-default',
+      frames,
+      repeat,
+      frameRate,
+    });
+
     this.createMultiple({
       frameQuantity: info.maxQuantity,
       key: info.name,

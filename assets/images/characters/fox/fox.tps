@@ -177,138 +177,122 @@
             <key>defaultPivotPoint</key>
             <point_f>0.5,0.5</point_f>
             <key>writePivotPoints</key>
-            <true/>
+            <false/>
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-00_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-01_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-02_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-03_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-04_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-05_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-06_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-07_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-08_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-09_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-10_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-11_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-12_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-13_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-14_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-15_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-16_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-17_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-18_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-19_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-20_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-21_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-22_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-23_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-24_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-25_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-26_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold(210x210)-27_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-00_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-01_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-02_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-03_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-04_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-05_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-06_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-07_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-08_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-09_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-10_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-11_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-12_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-13_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-14_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-15_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-16_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-17_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-18_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-19_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-20_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-21_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-22_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-23_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-24_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-25_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-26_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle(210x210)-27_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/short-toss0/short-toss(210x210)-00_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/short-toss0/short-toss(210x210)-01_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/short-toss0/short-toss(210x210)-02_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/short-toss0/short-toss(210x210)-03_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/walkR-itemhold/walkR-itemhold(210x210)-0_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/walkR-itemhold/walkR-itemhold(210x210)-1_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/walkR-itemhold/walkR-itemhold(210x210)-2_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/walkR-itemhold/walkR-itemhold(210x210)-3_n.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-00.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-01.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-02.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-03.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-04.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-05.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-06.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-07.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-08.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-09.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-10.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-11.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-12.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-13.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-14.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-15.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-16.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-17.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-18.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-19.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-20.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-21.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-22.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-23.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-24.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-25.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-26.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold(210x210)-27.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-00.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-01.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-02.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-03.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-04.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-05.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-06.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-07.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-08.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-09.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-10.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-11.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-12.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-13.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-14.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-15.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-16.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-17.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-18.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-19.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-20.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-21.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-22.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-23.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-24.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-25.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-26.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle(210x210)-27.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/short-toss0/short-toss(210x210)-00.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/short-toss0/short-toss(210x210)-01.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/short-toss0/short-toss(210x210)-02.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/short-toss0/short-toss(210x210)-03.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/walkR-itemhold/walkR-itemhold(210x210)-0.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/walkR-itemhold/walkR-itemhold(210x210)-1.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/walkR-itemhold/walkR-itemhold(210x210)-2.png</key>
-            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/walkR-itemhold/walkR-itemhold(210x210)-3.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-00_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-01_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-02_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-03_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-04_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-05_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-06_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-07_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-08_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-09_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-10_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-11_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-12_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-13_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-14_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-15_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-16_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-17_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-18_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-19_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-20_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-21_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-22_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-23_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-24_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-25_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-26_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle-itemhold/idle-itemhold-27_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-00_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-01_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-02_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-03_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-04_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-05_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-06_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-07_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-08_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-09_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-10_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-11_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-12_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-13_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-14_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-15_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-16_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-17_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-18_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-19_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-20_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-21_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-22_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-23_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-24_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-25_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-26_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/idle/idle-27_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-00.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-01.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-02.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-03.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-04.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-05.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-06.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-07.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-08.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-09.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-10.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-11.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-12.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-13.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-14.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-15.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-16.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-17.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-18.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-19.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-20.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-21.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-22.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-23.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-24.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-25.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-26.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle-itemhold/idle-itemhold-27.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-00.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-01.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-02.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-03.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-04.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-05.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-06.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-07.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-08.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-09.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-10.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-11.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-12.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-13.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-14.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-15.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-16.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-17.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-18.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-19.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-20.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-21.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-22.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-23.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-24.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-25.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-26.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/idle/idle-27.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -317,17 +301,61 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>53,53,105,105</rect>
+                <rect>19,36,37,71</rect>
                 <key>scale9Paddings</key>
-                <rect>53,53,105,105</rect>
+                <rect>19,36,37,71</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/short-toss/short-toss-0_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/short-toss/short-toss-1_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/short-toss/short-toss-2_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/short-toss/short-toss-3_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/short-toss/short-toss-0.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/short-toss/short-toss-1.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/short-toss/short-toss-2.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/short-toss/short-toss-3.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>35,36,69,71</rect>
+                <key>scale9Paddings</key>
+                <rect>35,36,69,71</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/walk-itemhold/walk-itemhold-0_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/walk-itemhold/walk-itemhold-1_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/walk-itemhold/walk-itemhold-2_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/normals/walk-itemhold/walk-itemhold-3_n.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/walk-itemhold/walk-itemhold-0.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/walk-itemhold/walk-itemhold-1.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/walk-itemhold/walk-itemhold-2.png</key>
+            <key type="filename">../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites/walk-itemhold/walk-itemhold-3.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>24,37,47,75</rect>
+                <key>scale9Paddings</key>
+                <rect>24,37,47,75</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites</filename>
             <filename>../../../../../../Desktop/cup-game/assets/images/characters/fox/normals</filename>
+            <filename>../../../../../../Desktop/cup-game/assets/images/characters/fox/sprites</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

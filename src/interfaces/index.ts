@@ -1,6 +1,7 @@
 export { Data } from './Data';
 export { GameScene } from './GameScene';
 export { Groups } from './Groups';
+export { Item } from './Item';
 export { LevelData } from './LevelData';
 export { Players } from './Players';
 export { Prefabs } from './Prefabs';
