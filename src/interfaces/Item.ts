@@ -3,5 +3,5 @@ export type Item = {
 };
 
 interface UseItem {
-  equipped: { use: { [Key in 'fire']: string } };
+  equipped: { use: (x?: number, y?: number) => {}; fire: {} }; // {} is not callable
 }

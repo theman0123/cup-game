@@ -3,10 +3,20 @@ import { PrefabSpriteProperties } from 'interfaces';
 export class Bullet extends Phaser.Physics.Arcade.Sprite {
   constructor(scene: Phaser.Scene, x: number, y: number, texture: string) {
     super(scene, x, y, texture);
-    debugger; // info
+    console.log(this);
+    this.scene = scene;
+    this.scene.time.addEvent({
+      delay: 1000,
+      callback: () => {
+        this.setSize(this.width, this.height);
+      },
+      callbackScope: this,
+      loop: false,
+    });
+    // this. = true;
   }
 
-  fire(x: number, y: number) {
+  use(x: number, y: number) {
     this.body.reset(x, y);
 
     this.setActive(true);
@@ -19,16 +29,16 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
     super.preUpdate(time, delta);
 
     if (this.y <= -32) {
-      // this.anims.play('sphere-default');
-      debugger;
       this.setActive(false);
       this.setVisible(false);
+      this.destroy();
     }
   }
 }
 
 export class Bullets extends Phaser.Physics.Arcade.Group {
   properties: PrefabSpriteProperties;
+  scene: Phaser.Scene;
 
   constructor(
     scene: Phaser.Scene,
@@ -36,6 +46,8 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
     properties: PrefabSpriteProperties
   ) {
     super(scene.physics.world, scene);
+    this.scene = scene;
+
     this.properties = properties;
     const {
       max,
@@ -44,7 +56,6 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
       repeat,
       frameRate,
     } = this.properties.animationProperties.plain;
-    debugger; // info
 
     const frames = this.scene.anims.generateFrameNames(
       this.properties.asset_name,
@@ -62,6 +73,9 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
       frameRate,
     });
 
+    // this.defaults.setCircle = 46;
+    this.defaults.setBounceY = 0.5;
+
     this.createMultiple({
       frameQuantity: info.maxQuantity,
       key: info.name,
@@ -70,16 +84,27 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
       classType: Bullet,
     });
 
-    this.setDepth(5);
+    // this.createCallbackHandler(this.children.entries[0])
+    debugger;
+    // this.scene.physics.add.group(this);
 
-    this.fireBullet(0, 0);
+    this.setDepth(5);
   }
 
-  fireBullet(x: number, y: number) {
+  // body is null here
+  // createCallbackHandler(child: any): void {
+  //   debugger;
+  // }
+
+  createMultipleCallback = (child: any) => {
+    debugger;
+  };
+
+  use(x: number, y: number) {
     let bullet = this.getFirstDead(false);
 
     if (bullet) {
-      bullet.fire(x, y);
+      bullet.use(x, y);
     }
   }
 }

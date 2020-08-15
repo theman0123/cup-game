@@ -24,7 +24,15 @@ class Player extends Prefab {
     scene.physics.world.enable(this);
 
     this.setScale(0.5);
-    this.body.setSize(50, 150);
+    this.scene.time.addEvent({
+      delay: 1000,
+      callback: () => {
+        this.body.setSize(this.width, this.height, true);
+      },
+      callbackScope: this,
+      loop: false,
+    });
+    // debugger;
     // this.body.collideWorldBounds = true;
 
     this.body.setMaxSpeed(200);
@@ -53,7 +61,7 @@ class Player extends Prefab {
   create() {}
 
   createAnimations(animation: string) {
-    if (animation === 'short-toss') debugger;
+    // if (animation === 'short-toss') debugger;
     const {
       frameRate,
       max,
@@ -93,12 +101,9 @@ class Player extends Prefab {
   }
 
   throw() {
-    // this.equipped
-    console.log('throw');
     this.anims.play('short-toss', true);
-    this.useItem();
     this.on('animationcomplete', () => {
-      debugger;
+      this.useItem();
       this.anims.play('idle', true);
     });
   }
@@ -110,7 +115,6 @@ class Player extends Prefab {
   }
   left() {
     this.body.setVelocityX(-250);
-    // this.body.acceleration.x -= 20;
 
     this.setFlipX(true);
     this.playWalkAnim();
@@ -129,7 +133,7 @@ class Player extends Prefab {
   }
   useItem(): void {
     if (this.items?.equipped) {
-      this.items.equipped[this.items.equipped.use]();
+      this.items.equipped.use(this.body.x + this.width / 2, this.body.y);
     }
   }
 

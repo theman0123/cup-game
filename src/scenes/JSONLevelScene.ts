@@ -16,7 +16,7 @@ import { MapLayers } from 'interfaces/GameScene';
 export class JSONLevelScene extends Phaser.Scene {
   items: any; // ???????
   level_data: LevelData | undefined;
-  players: Players = [];
+  players: Array<Players> = [];
   prefabs: Prefabs = {};
   prefab_classes: PrefabClasses | undefined;
   groups: Groups = {};
@@ -59,7 +59,7 @@ export class JSONLevelScene extends Phaser.Scene {
           const animations: object = this.cache.json.get(
             `animations_${sprite_data.asset_name}`
           );
-          debugger;
+
           if (sprite_data.type === 'image') {
             const name = sprite_data.asset_name;
             // @ts-ignore
@@ -110,6 +110,8 @@ export class JSONLevelScene extends Phaser.Scene {
         this.level_data.user_input.key
       );
     }
+    this.players[0].items = this.items;
+    this.players[0].items.equipped = this.items;
 
     this.user_input = new UserInput(this);
     this.user_input && this.user_input.set_input(this.user_input_data);

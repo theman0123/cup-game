@@ -75,6 +75,12 @@ class WorldScene extends JSONLevelScene {
         //   console.log('collision')
         // }
       );
+
+      this.physics.add.collider(
+        this.mapLayers.foreground as Phaser.GameObjects.GameObject,
+        this.items
+      );
+      this.physics.add.collider(this.items, this.items);
       // console.log(test);
       // debugger;
     }
