@@ -3,6 +3,7 @@ import Player from '../prefabs/world/Player';
 import { Bullets } from '../prefabs/world/Bullets';
 import Map from '../prefabs/world/Map';
 import { PrefabProperties } from 'interfaces';
+import Boss from '../prefabs/world/Boss';
 // import Door from '../prefabs/world/Door';
 
 class WorldScene extends JSONLevelScene {
@@ -15,6 +16,7 @@ class WorldScene extends JSONLevelScene {
       players: Player.prototype.constructor,
       map: Map.prototype.constructor,
       items: Bullets.prototype.constructor,
+      boss: Boss.prototype.constructor,
       //   door: Door.prototype.constructor,
     };
   }
@@ -81,18 +83,11 @@ class WorldScene extends JSONLevelScene {
         this.items
       );
       this.physics.add.collider(this.items, this.items);
-      // console.log(test);
-      // debugger;
     }
 
-    debugger;
     if (!this.game.scale.isFullscreen) {
       this.fullScreenPrompt();
     }
-
-    // @ts-ignore
-    // this.tween.play();
-    // debugger;
   }
 
   update() {
@@ -119,7 +114,6 @@ class WorldScene extends JSONLevelScene {
       x: object.x + object.width / 2,
       y: object.y + object.height / 2,
     };
-    // debugger;
     if (
       this.prefab_classes &&
       this.prefab_classes.hasOwnProperty(object.type)

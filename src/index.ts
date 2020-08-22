@@ -13,7 +13,7 @@ let loadingScene = new LoadingScene();
 let config = {
   type: Phaser.AUTO,
   parent: 'cup-game',
-  pixelArt: true,
+  // pixelArt: true,
   width: 600,
   height: 352,
   physics: {

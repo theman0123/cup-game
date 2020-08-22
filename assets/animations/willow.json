@@ -1,0 +1,14 @@
+{
+  "animations": ["idle"],
+  "animationProperties": {
+    "idle": {
+      "prefix": "combined(486x376).png",
+      "frame_width": 486,
+      "frame_height": 376,
+      "frameRate": 0,
+      "max": 0,
+      "zero_pad": 0,
+      "repeat": 0
+    }
+  }
+}

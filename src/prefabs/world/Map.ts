@@ -70,7 +70,7 @@ class Map {
   }
 
   handleObjectLayers(object: { [key: string]: any }) {
-    debugger;
+    // debugger;
     const start = object.objects.find(
       (obj: { name: string }) => obj.name === 'Start'
     );

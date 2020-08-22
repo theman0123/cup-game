@@ -3,17 +3,7 @@ import { PrefabSpriteProperties } from 'interfaces';
 export class Bullet extends Phaser.Physics.Arcade.Sprite {
   constructor(scene: Phaser.Scene, x: number, y: number, texture: string) {
     super(scene, x, y, texture);
-    console.log(this);
     this.scene = scene;
-    this.scene.time.addEvent({
-      delay: 1000,
-      callback: () => {
-        this.setSize(this.width, this.height);
-      },
-      callbackScope: this,
-      loop: false,
-    });
-    // this. = true;
   }
 
   use(x: number, y: number) {
@@ -75,6 +65,7 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
 
     // this.defaults.setCircle = 46;
     this.defaults.setBounceY = 0.5;
+    // this.defaults.setMass = 5.5;
 
     this.createMultiple({
       frameQuantity: info.maxQuantity,
@@ -96,8 +87,28 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
   //   debugger;
   // }
 
-  createMultipleCallback = (child: any) => {
-    debugger;
+  createMultipleCallback = (group: Phaser.GameObjects.GameObject[]) => {
+    Phaser.Actions.Call(
+      group,
+      // @ts-ignore
+      (sprite: Phaser.Physics.Arcade.Sprite) => {
+        const { body, height, width } = sprite;
+        debugger;
+        body.setSize(width, height);
+        sprite.body.setCircle(sprite.width / 2);
+        sprite.body.setMass(100); // not working
+
+        // this.scene.time.addEvent({
+        //   delay: 2000,
+        //   callback: () => {
+        //   },
+        //   callbackScope: this,
+        //   loop: false,
+        // });
+        // this. = true;
+      },
+      this
+    );
   };
 
   use(x: number, y: number) {
