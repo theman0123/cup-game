@@ -132,6 +132,7 @@ class Player extends Prefab {
     }
   }
   useItem(): void {
+    debugger;
     if (this.items?.equipped) {
       this.items.equipped.use(this.body.x + this.width / 2, this.body.y);
     }

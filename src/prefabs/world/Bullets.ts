@@ -7,21 +7,31 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
   }
 
   use(x: number, y: number) {
-    this.body.reset(x, y);
+    if (this.body) {
+      this.body.reset(x, y);
 
-    this.setActive(true);
-    this.setVisible(true);
+      this.setActive(true);
+      this.setVisible(true);
 
-    this.setVelocityX(300);
+      this.setVelocityX(300);
+      this.scene.time.addEvent({ delay: 5000, callback: this.destroy });
+    }
+  }
+
+  destroy(): void {
+    if (this.body) {
+      this.setActive(false);
+      this.setVisible(false);
+      this.body.destroy();
+    }
   }
 
   preUpdate(time: any, delta: any) {
     super.preUpdate(time, delta);
-
-    if (this.y <= -32) {
-      this.setActive(false);
-      this.setVisible(false);
-      this.destroy();
+    if (this.body) {
+      if (this.y > 400 || this.x > 500) {
+        this.destroy();
+      }
     }
   }
 }
@@ -76,36 +86,33 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
     });
 
     // this.createCallbackHandler(this.children.entries[0])
-    debugger;
     // this.scene.physics.add.group(this);
 
     this.setDepth(5);
   }
-
-  // body is null here
-  // createCallbackHandler(child: any): void {
-  //   debugger;
-  // }
 
   createMultipleCallback = (group: Phaser.GameObjects.GameObject[]) => {
     Phaser.Actions.Call(
       group,
       // @ts-ignore
       (sprite: Phaser.Physics.Arcade.Sprite) => {
+        // @ts-ignore
         const { body, height, width } = sprite;
-        debugger;
-        body.setSize(width, height);
-        sprite.body.setCircle(sprite.width / 2);
-        sprite.body.setMass(100); // not working
+        const { halfWidth } = body;
 
-        // this.scene.time.addEvent({
-        //   delay: 2000,
-        //   callback: () => {
-        //   },
-        //   callbackScope: this,
-        //   loop: false,
-        // });
-        // this. = true;
+        console.log(body.width, body.debugShowBody, sprite.displayWidth);
+        sprite.setDisplaySize(width, height);
+        body.setSize(width, height).setCircle(halfWidth); // 0, 0
+        // body.setCircle(width / 2);
+        body.setMass(100); // not working
+
+        //     this.scene.time.addEvent({
+        //       delay: 2000,
+        //       callback: () => {},
+        //       callbackScope: this,
+        //       loop: false,
+        //     });
+        //     // this. = true;
       },
       this
     );

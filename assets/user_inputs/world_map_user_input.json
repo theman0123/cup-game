@@ -2,24 +2,24 @@
   "objectClass": "players",
   "playerPriority": 0,
   "keydown": {
-    "ArrowUp": {
+    "up": {
       "method": "jump"
     },
-    "ArrowLeft": {
+    "left": {
       "method": "left"
     },
-    "ArrowRight": {
+    "right": {
       "method": "right"
     },
-    "Space": {
+    "space": {
       "method": "throw"
     }
   },
   "keyup": {
-    "ArrowLeft": {
+    "left": {
       "method": "idle"
     },
-    "ArrowRight": {
+    "right": {
       "method": "idle"
     }
   }

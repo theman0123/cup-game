@@ -8,7 +8,7 @@ export type UserInputJsonWorldMap = {
 };
 
 export type EventTypes = 'keydown' | 'keyup';
-export type KeyTypes = 'ArrowUp' | 'ArrowLeft' | 'ArrowRight' | 'Space';
+export type KeyTypes = 'up' | 'down' | 'left' | 'right';
 
 export type Key = {
   [key in KeyTypes]: KeyValue;

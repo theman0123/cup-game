@@ -8,6 +8,7 @@ import {
   Data,
   UserInput as Input,
   Players,
+  UserInputJsonWorldMap,
 } from 'interfaces';
 import Map from 'prefabs/world/Map';
 import { MapLayers } from 'interfaces/GameScene';
@@ -23,8 +24,8 @@ export class JSONLevelScene extends Phaser.Scene {
   map: Phaser.Tilemaps.Tilemap | undefined;
   MapClass: Map | undefined;
   mapLayers: MapLayers | undefined;
-  user_input: Input | undefined;
-  user_input_data: UserInputJson | undefined;
+  user_input: UserInput | undefined;
+  user_input_data: UserInputJsonWorldMap | undefined;
 
   constructor(key: string) {
     super({ key: key });
@@ -114,14 +115,19 @@ export class JSONLevelScene extends Phaser.Scene {
     this.players[0].items.equipped = this.items;
 
     this.user_input = new UserInput(this);
-    this.user_input && this.user_input.set_input(this.user_input_data);
+    this.user_input &&
+      this.user_input.set_input(this.user_input_data as UserInputJsonWorldMap);
   }
 
-  // update() {
-  // for (let prefab_name in this.prefabs) {
-  //   this.prefabs[prefab_name].update();
-  // }
-  // }
+  update(time: number, delta: number) {
+    if (this.user_input) {
+      this.user_input.process_input();
+    }
+
+    // for (let prefab_name in this.prefabs) {
+    //   this.prefabs[prefab_name].update();
+    // }
+  }
 }
 
 export default JSONLevelScene;
