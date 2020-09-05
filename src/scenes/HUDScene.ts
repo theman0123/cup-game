@@ -9,6 +9,8 @@ class HUDScene extends JSONLevelScene {
 
   create() {
     super.create();
+
+    this.add.image(100, 100, 'fox-icon');
     // cameras.main.setScrollFactor(0)
   }
 

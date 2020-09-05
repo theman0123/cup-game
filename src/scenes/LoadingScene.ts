@@ -51,8 +51,17 @@ class LoadingScene extends Phaser.Scene {
   }
 
   create(data: { scene: string }) {
-    debugger;
-    this.scene.start(data.scene, { level_data: this.level_data });
+    // const hud = this.scene.get('HUDScene');
+    const hud_data = this.cache.json.get('hud');
+
+    if (!this.scene.isActive('HUDScene')) {
+      debugger;
+      console.log('againagaingaingaing');
+      this.scene.launch('HUDScene', { level_data: hud_data });
+    }
+    if (data.scene === 'WorldScene')
+      this.scene.start(data.scene, { level_data: this.level_data });
+    // this.scene.launch('BootScene', { scene: 'hud' });
   }
 }
 

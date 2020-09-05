@@ -46,12 +46,14 @@ export class JSONLevelScene extends Phaser.Scene {
 
       if (this.prefab_classes) {
         for (let sprite_name in this.level_data.sprites) {
+          debugger;
           let sprite_data = this.level_data.sprites[sprite_name];
           const animations: object = this.cache.json.get(
             `animations_${sprite_data.asset_name}`
           );
 
           if (sprite_data.type === 'image') {
+            // see what other images you have in 'east' and copy that methodology
             const name = sprite_data.asset_name;
             // @ts-ignore
             this[name] = this.add.image(0, 0, name);

@@ -21,7 +21,6 @@ class WorldScene extends JSONLevelScene {
 
   create() {
     super.create();
-    this.scene.launch('HUDScene');
 
     this.lights.enable().setAmbientColor(0xf3c260);
     this.lights.addLight(600, 0, 1200).setIntensity(1);
