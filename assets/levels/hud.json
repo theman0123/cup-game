@@ -1,28 +1,13 @@
 {
-  "comment": "a basic example below: delete comment when finished",
-  "assets": {
-    "map_tileset": { "type": "image", "source": "assets/images/tileset.png" },
-
-    "player_spritesheet": {
-      "type": "spritesheet",
-      "source": "assets/images/world/characters/fox",
-      "animations": ["idle"],
-      "frame_width": 210,
-      "frame_height": 210
+  "assets": {},
+  "groups": ["icons"],
+  "sprites": {
+    "player_icon": {
+      "type": "image",
+      "source": "assets/images/core/icons/characters/fox(480x480).png",
+      "frame_width": 480,
+      "frame_height": 480
     },
-
-    "town_level_tilemap": {
-      "type": "tilemap",
-      "source": "assets/maps/town.json"
-    }
-  },
-  "groups": ["doors", "players"],
-  "map": {
-    "key": "town_level_tilemap",
-    "tilesets": ["map_tileset"]
-  },
-  "user_input": {
-    "key": "town_user_input",
-    "path": "assets/user_inputs/world_map_user_input.json"
+    "boss_icon": {}
   }
 }

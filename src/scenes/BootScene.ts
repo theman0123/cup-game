@@ -1,4 +1,4 @@
-type KeyTypes = 'title' | 'east';
+type KeyTypes = 'title' | 'east' | 'hud';
 
 class BootScene extends Phaser.Scene {
   sceneData: { scene: string } = { scene: '' };
@@ -8,7 +8,7 @@ class BootScene extends Phaser.Scene {
     super({ key: 'BootScene' });
     this.levels = {
       title: { key: 'TitleScene', path: 'assets/levels/title_screen.json' },
-      // hud: { key: 'HudScene', path: 'assets/levels/hud.json' },
+      hud: { key: 'HudScene', path: 'assets/levels/hud.json' },
       east: { key: 'WorldScene', path: 'assets/levels/east.json' },
       // east: { key: 'WorldScene', path: 'assets/levels/east.json' }, //menuScene, SelectCharacterScene
       // town: { key: 'WorldScene', path: 'assets/levels/town.json' },

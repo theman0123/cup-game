@@ -4,7 +4,6 @@ import { Bullets } from '../prefabs/world/Bullets';
 import Map from '../prefabs/world/Map';
 import { PrefabProperties } from 'interfaces';
 import Boss from '../prefabs/world/Boss';
-// import Door from '../prefabs/world/Door';
 
 class WorldScene extends JSONLevelScene {
   light: Phaser.GameObjects.Light | undefined;
@@ -17,12 +16,12 @@ class WorldScene extends JSONLevelScene {
       map: Map.prototype.constructor,
       items: Bullets.prototype.constructor,
       boss: Boss.prototype.constructor,
-      //   door: Door.prototype.constructor,
     };
   }
 
   create() {
     super.create();
+    this.scene.launch('HUDScene');
 
     this.lights.enable().setAmbientColor(0xf3c260);
     this.lights.addLight(600, 0, 1200).setIntensity(1);
@@ -30,7 +29,7 @@ class WorldScene extends JSONLevelScene {
     if (this.map && this.MapClass) {
       this.map.objects.map((object) =>
         this.MapClass!.handleObjectLayers(object)
-      ); //.Objectlayers.map((layer) => this.handleLayers(layer));
+      );
     }
 
     // @ts-ignore
@@ -90,16 +89,7 @@ class WorldScene extends JSONLevelScene {
     }
   }
 
-  update() {
-    // @ts-ignore
-    // if (this.tween) {
-    //   debugger;
-    //   // @ts-ignore
-    //   console.log(this.tween.getValue()); // 0
-    // }
-    // if (this.groups && this.groups.players)
-    //   this.groups.players.children.entries[0].update();
-  }
+  update() {}
 
   create_object(object: {
     x: number;

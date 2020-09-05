@@ -4,15 +4,12 @@ import {
   Prefabs,
   PrefabClasses,
   Groups,
-  UserInputJson,
   Data,
-  UserInput as Input,
   Players,
   UserInputJsonWorldMap,
 } from 'interfaces';
 import Map from 'prefabs/world/Map';
 import { MapLayers } from 'interfaces/GameScene';
-// import { Bullets } from './Bullets';
 
 export class JSONLevelScene extends Phaser.Scene {
   items: any; // ???????
@@ -44,13 +41,6 @@ export class JSONLevelScene extends Phaser.Scene {
           this.groups[group_name] = this.add.group({
             defaultKey: group_name,
           });
-
-          // debugger; // make player on this.player[0] not aad.group
-          // if (group_name === 'players') {
-          //   this.players[position] = this.add.sprite({
-          //     defaultKey: group_name,
-          //   });
-          // }
         }
       });
 
@@ -65,11 +55,6 @@ export class JSONLevelScene extends Phaser.Scene {
             const name = sprite_data.asset_name;
             // @ts-ignore
             this[name] = this.add.image(0, 0, name);
-
-            // new this.prefab_classes[sprite_data.group](
-            //   this,
-            //   sprite_data
-            // );
           }
           if (sprite_data.type === 'tilemap') {
             this.MapClass = new this.prefab_classes[sprite_data.group](
@@ -85,9 +70,6 @@ export class JSONLevelScene extends Phaser.Scene {
               sprite_data
             );
           }
-          // this.scene.playerItems.forEach((item) => {
-          //  this.scene.groups[item] =
-          // });
           if (sprite_data.type === 'spritesheet') {
             if (sprite_data.group === 'players') {
               this.players[position] = new this.prefab_classes[
@@ -107,26 +89,27 @@ export class JSONLevelScene extends Phaser.Scene {
           }
         }
       }
-      this.user_input_data = this.cache.json.get(
-        this.level_data.user_input.key
-      );
+      if (this.level_data.user_input) {
+        this.user_input_data = this.cache.json.get(
+          this.level_data.user_input.key
+        );
+        this.user_input = new UserInput(this);
+        this.user_input &&
+          this.user_input.set_input(
+            this.user_input_data as UserInputJsonWorldMap
+          );
+      }
     }
-    this.players[0].items = this.items;
-    this.players[0].items.equipped = this.items;
-
-    this.user_input = new UserInput(this);
-    this.user_input &&
-      this.user_input.set_input(this.user_input_data as UserInputJsonWorldMap);
+    if (this.players.length) {
+      this.players[0].items = this.items;
+      this.players[0].items.equipped = this.items;
+    }
   }
 
   update(time: number, delta: number) {
     if (this.user_input) {
       this.user_input.process_input();
     }
-
-    // for (let prefab_name in this.prefabs) {
-    //   this.prefabs[prefab_name].update();
-    // }
   }
 }
 

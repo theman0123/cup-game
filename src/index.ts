@@ -3,11 +3,13 @@ import TitleScene from './scenes/TitleScene';
 import WorldScene from './scenes/WorldScene';
 import BootScene from './scenes/BootScene';
 import LoadingScene from './scenes/LoadingScene';
+import HUDScene from './scenes/HUDScene';
 
 let titleScene = new TitleScene();
 let worldScene = new WorldScene();
 let bootScene = new BootScene();
 let loadingScene = new LoadingScene();
+let hudScene = new HUDScene();
 // let CreditsScene = new CreditsScene();
 
 let config = {
@@ -43,9 +45,10 @@ game.scene.add('TitleScene', titleScene);
 game.scene.add('WorldScene', worldScene);
 game.scene.add('BootScene', bootScene);
 game.scene.add('LoadingScene', loadingScene);
+game.scene.add('HUDSCene', hudScene);
 // 'title'
 game.scene.start('BootScene', { scene: 'east' });
-
+// game.scene.
 // const config = {
 //   type: Phaser.AUTO,
 //   width: 800,
