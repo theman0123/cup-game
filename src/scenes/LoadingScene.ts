@@ -22,9 +22,11 @@ class LoadingScene extends Phaser.Scene {
       let assets = this.level_data.sprites;
       for (let asset_key in assets) {
         let asset = assets[asset_key];
+        let name = asset.asset_name;
         switch (asset.type) {
           case 'image':
-            this.load.image(asset_key, asset.source);
+            debugger;
+            this.load.image(name, asset.source);
             break;
           case 'items':
           case 'spritesheet':
@@ -51,17 +53,11 @@ class LoadingScene extends Phaser.Scene {
   }
 
   create(data: { scene: string }) {
-    // const hud = this.scene.get('HUDScene');
-    const hud_data = this.cache.json.get('hud');
-
-    if (!this.scene.isActive('HUDScene')) {
-      debugger;
-      console.log('againagaingaingaing');
-      this.scene.launch('HUDScene', { level_data: hud_data });
-    }
-    if (data.scene === 'WorldScene')
-      this.scene.start(data.scene, { level_data: this.level_data });
-    // this.scene.launch('BootScene', { scene: 'hud' });
+    debugger;
+    // game scenes need to launch first
+    this.scene.launch(data.scene, { level_data: this.level_data });
+    // then shut down the loading scene
+    this.scene.stop('LoadingScene');
   }
 }
 

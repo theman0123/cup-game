@@ -86,6 +86,8 @@ class WorldScene extends JSONLevelScene {
     if (!this.game.scale.isFullscreen) {
       this.fullScreenPrompt();
     }
+    // can only launch a scene from inside a scene
+    this.scene.launch('BootScene', { scene: 'hud' });
   }
 
   update() {}
