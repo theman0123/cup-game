@@ -29,7 +29,6 @@ class BootScene extends Phaser.Scene {
   }
 
   create(data: object) {
-    debugger;
     let level_data = this.cache.json.get(this.sceneData.scene);
     this.scene.start('LoadingScene', {
       level_data: level_data,

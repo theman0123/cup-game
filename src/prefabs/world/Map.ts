@@ -70,7 +70,7 @@ class Map {
   }
 
   handleObjectLayers(object: { [key: string]: any }) {
-    // debugger;
+    debugger;
     const start = object.objects.find(
       (obj: { name: string }) => obj.name === 'Start'
     );
@@ -78,9 +78,9 @@ class Map {
       (obj: { name: string }) => obj.name === 'End'
     );
     // @ts-ignore
-    this.scene[object.name].setDepth(-1);
+    this.scene.sceneLights[object.name].setDepth(-1);
     // @ts-ignore
-    this.scene[object.name].setPosition(start.x, start.y);
+    this.scene.sceneLights[object.name].setPosition(start.x, start.y);
     // set up light with tween image
     // @ts-ignore
     this.scene.sunLight = this.scene.lights
@@ -89,7 +89,7 @@ class Map {
     // @ts-ignore
     this.scene.tween = this.scene.tweens.add({
       // @ts-ignore
-      targets: [this.scene[object.name], this.scene.sunLight],
+      targets: [this.scene.sceneLights[object.name], this.scene.sunLight],
       x: end.x,
       y: end.y,
       // delay: 1000,

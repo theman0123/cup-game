@@ -49,7 +49,7 @@
     },
     "sun-yellow": {
       "asset_name": "sun-yellow",
-      "group": "image",
+      "group": "sceneLights",
       "type": "image",
       "source": "assets/images/world/stages/spring1/in-motion/sun-yellow(640x352).png"
     }

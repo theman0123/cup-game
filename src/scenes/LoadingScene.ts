@@ -25,7 +25,6 @@ class LoadingScene extends Phaser.Scene {
         let name = asset.asset_name;
         switch (asset.type) {
           case 'image':
-            debugger;
             this.load.image(name, asset.source);
             break;
           case 'items':
@@ -53,7 +52,6 @@ class LoadingScene extends Phaser.Scene {
   }
 
   create(data: { scene: string }) {
-    debugger;
     // game scenes need to launch first
     this.scene.launch(data.scene, { level_data: this.level_data });
     // then shut down the loading scene

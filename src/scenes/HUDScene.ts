@@ -1,9 +1,9 @@
 import JSONLevelScene from './JSONLevelScene';
 
 class HUDScene extends JSONLevelScene {
+  playerIcon: Phaser.GameObjects.Image | undefined;
   constructor() {
     super('HUDScene');
-    debugger;
 
     this.prefab_classes = {};
   }
@@ -11,8 +11,8 @@ class HUDScene extends JSONLevelScene {
   create() {
     super.create();
     debugger;
-    this.add.image(100, 100, 'fox-icon');
-    // gameObject.setScrollFactor(0)
+    // @ts-ignore
+    this.playerIcon['fox-icon'].setScale(0.25).setPosition(50, 50);
   }
 
   update() {}

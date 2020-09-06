@@ -4,7 +4,7 @@
   "sprites": {
     "player_icon": {
       "type": "image",
-      "group": "image",
+      "group": "playerIcon",
       "source": "assets/images/core/icons/characters/fox(480x480).png",
       "asset_name": "fox-icon",
       "frame_width": 480,
