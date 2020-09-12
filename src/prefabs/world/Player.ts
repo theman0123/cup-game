@@ -32,7 +32,6 @@ class Player extends Prefab {
       callbackScope: this,
       loop: false,
     });
-    // debugger;
     // this.body.collideWorldBounds = true;
 
     this.body.setMaxSpeed(200);
@@ -61,7 +60,6 @@ class Player extends Prefab {
   create() {}
 
   createAnimations(animation: string) {
-    // if (animation === 'short-toss') debugger;
     const {
       frameRate,
       max,
@@ -88,11 +86,7 @@ class Player extends Prefab {
     this.anims.play('idle');
   }
 
-  update() {
-    // debugger;
-    // if (this.body) {
-    // }
-  }
+  update() {}
 
   idle() {
     this.body.setVelocityX(0);
@@ -132,7 +126,6 @@ class Player extends Prefab {
     }
   }
   useItem(): void {
-    debugger;
     if (this.items?.equipped) {
       this.items.equipped.use(this.body.x + this.width / 2, this.body.y);
     }

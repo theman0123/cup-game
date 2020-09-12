@@ -16,7 +16,6 @@ class Map {
   ) {
     this.scene = scene;
 
-    // debugger;
     this.map = this.scene.make.tilemap({ key: info.tiled_key });
     this.tiles = this.map.addTilesetImage(info.tile_set_name, info.asset_name);
     // @ts-ignore
@@ -62,7 +61,6 @@ class Map {
     // @ts-ignore
     this.scene.mapLayers[name] = newLayer;
     //.setDisplaySize(scene)
-    // debugger;
     // .setCollision(true)
     // .setCollisionFromCollisionGroup();
     // this.scene.matter.add.gameObject(this[name]);
@@ -70,7 +68,6 @@ class Map {
   }
 
   handleObjectLayers(object: { [key: string]: any }) {
-    debugger;
     const start = object.objects.find(
       (obj: { name: string }) => obj.name === 'Start'
     );

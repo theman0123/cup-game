@@ -55,7 +55,6 @@ export class JSONLevelScene extends Phaser.Scene {
             // see what other images you have in 'east' and copy that methodology
             const { asset_name: name, group } = sprite_data;
             // this[name]
-            debugger;
             // @ts-ignore
             if (!this[group]) {
               // @ts-ignore
