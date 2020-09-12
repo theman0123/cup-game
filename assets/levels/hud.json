@@ -10,6 +10,14 @@
       "frame_width": 480,
       "frame_height": 480
     },
+    "enemy_icon": {
+      "type": "image",
+      "group": "enemyIcon",
+      "source": "assets/images/core/icons/enemies/willow-spring(480x480).png",
+      "asset_name": "willow-icon",
+      "frame_width": 480,
+      "frame_height": 480
+    },
     "boss_icon": {}
   }
 }

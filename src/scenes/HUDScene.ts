@@ -1,7 +1,11 @@
 import JSONLevelScene from './JSONLevelScene';
 
+type PlayerIconType = 'fox-icon';
+type EnemyIconType = 'willow-icon';
+
 class HUDScene extends JSONLevelScene {
-  playerIcon: Phaser.GameObjects.Image | undefined;
+  playerIcon: Record<PlayerIconType, Phaser.GameObjects.Image> | undefined;
+  enemyIcon: Record<EnemyIconType, Phaser.GameObjects.Image> | undefined;
   constructor() {
     super('HUDScene');
 
@@ -11,8 +15,13 @@ class HUDScene extends JSONLevelScene {
   create() {
     super.create();
     debugger;
-    // @ts-ignore
-    this.playerIcon['fox-icon'].setScale(0.25).setPosition(50, 50);
+    // bring in grid
+    if (this.playerIcon) {
+      this.playerIcon['fox-icon'].setScale(0.25).setPosition(50, 50);
+    }
+    if (this.enemyIcon) {
+      this.enemyIcon['willow-icon'].setScale(0.25).setPosition(350, 50);
+    }
   }
 
   update() {}

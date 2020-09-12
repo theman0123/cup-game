@@ -1,4 +1,6 @@
 import * as Phaser from 'phaser';
+// @ts-ignore
+import UIPlugin from 'phaser3-rex-plugins/templates/ui/ui-plugin.js';
 import TitleScene from './scenes/TitleScene';
 import WorldScene from './scenes/WorldScene';
 import BootScene from './scenes/BootScene';
@@ -32,7 +34,13 @@ let config = {
     // forceSetTimeout: true,
   },
   plugins: {
-    scene: [],
+    scene: [
+      {
+        key: 'rexUI',
+        plugin: UIPlugin,
+        mapping: 'rexUI',
+      },
+    ],
   },
   scale: {
     mode: Phaser.Scale.FIT,
@@ -48,32 +56,3 @@ game.scene.add('LoadingScene', loadingScene);
 game.scene.add('HUDSCene', hudScene);
 // 'title'
 game.scene.start('BootScene', { scene: 'east' });
-// game.scene.
-// const config = {
-//   type: Phaser.AUTO,
-//   width: 800,
-//   height: 600,
-//   scene: {
-//     preload: preload,
-//     create: create
-//   }
-// };
-
-// const game = new Phaser.Game(config);
-
-// function preload() {
-//   this.load.image("logo", logoImg);
-// }
-
-// function create() {
-//   const logo = this.add.image(400, 150, "logo");
-
-//   this.tweens.add({
-//     targets: logo,
-//     y: 450,
-//     duration: 2000,
-//     ease: "Power2",
-//     yoyo: true,
-//     loop: -1
-//   });
-// }
