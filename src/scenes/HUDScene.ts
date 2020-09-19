@@ -8,6 +8,9 @@ class HUDScene extends JSONLevelScene {
   enemyIcon: Record<EnemyIconType, Phaser.GameObjects.Image> | undefined;
   rexUI: any; //plugin without typedefs... :(
   grid: any;
+  lowerGrid: any;
+  health: any;
+  interactive: any;
 
   constructor() {
     super('HUDScene');
@@ -18,10 +21,11 @@ class HUDScene extends JSONLevelScene {
   create() {
     super.create();
     this.setupIcons();
+    debugger;
   }
 
   setupIcons() {
-    let { width } = this.sys.game.canvas;
+    let { width, height } = this.sys.game.canvas;
 
     this.grid = this.rexUI.add
       .gridSizer({
@@ -37,6 +41,20 @@ class HUDScene extends JSONLevelScene {
     this.grid.setColumnProportion(2, 0.1);
     this.grid.setColumnProportion(3, 0.3);
     this.grid.setColumnProportion(4, 0.1);
+
+    this.lowerGrid = this.rexUI.add
+      .gridSizer({
+        width: width,
+        height: 100,
+        column: 3,
+        row: 1,
+        y: height - 100,
+      })
+      .setOrigin(0);
+
+    this.lowerGrid.setColumnProportion(0, 0.3);
+    this.lowerGrid.setColumnProportion(1, 0);
+    this.lowerGrid.setColumnProportion(2, 0.3);
 
     // @ts-ignore
     // this.levelText = this.add
@@ -77,9 +95,49 @@ class HUDScene extends JSONLevelScene {
         },
         expand: false,
       });
-      this.grid.layout();
-      this.grid.drawBounds(this.add.graphics());
     }
+    if (this.health) {
+      this.grid.add(this.health['health-icon'].setScale(0.5), {
+        column: 1,
+        row: 0,
+        padding: {
+          top: 10,
+        },
+        expand: false,
+      });
+      this.health['boss-health'] = this.add.image(0, 0, 'health-icon');
+      this.grid.add(this.health['boss-health'].setScale(0.5), {
+        column: 3,
+        row: 0,
+        padding: {
+          top: 10,
+        },
+        expand: false,
+      });
+    }
+
+    this.lowerGrid.add(
+      this.interactive['touch-icon'].setScale(6, 3).setAlpha(0.4),
+      {
+        column: 0,
+        row: 0,
+        padding: { bottom: 10, left: 10 },
+        align: 'left',
+        expand: false,
+      }
+    );
+
+    debugger;
+
+    // paint grid items
+    this.grid.layout();
+    // debugger graphics
+    // this.grid.drawBounds(this.add.graphics());
+
+    // paint grid items
+    this.lowerGrid.layout();
+    // debugger graphics
+    // this.lowerGrid.drawBounds(this.add.graphics());
   }
 
   update() {}

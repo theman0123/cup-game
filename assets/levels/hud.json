@@ -18,6 +18,21 @@
       "frame_width": 480,
       "frame_height": 480
     },
-    "boss_icon": {}
+    "health_bar": {
+      "type": "image",
+      "group": "health",
+      "source": "assets/images/core/icons/enemies/hp-meter/willow/willowHP(400x60)-0.png",
+      "asset_name": "health-icon",
+      "frame_width": 480,
+      "frame_height": 60
+    },
+    "touch_icon": {
+      "type": "image",
+      "group": "interactive",
+      "source": "assets/images/core/misc/touch input.png",
+      "asset_name": "touch-icon",
+      "frame_width": 32,
+      "frame_height": 32
+    }
   }
 }
