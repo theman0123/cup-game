@@ -21,7 +21,6 @@ class HUDScene extends JSONLevelScene {
   create() {
     super.create();
     this.setupIcons();
-    debugger;
   }
 
   setupIcons() {
@@ -82,7 +81,6 @@ class HUDScene extends JSONLevelScene {
         },
         expand: false,
       });
-      debugger;
       // this.playerIcon['fox-icon'].setScale(0.25).setPosition(50, 50);
     }
     if (this.enemyIcon) {
@@ -126,8 +124,6 @@ class HUDScene extends JSONLevelScene {
         expand: false,
       }
     );
-
-    debugger;
 
     // paint grid items
     this.grid.layout();

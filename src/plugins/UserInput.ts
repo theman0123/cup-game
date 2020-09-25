@@ -53,13 +53,16 @@ class UserInput {
 
   process_input(): void {
     if (this.enabled && this.user_inputs) {
-      this.scene.players[0].idle();
       for (const key in this.keys) {
         const phaserKey = this.keys[key as KeyTypes];
-        if (phaserKey.isDown) {
+        debugger; // justDown
+        if (Phaser.Input.Keyboard.JustDown(phaserKey)) {
           const method = this.user_inputs.keydown[key as KeyTypes]
             .method as KeyTypes;
+          // call function
           this.scene.players[0][method]();
+          // exit function now!
+          return;
         }
       }
     }

@@ -34,6 +34,8 @@ class Player extends Prefab {
     });
     // this.body.collideWorldBounds = true;
 
+    // working here: attach an event to the body speed. when it hits 0, play this.idle()
+
     this.body.setMaxSpeed(200);
 
     this.setPosition(100, 100);

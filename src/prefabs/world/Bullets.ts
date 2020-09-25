@@ -7,7 +7,9 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
   }
 
   use(x: number, y: number) {
-    if (this.body) {
+    debugger;
+    //  @ts-ignore
+    if (this.body && this.body.speed !== 0) {
       this.body.reset(x, y);
 
       this.setActive(true);
@@ -119,7 +121,7 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
   };
 
   use(x: number, y: number) {
-    let bullet = this.getFirstDead(false);
+    let bullet = this.getFirstDead(true);
 
     if (bullet) {
       bullet.use(x, y);
