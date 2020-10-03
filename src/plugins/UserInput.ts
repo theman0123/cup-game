@@ -55,8 +55,8 @@ class UserInput {
     if (this.enabled && this.user_inputs) {
       for (const key in this.keys) {
         const phaserKey = this.keys[key as KeyTypes];
-        debugger; // justDown
-        if (Phaser.Input.Keyboard.JustDown(phaserKey)) {
+        // debugger; // justDown
+        if (key === 'space' && Phaser.Input.Keyboard.JustDown(phaserKey)) {
           const method = this.user_inputs.keydown[key as KeyTypes]
             .method as KeyTypes;
           // call function
@@ -64,6 +64,14 @@ class UserInput {
           // exit function now!
           return;
         }
+        if (phaserKey.isDown) {
+          const method = this.user_inputs.keydown[key as KeyTypes]
+            .method as KeyTypes;
+          // call function
+          this.scene.players[0][method]();
+          return;
+        }
+        this.scene.players[0].idle();
       }
     }
   }

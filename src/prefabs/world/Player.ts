@@ -6,6 +6,7 @@ class Player extends Prefab {
   properties: PrefabSpriteProperties;
   walking_speed: number;
   body: Phaser.Physics.Arcade.Body;
+  blockAnimation: boolean = false;
 
   constructor(
     scene: GameScene,
@@ -35,6 +36,11 @@ class Player extends Prefab {
     // this.body.collideWorldBounds = true;
 
     // working here: attach an event to the body speed. when it hits 0, play this.idle()
+    // this.addListener('body')
+    // @ts-ignore
+    // this.bodySpeedEventEmitter = new Phaser.Events.EventEmitter();
+    // debugger;
+    // this.body.addListener('speed', )
 
     this.body.setMaxSpeed(200);
 
@@ -91,21 +97,33 @@ class Player extends Prefab {
   update() {}
 
   idle() {
-    this.body.setVelocityX(0);
-    // this.body.setAccelerationX(0);
-    this.anims.play('idle');
+    // debugger;
+    if (!this.blockAnimation) {
+      this.body.setVelocityX(0);
+      // this.body.setAccelerationX(0);
+      this.anims.play('idle');
+    }
   }
 
   throw() {
+    // debugger;
     this.anims.play('short-toss', true);
+    this.blockAnimation = true;
     this.on('animationcomplete', () => {
-      this.useItem();
-      this.anims.play('idle', true);
+      // useItem was being called multiple times
+      // this.blockAnimation is throttling the call
+      if (this.blockAnimation) {
+        this.useItem();
+        this.blockAnimation = false;
+        this.anims.play('idle', true);
+      }
     });
   }
 
   jump() {
     if (this.body.blocked.down) {
+      // play animation
+      // this.blockAnimation = true;
       this.body.setVelocityY(-480);
     }
   }

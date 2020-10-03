@@ -1,6 +1,9 @@
 import { PrefabSpriteProperties } from 'interfaces';
 
 export class Bullet extends Phaser.Physics.Arcade.Sprite {
+  previousX: number = this.x;
+  previousY: number = this.y;
+
   constructor(scene: Phaser.Scene, x: number, y: number, texture: string) {
     super(scene, x, y, texture);
     this.scene = scene;
@@ -9,32 +12,49 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
   use(x: number, y: number) {
     debugger;
     //  @ts-ignore
-    if (this.body && this.body.speed !== 0) {
+    this.enableBody();
+    if (this.body) {
       this.body.reset(x, y);
 
       this.setActive(true);
       this.setVisible(true);
 
       this.setVelocityX(300);
-      this.scene.time.addEvent({ delay: 5000, callback: this.destroy });
+      // this.scene.time.addEvent({ delay: 5000, callback: this.markAsDead });
     }
   }
 
-  destroy(): void {
+  markAsDead(): void {
     if (this.body) {
       this.setActive(false);
       this.setVisible(false);
-      this.body.destroy();
+      // gotta disable the body for the physics to respond correctly
+      this.disableBody();
     }
   }
 
   preUpdate(time: any, delta: any) {
     super.preUpdate(time, delta);
     if (this.body) {
-      if (this.y > 400 || this.x > 500) {
-        this.destroy();
+      if (this.shouldDestroy()) {
+        this.markAsDead();
       }
     }
+  }
+
+  shouldDestroy(): boolean {
+    const x = +this.x.toFixed(2);
+    const y = +this.y.toFixed(2);
+    // '+' changed toFixed() to a number again
+    if (this.previousX === x && this.previousY === y) {
+      return true;
+    }
+    if (this.y > 400 || this.x > 500) {
+      return true;
+    }
+    this.previousX = x;
+    this.previousY = y;
+    return false;
   }
 }
 
@@ -98,6 +118,7 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
       group,
       // @ts-ignore
       (sprite: Phaser.Physics.Arcade.Sprite) => {
+        debugger;
         // @ts-ignore
         const { body, height, width } = sprite;
         const { halfWidth } = body;
@@ -121,7 +142,8 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
   };
 
   use(x: number, y: number) {
-    let bullet = this.getFirstDead(true);
+    debugger;
+    let bullet = this.getFirstDead();
 
     if (bullet) {
       bullet.use(x, y);
