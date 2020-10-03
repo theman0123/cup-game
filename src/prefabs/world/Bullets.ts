@@ -10,8 +10,7 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
   }
 
   use(x: number, y: number) {
-    debugger;
-    //  @ts-ignore
+    // @ts-ignore
     this.enableBody();
     if (this.body) {
       this.body.reset(x, y);
@@ -142,7 +141,6 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
   };
 
   use(x: number, y: number) {
-    debugger;
     let bullet = this.getFirstDead();
 
     if (bullet) {
