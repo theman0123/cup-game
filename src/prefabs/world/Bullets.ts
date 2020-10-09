@@ -33,6 +33,7 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
   }
 
   preUpdate(time: any, delta: any) {
+    debugger;
     super.preUpdate(time, delta);
     if (this.body) {
       if (this.shouldDestroy()) {
@@ -122,19 +123,8 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
         const { body, height, width } = sprite;
         const { halfWidth } = body;
 
-        console.log(body.width, body.debugShowBody, sprite.displayWidth);
-        sprite.setDisplaySize(width, height);
-        body.setSize(width, height).setCircle(halfWidth); // 0, 0
-        // body.setCircle(width / 2);
-        body.setMass(100); // not working
-
-        //     this.scene.time.addEvent({
-        //       delay: 2000,
-        //       callback: () => {},
-        //       callbackScope: this,
-        //       loop: false,
-        //     });
-        //     // this. = true;
+        sprite.setCircle(halfWidth);
+        body.setMass(10);
       },
       this
     );
