@@ -3,8 +3,8 @@
   "animationProperties": {
     "plain": {
       "prefix": "blue-ball-",
-      "frame_width": 64,
-      "frame_height": 64,
+      "frame_width": 17,
+      "frame_height": 17,
       "frameRate": 6,
       "max": 2,
       "zero_pad": 2,

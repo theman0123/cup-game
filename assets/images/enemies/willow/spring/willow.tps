@@ -34,7 +34,7 @@
         <key>dataFormat</key>
         <string>phaser</string>
         <key>textureFileName</key>
-        <filename>willow-combined-{n}.png</filename>
+        <filename>willow-{n}.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -82,7 +82,7 @@
         <key>atfFormats</key>
         <string></string>
         <key>textureFormat</key>
-        <enum type="SettingsBase::TextureFormat">png8</enum>
+        <enum type="SettingsBase::TextureFormat">png</enum>
         <key>borderPadding</key>
         <uint>0</uint>
         <key>maxTextureSize</key>
@@ -132,7 +132,7 @@
             <key>json</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>willow-combined.json</filename>
+                <filename>willow.json</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -163,7 +163,7 @@
             <key>scaleMode</key>
             <enum type="ScaleMode">Smooth</enum>
             <key>extrude</key>
-            <uint>1</uint>
+            <uint>0</uint>
             <key>trimThreshold</key>
             <uint>1</uint>
             <key>trimMargin</key>
@@ -181,12 +181,8 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">normals/combined(486x376)_n.png</key>
-            <key type="filename">sprites/combined(486x376).png</key>
-            <key type="filename">sprites/leaves1front(486x376).png</key>
-            <key type="filename">sprites/leaves2mid(486x376).png</key>
-            <key type="filename">sprites/leaves3back(486x376).png</key>
-            <key type="filename">sprites/trunk(486x376).png</key>
+            <key type="filename">normals/willow_n.png</key>
+            <key type="filename">sprites/willow.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -195,24 +191,9 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>122,94,243,188</rect>
+                <rect>52,63,105,127</rect>
                 <key>scale9Paddings</key>
-                <rect>122,94,243,188</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">sprites/shadow(432x220).png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>spriteScale</key>
-                <double>1</double>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>108,55,216,110</rect>
-                <key>scale9Paddings</key>
-                <rect>108,55,216,110</rect>
+                <rect>52,63,105,127</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
@@ -241,7 +222,7 @@
         <key>normalMapSuffix</key>
         <string></string>
         <key>normalMapSheetFileName</key>
-        <filename>willow-combined-{n}_n.png</filename>
+        <filename>willow-{n}_n.png</filename>
         <key>exporterProperties</key>
         <map type="ExporterProperties"/>
     </struct>

@@ -163,7 +163,7 @@
             <key>scaleMode</key>
             <enum type="ScaleMode">Smooth</enum>
             <key>extrude</key>
-            <uint>1</uint>
+            <uint>0</uint>
             <key>trimThreshold</key>
             <uint>1</uint>
             <key>trimMargin</key>
@@ -181,12 +181,12 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">blue-ball/blue-ball(64x64)-0.png</key>
-            <key type="filename">blue-ball/blue-ball(64x64)-1.png</key>
-            <key type="filename">blue-ball/blue-ball(64x64)-2.png</key>
-            <key type="filename">blue-ball_n/blue-ball(64x64)-0_n.png</key>
-            <key type="filename">blue-ball_n/blue-ball(64x64)-1_n.png</key>
-            <key type="filename">blue-ball_n/blue-ball(64x64)-2_n.png</key>
+            <key type="filename">blue-ball/blue-ball(17x17)-0.png</key>
+            <key type="filename">blue-ball/blue-ball(17x17)-1.png</key>
+            <key type="filename">blue-ball/blue-ball(17x17)-2.png</key>
+            <key type="filename">blue-ball_n/blue-ball(17x17)-0_n.png</key>
+            <key type="filename">blue-ball_n/blue-ball(17x17)-1_n.png</key>
+            <key type="filename">blue-ball_n/blue-ball(17x17)-2_n.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -195,9 +195,9 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>16,16,32,32</rect>
+                <rect>4,4,9,9</rect>
                 <key>scale9Paddings</key>
-                <rect>16,16,32,32</rect>
+                <rect>4,4,9,9</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>

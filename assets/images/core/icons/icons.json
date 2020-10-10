@@ -285,7 +285,7 @@
 					}
 				},
 				{
-					"filename": "enemies/willow-spring(480x480).png",
+					"filename": "enemies/willow-spring(480x480)0.png",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -315,6 +315,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:369ce7c61f2a439137791a70c7cb5502:bdba550eeaa63b557d7eb3d3c1794fb1:d0dcb225dd952922d6b87a09d6c72353$"
+		"smartupdate": "$TexturePacker:SmartUpdate:c349f095bc9b294d654152f3cbeee056:39ae6b1fb3acf2ab7b0d02d9bfb59388:d0dcb225dd952922d6b87a09d6c72353$"
 	}
 }

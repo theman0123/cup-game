@@ -2,6 +2,31 @@
 <map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" width="20" height="11" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="7">
  <tileset firstgid="1" name="spring1c-0" tilewidth="32" tileheight="32" tilecount="660" columns="60">
   <image source="../../../../../Desktop/cup-game/assets/images/world/stages/spring1/spring1c-0.png" width="1920" height="352"/>
+  <tile id="250">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="310">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="370">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="430">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="480">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
   <tile id="481">
    <properties>
     <property name="collision" type="bool" value="true"/>
@@ -13,6 +38,11 @@
    </properties>
   </tile>
   <tile id="541">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="542">
    <properties>
     <property name="collision" type="bool" value="true"/>
    </properties>

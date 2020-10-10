@@ -1,0 +1,42 @@
+{
+	"textures": [
+		{
+			"image": "willow-0.png",
+			"normalMap": "willow-0_n.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 209,
+				"h": 253
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "willow.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 209,
+						"h": 253
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 209,
+						"h": 253
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 209,
+						"h": 253
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:29b8e614e57a4c6eae5c01af12e8fe02:dcf3d16c0289688811a9f86666332b65:a57d0d0939982699951618171e66a05e$"
+	}
+}

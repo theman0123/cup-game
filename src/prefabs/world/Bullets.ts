@@ -18,8 +18,10 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
       this.setActive(true);
       this.setVisible(true);
 
+      // add conditional to player throwing direction
       this.setVelocityX(300);
-      // this.scene.time.addEvent({ delay: 5000, callback: this.markAsDead });
+      // disable 'bullet' after 4 seconds
+      this.scene.time.addEvent({ delay: 4000, callback: this.markAsDead, callbackScope: this });
     }
   }
 
@@ -33,7 +35,6 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
   }
 
   preUpdate(time: any, delta: any) {
-    debugger;
     super.preUpdate(time, delta);
     if (this.body) {
       if (this.shouldDestroy()) {
@@ -95,10 +96,6 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
       frameRate,
     });
 
-    // this.defaults.setCircle = 46;
-    this.defaults.setBounceY = 0.5;
-    // this.defaults.setMass = 5.5;
-
     this.createMultiple({
       frameQuantity: info.maxQuantity,
       key: info.name,
@@ -110,7 +107,7 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
     // this.createCallbackHandler(this.children.entries[0])
     // this.scene.physics.add.group(this);
 
-    this.setDepth(5);
+    this.setDepth(1);
   }
 
   createMultipleCallback = (group: Phaser.GameObjects.GameObject[]) => {
@@ -121,10 +118,13 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
         debugger;
         // @ts-ignore
         const { body, height, width } = sprite;
-        const { halfWidth } = body;
+        const { halfWidth } = body as Phaser.Physics.Arcade.Body;
 
         sprite.setCircle(halfWidth);
-        body.setMass(10);
+        sprite.setBounce(.1)
+        body.setMass(.6);
+        // @ts-ignore setmaxvelo does exist
+        body.setMaxVelocity(300); // pixels per second (pps)
       },
       this
     );
