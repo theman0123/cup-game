@@ -4,8 +4,9 @@ import { PrefabSpriteProperties, GameScene, XY, Item } from 'interfaces';
 class Boss extends Prefab {
   items: Item | undefined;
   properties: PrefabSpriteProperties;
-  walking_speed: number;
+  // walking_speed: number;
   body: Phaser.Physics.Arcade.Body;
+  blockAnimation: boolean = false;
 
   constructor(
     scene: GameScene,
@@ -18,20 +19,21 @@ class Boss extends Prefab {
     this.scene = scene;
     this.items = properties.items;
 
-    this.walking_speed = +properties.walking_speed;
+    // this.walking_speed = +properties.walking_speed;
 
     this.body = new Phaser.Physics.Arcade.Body(scene.physics.world, this);
+    this.body.setAllowGravity(false);
     scene.physics.world.enable(this);
-
+    
     // this.setScale(0.5);
-    this.scene.time.addEvent({
-      delay: 1000,
-      callback: () => {
-        this.body.setSize(this.width, this.height, true);
-      },
-      callbackScope: this,
-      loop: false,
-    });
+    // this.scene.time.addEvent({
+    //   delay: 1000,
+    //   callback: () => {
+    //     this.body.setSize(this.width, this.height, true);
+    //   },
+    //   callbackScope: this,
+    //   loop: false,
+    // });
     // debugger;
     // this.body.collideWorldBounds = true;
 
@@ -47,7 +49,7 @@ class Boss extends Prefab {
 
     // enable lighting system for player
     this.setPipeline('Light2D');
-    this.setDepth(1);
+    this.setDepth(0);
 
     // this.body.setBounce(0.1, 0.1);
     this.body.setMass(0.9);
@@ -57,9 +59,11 @@ class Boss extends Prefab {
     // this.body.setDrag(0.5, 0.5);
     // this.body.setAngularDrag(5);
     // this.setupItems();
+
   }
 
-  create() {}
+  create() {
+  }
 
   createAnimations(animation: string) {
     // if (animation === 'short-toss') debugger;
@@ -86,7 +90,7 @@ class Boss extends Prefab {
       frameRate,
     });
 
-    // this.anims.play('idle');
+    this.anims.play('idle');
   }
 
   update() {

@@ -17,9 +17,15 @@ class Prefab extends Phaser.GameObjects.Sprite {
     // if (properties.group === 'players') {
     //   this.scene.players[0].add(this);
     // }
-    if (properties.group !== 'players') {
-      this.scene.groups[properties.group].add(this);
-    }
+    // if (properties.group === 'boss') {
+    //   debugger;
+    //   this.scene.boss.add(this);
+    // }
+
+    // if (properties.group !== 'players' && properties.group !== 'boss') {
+    //   debugger;
+    //   this.scene.groups[properties.group].add(this);
+    // }
     if (properties.scale) {
       this.setScale(properties.scale.x, properties.scale.y);
     }

@@ -12,6 +12,7 @@ import Map from 'prefabs/world/Map';
 import { MapLayers } from 'interfaces/GameScene';
 
 export class JSONLevelScene extends Phaser.Scene {
+  boss: Phaser.GameObjects.Sprite | undefined;
   items: any; // ???????
   level_data: LevelData | undefined;
   players: Array<Players> = [];
@@ -77,6 +78,7 @@ export class JSONLevelScene extends Phaser.Scene {
               sprite_data
             );
           }
+          // switch case that call it's own function
           if (sprite_data.type === 'spritesheet') {
             if (sprite_data.group === 'players') {
               this.players[position] = new this.prefab_classes[
@@ -92,6 +94,16 @@ export class JSONLevelScene extends Phaser.Scene {
                 { name: sprite_name, maxQuantity: sprite_data.maxQuantity },
                 { ...sprite_data, ...animations }
               );
+            }
+            if (sprite_data.group === 'boss') {
+              this.boss = new this.prefab_classes[
+                sprite_data.group
+              ](this, sprite_name, sprite_data.position, {
+                ...sprite_data,
+                ...animations,
+              });
+              debugger;
+
             }
           }
         }

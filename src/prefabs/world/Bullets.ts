@@ -115,7 +115,6 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
       group,
       // @ts-ignore
       (sprite: Phaser.Physics.Arcade.Sprite) => {
-        debugger;
         // @ts-ignore
         const { body, height, width } = sprite;
         const { halfWidth } = body as Phaser.Physics.Arcade.Body;

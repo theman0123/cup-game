@@ -2,7 +2,7 @@
   "animations": ["idle"],
   "animationProperties": {
     "idle": {
-      "prefix": "combined(486x376).png",
+      "prefix": "willow-.png",
       "frame_width": 486,
       "frame_height": 376,
       "frameRate": 0,
@@ -10,5 +10,6 @@
       "zero_pad": 0,
       "repeat": 0
     }
-  }
+  },
+  "items": []
 }
