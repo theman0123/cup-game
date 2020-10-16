@@ -49,10 +49,11 @@ class Boss extends Prefab {
 
     // enable lighting system for player
     this.setPipeline('Light2D');
-    this.setDepth(0);
+    this.setDepth(0); 
 
     // this.body.setBounce(0.1, 0.1);
     this.body.setMass(0.9);
+    this.body.setImmovable(); 
 
     // this.setDepth(-1);
     // this.body.setAllowDrag(false);

@@ -81,6 +81,8 @@ class WorldScene extends JSONLevelScene {
         this.items
       );
       this.physics.add.collider(this.items, this.items);
+      // @ts-ignore
+      this.physics.add.collider(this.items, this.boss);
     }
 
     if (!this.game.scale.isFullscreen) {

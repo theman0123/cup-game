@@ -3,6 +3,7 @@ import { PrefabSpriteProperties } from 'interfaces';
 export class Bullet extends Phaser.Physics.Arcade.Sprite {
   previousX: number = this.x;
   previousY: number = this.y;
+  killTimer: Phaser.Time.TimerEvent | undefined;
 
   constructor(scene: Phaser.Scene, x: number, y: number, texture: string) {
     super(scene, x, y, texture);
@@ -21,16 +22,17 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
       // add conditional to player throwing direction
       this.setVelocityX(300);
       // disable 'bullet' after 4 seconds
-      this.scene.time.addEvent({ delay: 4000, callback: this.markAsDead, callbackScope: this });
+      this.killTimer = this.scene.time.addEvent({ delay: 4000, callback: this.markAsDead, callbackScope: this });
     }
   }
 
   markAsDead(): void {
-    if (this.body) {
+    if (this.body && this.killTimer) {
       this.setActive(false);
       this.setVisible(false);
       // gotta disable the body for the physics to respond correctly
       this.disableBody();
+      this.killTimer.remove(false)
     }
   }
 
