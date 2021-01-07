@@ -52,8 +52,14 @@ class LoadingScene extends Phaser.Scene {
   }
 
   create(data: { scene: string }) {
+    // debugger; // pass level scene to hud scene
     // game scenes need to launch first
-    this.scene.launch(data.scene, { level_data: this.level_data });
+    // if (data.scene !== 'HUDScene') {
+      this.scene.launch(data.scene, { level_data: this.level_data });
+    // }
+    // if (data.scene === 'HUDScene') {
+    //   this.scene.launch(data.scene, { level_data: {...this.level_data, worldScene: this.scene} });
+    // }
     // then shut down the loading scene
     this.scene.stop('LoadingScene');
   }

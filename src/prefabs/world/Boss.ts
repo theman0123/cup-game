@@ -24,7 +24,7 @@ class Boss extends Prefab {
     this.body = new Phaser.Physics.Arcade.Body(scene.physics.world, this);
     this.body.setAllowGravity(false);
     scene.physics.world.enable(this);
-    
+
     // this.setScale(0.5);
     // this.scene.time.addEvent({
     //   delay: 1000,
@@ -49,22 +49,20 @@ class Boss extends Prefab {
 
     // enable lighting system for player
     this.setPipeline('Light2D');
-    this.setDepth(0); 
+    this.setDepth(0);
 
     // this.body.setBounce(0.1, 0.1);
     this.body.setMass(0.9);
-    this.body.setImmovable(); 
+    this.body.setImmovable();
 
     // this.setDepth(-1);
     // this.body.setAllowDrag(false);
     // this.body.setDrag(0.5, 0.5);
     // this.body.setAngularDrag(5);
     // this.setupItems();
-
   }
 
-  create() {
-  }
+  create() {}
 
   createAnimations(animation: string) {
     // if (animation === 'short-toss') debugger;

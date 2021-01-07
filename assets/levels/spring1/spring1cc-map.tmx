@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" width="20" height="11" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="7">
+<map version="1.4" tiledversion="1.4.1" orientation="orthogonal" renderorder="right-down" width="20" height="11" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="10">
+ <editorsettings>
+  <export target="spring1cc-map.json" format="json"/>
+ </editorsettings>
  <tileset firstgid="1" name="spring1c-0" tilewidth="32" tileheight="32" tilecount="660" columns="60">
-  <image source="../../../../../Desktop/cup-game/assets/images/world/stages/spring1/spring1c-0.png" width="1920" height="352"/>
+  <image source="../../images/world/stages/spring1/spring1c-0.png" width="1920" height="352"/>
+  <tile id="0">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="60">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="180">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="240">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
   <tile id="250">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </tile>
+  <tile id="300">
    <properties>
     <property name="collision" type="bool" value="true"/>
    </properties>
   </tile>
   <tile id="310">
    <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="360">
+   <properties>
     <property name="collision" type="bool" value="true"/>
    </properties>
   </tile>
   <tile id="370">
+   <properties>
+    <property name="collision" type="bool" value="false"/>
+   </properties>
+  </tile>
+  <tile id="420">
    <properties>
     <property name="collision" type="bool" value="true"/>
    </properties>
   </tile>
   <tile id="430">
    <properties>
-    <property name="collision" type="bool" value="true"/>
+    <property name="collision" type="bool" value="false"/>
    </properties>
   </tile>
   <tile id="480">
@@ -123,6 +166,19 @@
    <point/>
   </object>
   <object id="6" name="End" x="177" y="-80">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="enemy">
+  <object id="7" name="enemy_start" x="559.015" y="207.462">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="goal">
+  <object id="8" name="goal" x="559.769" y="208.216">
+   <point/>
+  </object>
+  <object id="9" x="406.625" y="416.432">
    <point/>
   </object>
  </objectgroup>

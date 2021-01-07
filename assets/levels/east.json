@@ -40,15 +40,15 @@
       "home": "assets/images/enemies/willow/spring",
       "json": "assets/images/enemies/willow/spring/willow.json",
       "position": {
-        "x": 500,
-        "y": 200
+        "x": "map",
+        "y": "map"
       },
       "texture": "willow",
       "type": "spritesheet",
       "source": "assets/images/enemies/willow/spring/willow-combined-0.png"
     },
-    "sun-yellow": {
-      "asset_name": "sun-yellow",
+    "light-source": {
+      "asset_name": "light-source",
       "group": "sceneLights",
       "type": "image",
       "source": "assets/images/world/stages/spring1/in-motion/sun-yellow(640x352).png"

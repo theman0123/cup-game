@@ -22,7 +22,11 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
       // add conditional to player throwing direction
       this.setVelocityX(300);
       // disable 'bullet' after 4 seconds
-      this.killTimer = this.scene.time.addEvent({ delay: 4000, callback: this.markAsDead, callbackScope: this });
+      this.killTimer = this.scene.time.addEvent({
+        delay: 4000,
+        callback: this.markAsDead,
+        callbackScope: this,
+      });
     }
   }
 
@@ -32,7 +36,7 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
       this.setVisible(false);
       // gotta disable the body for the physics to respond correctly
       this.disableBody();
-      this.killTimer.remove(false)
+      this.killTimer.remove(false);
     }
   }
 
@@ -52,9 +56,9 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
     if (this.previousX === x && this.previousY === y) {
       return true;
     }
-    if (this.y > 400 || this.x > 500) {
-      return true;
-    }
+    // if (this.y > 400 || this.x > 500) {
+    //   return true;
+    // }
     this.previousX = x;
     this.previousY = y;
     return false;
@@ -122,8 +126,8 @@ export class Bullets extends Phaser.Physics.Arcade.Group {
         const { halfWidth } = body as Phaser.Physics.Arcade.Body;
 
         sprite.setCircle(halfWidth);
-        sprite.setBounce(.1)
-        body.setMass(.6);
+        sprite.setBounce(0.1);
+        body.setMass(0.6);
         // @ts-ignore setmaxvelo does exist
         body.setMaxVelocity(300); // pixels per second (pps)
       },

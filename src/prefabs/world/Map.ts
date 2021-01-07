@@ -68,6 +68,68 @@ class Map {
   }
 
   handleObjectLayers(object: { [key: string]: any }) {
+    if (object.name === 'light-source') {
+      this.setupLights(object);
+    }
+
+    if (object.name === 'enemy') {
+      this.setupEnemy(object);
+    }
+
+    if (object.name === 'goal') {
+      this.setupGoal(object);
+    }
+  }
+
+  setupEnemy(object: { [key: string]: any }): void {
+    const start = object.objects.find(
+      (obj: { name: string }) => obj.name === 'enemy_start'
+    );
+    this.scene.boss?.setPosition(start.x, start.y);
+  }
+
+  setupGoal(object: { [key: string]: any }): void {
+    debugger;
+    // get overlap to work
+    // see if you have animations for the tree
+    // play animation
+    // take away health
+    const goal = object.objects.find(
+      (obj: { name: string }) => obj.name === 'goal'
+    );
+
+    //  @ts-ignore
+    this.scene.goal = this.scene.add.zone(goal.x, goal.y, 0, 0);
+
+    this.scene.physics.world.enable(goal);
+    //  @ts-ignore
+    this.scene.goal.body = new Phaser.Physics.Arcade.Body(
+      this.scene.physics.world,
+      //  @ts-ignore
+      this.scene.goal
+    );
+    //  @ts-ignore
+    this.scene.goal.body.setCircle(50);
+    //  @ts-ignore
+    // this.scene.goal.body.setAllowGravity(false);
+    //  @ts-ignore
+    // this.scene.goal.body.moves = false;
+    // create a collision area
+    this.scene.physics.add.overlap(this.scene.items, goal);
+
+    // @ts-ignore
+    // debugGraphics ? debugGraphics.clear() : null;
+    const debugGraphics = this.scene.add.graphics(); //.setAlpha(0.75); //.setScale(2);
+    // @ts-ignore
+    this.scene.goal.body.drawDebug(debugGraphics, {
+      tileColor: null, //new Phaser.Display.Color(40, 39, 37, 255),
+      collidingTileColor: new Phaser.Display.Color(40, 39, 37, 255),
+      faceColor: null,
+    });
+    debugGraphics.depth = 1;
+  }
+
+  setupLights(object: { [key: string]: any }): void {
     const start = object.objects.find(
       (obj: { name: string }) => obj.name === 'Start'
     );
@@ -116,6 +178,5 @@ class Map {
     // console.log(tween.isPlaying()); // true
   }
 }
-// .setDisplaySize(640, 480)
 
 export default Map;

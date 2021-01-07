@@ -1,4 +1,5 @@
 import JSONLevelScene from './JSONLevelScene';
+import WorldScene from './WorldScene';
 
 type PlayerIconType = 'fox-icon';
 type EnemyIconType = 'willow-icon';
@@ -10,17 +11,47 @@ class HUDScene extends JSONLevelScene {
   grid: any;
   lowerGrid: any;
   health: any;
-  interactive: any;
+  interactive: {
+    "touch-icon": Phaser.GameObjects.Image | undefined;
+  } = { 'touch-icon': undefined };
+  worldScene: WorldScene | undefined;
 
   constructor() {
     super('HUDScene');
 
     this.prefab_classes = {};
   }
-
+  
   create() {
     super.create();
+    this.worldScene = this.scene.manager.getScene('WorldScene') as WorldScene;
     this.setupIcons();
+    this.setupTouchControls();
+  }
+
+  setupTouchControls(): void {
+    if (this.interactive['touch-icon']) {
+      this.interactive['touch-icon'].setInteractive()
+      // listen to pointer up or when touch leaves the graphic?
+      // @ts-ignore
+      this.interactive['touch-icon'].on('pointermove', (pointer, dragX, dragY) => {
+        if (pointer.isDown && this.worldScene) {
+          if (pointer.prevPosition.x > pointer.x) {
+            this.worldScene.players[0].left();
+          }
+          if (pointer.prevPosition.x < pointer.x) {
+            this.worldScene.players[0].right();
+          }
+        }
+      });
+      // @ts-ignore
+      this.interactive['touch-icon'].on('pointerup', (pointer, dragX, dragY) => {
+        if (this.worldScene) {
+            this.worldScene.players[0].idle();
+        }
+      });
+    }
+
   }
 
   setupIcons() {
@@ -115,7 +146,7 @@ class HUDScene extends JSONLevelScene {
     }
 
     this.lowerGrid.add(
-      this.interactive['touch-icon'].setScale(6, 3).setAlpha(0.4),
+      this.interactive['touch-icon']!.setScale(6, 3).setAlpha(0.4),
       {
         column: 0,
         row: 0,

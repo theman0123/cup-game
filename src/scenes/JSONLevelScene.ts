@@ -5,17 +5,17 @@ import {
   PrefabClasses,
   Groups,
   Data,
-  Players,
   UserInputJsonWorldMap,
 } from 'interfaces';
 import Map from 'prefabs/world/Map';
 import { MapLayers } from 'interfaces/GameScene';
+import Player from 'prefabs/world/Player';
 
 export class JSONLevelScene extends Phaser.Scene {
   boss: Phaser.GameObjects.Sprite | undefined;
   items: any; // ???????
   level_data: LevelData | undefined;
-  players: Array<Players> = [];
+  players: Array<Player> = [];
   prefabs: Prefabs = {};
   prefab_classes: PrefabClasses | undefined;
   groups: Groups = {};
@@ -102,7 +102,6 @@ export class JSONLevelScene extends Phaser.Scene {
                 ...sprite_data,
                 ...animations,
               });
-              debugger;
 
             }
           }
@@ -121,7 +120,7 @@ export class JSONLevelScene extends Phaser.Scene {
     }
     if (this.players.length) {
       this.players[0].items = this.items;
-      this.players[0].items.equipped = this.items;
+      this.players[0].items!.equipped = this.items;
     }
   }
 

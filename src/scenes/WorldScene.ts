@@ -82,7 +82,7 @@ class WorldScene extends JSONLevelScene {
       );
       this.physics.add.collider(this.items, this.items);
       // @ts-ignore
-      this.physics.add.collider(this.items, this.boss);
+      // this.physics.add.collider(this.items, this.boss);
     }
 
     if (!this.game.scale.isFullscreen) {
@@ -92,7 +92,13 @@ class WorldScene extends JSONLevelScene {
     this.scene.launch('BootScene', { scene: 'hud' });
   }
 
-  update() {}
+  update() {
+    debugger;
+    // @ts-ignore
+    if (!this.goal.body.touching.none) {
+      console.log('goal');
+    }
+  }
 
   create_object(object: {
     x: number;
