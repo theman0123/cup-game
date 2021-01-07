@@ -90,6 +90,7 @@ class Map {
 
   setupGoal(object: { [key: string]: any }): void {
     debugger;
+    // position hit area
     // get overlap to work
     // see if you have animations for the tree
     // play animation
