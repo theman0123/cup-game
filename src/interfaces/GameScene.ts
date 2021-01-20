@@ -1,6 +1,7 @@
 import JSONLevelScene from 'scenes/JSONLevelScene';
 
 export interface GameScene extends JSONLevelScene {
+  goal: Phaser.GameObjects.Zone;
   mapLayers: MapLayers;
 }
 

@@ -89,7 +89,7 @@ class Map {
   }
 
   setupGoal(object: { [key: string]: any }): void {
-    debugger;
+    // debugger;
     // position hit area
     // get overlap to work
     // see if you have animations for the tree
@@ -99,24 +99,19 @@ class Map {
       (obj: { name: string }) => obj.name === 'goal'
     );
 
-    //  @ts-ignore
-    this.scene.goal = this.scene.add.zone(goal.x, goal.y, 0, 0);
+    this.scene.goal = this.scene.add.zone(goal.x - 15, goal.y + 40, 0, 0);
 
-    this.scene.physics.world.enable(goal);
-    //  @ts-ignore
+    this.scene.physics.world.enable(this.scene.goal);
     this.scene.goal.body = new Phaser.Physics.Arcade.Body(
       this.scene.physics.world,
-      //  @ts-ignore
       this.scene.goal
     );
-    //  @ts-ignore
-    this.scene.goal.body.setCircle(50);
-    //  @ts-ignore
-    // this.scene.goal.body.setAllowGravity(false);
-    //  @ts-ignore
-    // this.scene.goal.body.moves = false;
+    this.scene.goal.body.setCircle(15);
+    this.scene.goal.body.setImmovable(true);
     // create a collision area
-    this.scene.physics.add.overlap(this.scene.items, goal);
+    // this.scene.physics.add.overlap(this.scene.items, goal, (overlapEvent) => {
+    //   console.log('overlap bang');
+    // });
 
     // @ts-ignore
     // debugGraphics ? debugGraphics.clear() : null;

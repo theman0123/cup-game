@@ -7,6 +7,7 @@ import Boss from '../prefabs/world/Boss';
 
 class WorldScene extends JSONLevelScene {
   light: Phaser.GameObjects.Light | undefined;
+  goal: Phaser.GameObjects.Zone | undefined;
 
   constructor() {
     super('WorldScene');
@@ -80,7 +81,16 @@ class WorldScene extends JSONLevelScene {
         this.mapLayers.foreground as Phaser.GameObjects.GameObject,
         this.items
       );
-      this.physics.add.collider(this.items, this.items);
+
+      if (this.items) {
+        this.physics.add.collider(this.items, this.items);
+        if (this.goal) {
+          this.physics.add.collider(this.items, this.goal, (overlapEvent) => {
+            console.log('bang');
+          });
+          debugger;
+        }
+      }
       // @ts-ignore
       // this.physics.add.collider(this.items, this.boss);
     }
@@ -95,9 +105,9 @@ class WorldScene extends JSONLevelScene {
   update() {
     debugger;
     // @ts-ignore
-    if (!this.goal.body.touching.none) {
-      console.log('goal');
-    }
+    // if (!this.goal.body.touching.none) {
+    //   console.log('goal');
+    // }
   }
 
   create_object(object: {
