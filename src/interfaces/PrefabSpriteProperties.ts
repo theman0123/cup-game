@@ -3,6 +3,7 @@ import { Item } from './Item';
 
 export interface PrefabSpriteProperties
   extends PrefabProperties,
+    character,
     Phaser.Physics.Arcade.Body {
   walking_speed: number;
   animations: Array<string>;
@@ -19,4 +20,8 @@ interface AnimationDetails {
   prefix: string;
   repeat: number;
   zero_pad: number;
+}
+
+interface character {
+  hp: number;
 }

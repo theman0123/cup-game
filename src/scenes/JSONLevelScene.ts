@@ -10,9 +10,10 @@ import {
 import Map from 'prefabs/world/Map';
 import { MapLayers } from 'interfaces/GameScene';
 import Player from 'prefabs/world/Player';
+import Boss from 'prefabs/world/Boss';
 
 export class JSONLevelScene extends Phaser.Scene {
-  boss: Phaser.GameObjects.Sprite | undefined;
+  boss: Boss | undefined;
   items: any; // ???????
   level_data: LevelData | undefined;
   players: Array<Player> = [];
@@ -96,13 +97,15 @@ export class JSONLevelScene extends Phaser.Scene {
               );
             }
             if (sprite_data.group === 'boss') {
-              this.boss = new this.prefab_classes[
-                sprite_data.group
-              ](this, sprite_name, sprite_data.position, {
-                ...sprite_data,
-                ...animations,
-              });
-
+              this.boss = new this.prefab_classes[sprite_data.group](
+                this,
+                sprite_name,
+                sprite_data.position,
+                {
+                  ...sprite_data,
+                  ...animations,
+                }
+              );
             }
           }
         }

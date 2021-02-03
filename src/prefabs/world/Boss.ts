@@ -7,6 +7,7 @@ class Boss extends Prefab {
   // walking_speed: number;
   body: Phaser.Physics.Arcade.Body;
   blockAnimation: boolean = false;
+  hp: number = 0;
 
   constructor(
     scene: GameScene,
@@ -60,6 +61,9 @@ class Boss extends Prefab {
     // this.body.setDrag(0.5, 0.5);
     // this.body.setAngularDrag(5);
     // this.setupItems();
+
+    // stats
+    this.hp = properties.hp;
   }
 
   create() {}

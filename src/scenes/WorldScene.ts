@@ -4,6 +4,7 @@ import { Bullets } from '../prefabs/world/Bullets';
 import Map from '../prefabs/world/Map';
 import { PrefabProperties } from 'interfaces';
 import Boss from '../prefabs/world/Boss';
+import { ItemBase } from 'interfaces/Item';
 
 class WorldScene extends JSONLevelScene {
   light: Phaser.GameObjects.Light | undefined;
@@ -85,9 +86,20 @@ class WorldScene extends JSONLevelScene {
       if (this.items) {
         this.physics.add.collider(this.items, this.items);
         if (this.goal) {
-          this.physics.add.collider(this.items, this.goal, (overlapEvent) => {
-            console.log('bang');
-          });
+          this.physics.add.overlap(
+            this.items,
+            this.goal,
+            // @ts-ignore; type def correct but still throwing an error
+            (zone, item: ItemBase) => {
+              // working
+              if (this.boss) {
+                this.boss.hp -= 10;
+                item.markAsDead();
+                debugger; // destroy item
+                console.log('boss health', this.boss.hp);
+              }
+            }
+          );
           debugger;
         }
       }
@@ -103,7 +115,7 @@ class WorldScene extends JSONLevelScene {
   }
 
   update() {
-    debugger;
+    // debugger;
     // @ts-ignore
     // if (!this.goal.body.touching.none) {
     //   console.log('goal');
