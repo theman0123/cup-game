@@ -12,7 +12,7 @@ class HUDScene extends JSONLevelScene {
   lowerGrid: any;
   health: any;
   interactive: {
-    "touch-icon": Phaser.GameObjects.Image | undefined;
+    'touch-icon': Phaser.GameObjects.Image | undefined;
   } = { 'touch-icon': undefined };
   worldScene: WorldScene | undefined;
 
@@ -21,7 +21,7 @@ class HUDScene extends JSONLevelScene {
 
     this.prefab_classes = {};
   }
-  
+
   create() {
     super.create();
     this.worldScene = this.scene.manager.getScene('WorldScene') as WorldScene;
@@ -31,27 +31,32 @@ class HUDScene extends JSONLevelScene {
 
   setupTouchControls(): void {
     if (this.interactive['touch-icon']) {
-      this.interactive['touch-icon'].setInteractive()
+      this.interactive['touch-icon'].setInteractive();
       // listen to pointer up or when touch leaves the graphic?
       // @ts-ignore
-      this.interactive['touch-icon'].on('pointermove', (pointer, dragX, dragY) => {
-        if (pointer.isDown && this.worldScene) {
-          if (pointer.prevPosition.x > pointer.x) {
-            this.worldScene.players[0].left();
-          }
-          if (pointer.prevPosition.x < pointer.x) {
-            this.worldScene.players[0].right();
+      this.interactive['touch-icon'].on(
+        'pointermove',
+        (pointer: any, dragX: any, dragY: any) => {
+          if (pointer.isDown && this.worldScene) {
+            if (pointer.prevPosition.x > pointer.x) {
+              this.worldScene.players[0].left();
+            }
+            if (pointer.prevPosition.x < pointer.x) {
+              this.worldScene.players[0].right();
+            }
           }
         }
-      });
+      );
       // @ts-ignore
-      this.interactive['touch-icon'].on('pointerup', (pointer, dragX, dragY) => {
-        if (this.worldScene) {
+      this.interactive['touch-icon'].on(
+        'pointerup',
+        (pointer: any, dragX: any, dragY: any) => {
+          if (this.worldScene) {
             this.worldScene.players[0].idle();
+          }
         }
-      });
+      );
     }
-
   }
 
   setupIcons() {
@@ -134,7 +139,15 @@ class HUDScene extends JSONLevelScene {
         },
         expand: false,
       });
-      this.health['boss-health'] = this.add.image(0, 0, 'health-icon');
+      // this.health['boss-health'] = this.add.image(0, 0, 'health-icon');
+      // using tilemap here....
+      this.health['boss-health'] = this.add.image(
+        0,
+        0,
+        'icons',
+        '/enemies/hp-meter/willow/willowHP(400x60)-5.png'
+      );
+      console.log(this.health['boss-health']);
       this.grid.add(this.health['boss-health'].setScale(0.5), {
         column: 3,
         row: 0,

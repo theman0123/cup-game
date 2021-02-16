@@ -40,6 +40,9 @@ class LoadingScene extends Phaser.Scene {
             this.load.multiatlas(asset.asset_name, asset.json, asset.home);
             this.load.tilemapTiledJSON(asset.tiled_key, asset.tiled_source);
             break;
+          case 'multi-atlas':
+            this.load.multiatlas(asset.asset_name, asset.json, asset.home);
+            break;
         }
       }
       if (this.level_data.user_input) {
@@ -55,7 +58,7 @@ class LoadingScene extends Phaser.Scene {
     // debugger; // pass level scene to hud scene
     // game scenes need to launch first
     // if (data.scene !== 'HUDScene') {
-      this.scene.launch(data.scene, { level_data: this.level_data });
+    this.scene.launch(data.scene, { level_data: this.level_data });
     // }
     // if (data.scene === 'HUDScene') {
     //   this.scene.launch(data.scene, { level_data: {...this.level_data, worldScene: this.scene} });

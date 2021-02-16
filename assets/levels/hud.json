@@ -26,6 +26,16 @@
       "frame_width": 480,
       "frame_height": 60
     },
+    "icons": {
+      "group": "icons",
+      "asset_name": "icons",
+      "tiled_key": "icons",
+      "json": "assets/images/core/icons/icons.json",
+      "home": "assets/images/core/icons",
+      "tiled_source": "assets/images/core/icons/icons-0.png",
+      "tile_set_name": "icons",
+      "type": "multi-atlas"
+    },
     "touch_icon": {
       "type": "image",
       "group": "interactive",
