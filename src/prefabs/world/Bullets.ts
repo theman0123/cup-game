@@ -4,6 +4,7 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
   previousX: number = this.x;
   previousY: number = this.y;
   killTimer: Phaser.Time.TimerEvent | undefined;
+  damage: number = 10;
 
   constructor(scene: Phaser.Scene, x: number, y: number, texture: string) {
     super(scene, x, y, texture);

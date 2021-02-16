@@ -8,4 +8,5 @@ interface UseItem {
 
 export interface ItemBase extends Phaser.GameObjects.Sprite {
   markAsDead: () => {};
+  damage: number;
 }

@@ -8,6 +8,7 @@ class Boss extends Prefab {
   body: Phaser.Physics.Arcade.Body;
   blockAnimation: boolean = false;
   hp: number = 0;
+  shake: any;
 
   constructor(
     scene: GameScene,
@@ -64,6 +65,15 @@ class Boss extends Prefab {
 
     // stats
     this.hp = properties.hp;
+
+    this.shake = this.scene.tweens.add({
+      targets: this,
+      angle: { from: -5, to: 5 },
+      duration: 50,
+      ease: 'Elastic',
+      repeat: 3,
+      yoyo: true,
+    });
   }
 
   create() {}
@@ -96,10 +106,32 @@ class Boss extends Prefab {
     this.anims.play('idle');
   }
 
-  update() {
-    // debugger;
-    // if (this.body) {
-    // }
+  handleHealth(item: { damage: number }): void {
+    this.hp -= item.damage;
+    this.handleHealthUI();
+  }
+
+  handleHealthUI(): void {
+    // thinking like rxjs:
+    // subscribe to the healthbar
+    // when it changes change the graphic
+    // @ts-ignore
+    // this.scene.health['boss-health'] = this.add.image(0, 0, 'health-icon');
+    // // @ts-ignore
+    // this.grid.add(this.health['boss-health'].setScale(0.5), {
+    //   column: 3,
+    //   row: 0,
+    //   padding: {
+    //     top: 10,
+    //   },
+    //   expand: false,
+    // });
+  }
+
+  hit(item: { damage: number }): void {
+    // shake boss
+    this.handleHealth(item);
+    this.shake.play();
   }
 
   idle() {
@@ -107,6 +139,14 @@ class Boss extends Prefab {
     // this.body.setAccelerationX(0);
     // this.anims.play('idle');
   }
+  // setupShake(): void {
+  //   this.shake =
+
+  // }
+
+  // shake: void {
+  //   this.
+  // }
 
   throw() {
     // this.anims.play('short-toss', true);
@@ -148,6 +188,12 @@ class Boss extends Prefab {
   // setupItems(): void {
   //   console.log(this.properties);
   // }
+
+  update() {
+    // debugger;
+    // if (this.body) {
+    // }
+  }
 }
 
 export default Boss;

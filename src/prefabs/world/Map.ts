@@ -89,12 +89,6 @@ class Map {
   }
 
   setupGoal(object: { [key: string]: any }): void {
-    // debugger;
-    // position hit area
-    // get overlap to work
-    // see if you have animations for the tree
-    // play animation
-    // take away health
     const goal = object.objects.find(
       (obj: { name: string }) => obj.name === 'goal'
     );
@@ -108,10 +102,6 @@ class Map {
     );
     this.scene.goal.body.setCircle(15);
     this.scene.goal.body.setImmovable(true);
-    // create a collision area
-    // this.scene.physics.add.overlap(this.scene.items, goal, (overlapEvent) => {
-    //   console.log('overlap bang');
-    // });
 
     // @ts-ignore
     // debugGraphics ? debugGraphics.clear() : null;
@@ -165,13 +155,6 @@ class Map {
       repeat: -1, // -1: infinity
       yoyo: true,
     });
-    // tween.on('start', (t: any, target: any) => {
-    //   t.updateTo('x', end.x, true);
-    //   t.updateTo('y', end.y, true);
-    // });
-    // @ts-ignore
-    // this.scene.tween.play();
-    // console.log(tween.isPlaying()); // true
   }
 }
 
