@@ -123,9 +123,14 @@ class Map {
       (obj: { name: string }) => obj.name === 'End'
     );
     // @ts-ignore
-    this.scene.sceneLights[object.name].setDepth(-1);
-    // @ts-ignore
-    this.scene.sceneLights[object.name].setPosition(start.x, start.y);
+    if (this.scene.sceneLights[object.name]) {
+      // @ts-ignore
+      this.scene.sceneLights[object.name].setDepth(-1);
+
+      // @ts-ignore
+      this.scene.sceneLights[object.name].setPosition(start.x, start.y);
+    }
+
     // set up light with tween image
     // @ts-ignore
     this.scene.sunLight = this.scene.lights
