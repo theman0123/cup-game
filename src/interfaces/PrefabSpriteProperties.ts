@@ -10,6 +10,7 @@ export interface PrefabSpriteProperties
   animationProperties: { [key: string]: AnimationDetails };
   asset_name: string;
   items: Item;
+  health?: number;
 }
 
 interface AnimationDetails {

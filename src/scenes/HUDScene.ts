@@ -27,6 +27,10 @@ class HUDScene extends JSONLevelScene {
     this.worldScene = this.scene.manager.getScene('WorldScene') as WorldScene;
     this.setupIcons();
     this.setupTouchControls();
+
+    this.worldScene.boss?.hp.subscribe((hp) => {
+      this.handleBossHealthUI(hp);
+    });
   }
 
   setupTouchControls(): void {
@@ -145,9 +149,9 @@ class HUDScene extends JSONLevelScene {
         0,
         0,
         'icons',
-        '/enemies/hp-meter/willow/willowHP(400x60)-5.png'
+        'enemies/hp-meter/willow/willowHP(400x60)-0.png'
       );
-      console.log(this.health['boss-health']);
+      // console.log(this.health['boss-health']);
       this.grid.add(this.health['boss-health'].setScale(0.5), {
         column: 3,
         row: 0,
@@ -178,6 +182,87 @@ class HUDScene extends JSONLevelScene {
     this.lowerGrid.layout();
     // debugger graphics
     // this.lowerGrid.drawBounds(this.add.graphics());
+  }
+
+  handleBossHealthUI(hp: number): void {
+    // const totalHp = this.worldScene?.boss?.totalHp;
+    // @ts-ignore
+    // const percentage = (hp / totalHp) * 100;
+    this.removeBossHealth();
+
+    if (hp === 60) {
+      this.health['boss-health'] = this.add.image(
+        0,
+        0,
+        'icons',
+        'enemies/hp-meter/willow/willowHP(400x60)-0.png'
+      );
+    }
+    if (hp === 50) {
+      this.health['boss-health'] = this.add.image(
+        0,
+        0,
+        'icons',
+        'enemies/hp-meter/willow/willowHP(400x60)-1.png'
+      );
+    }
+    if (hp === 40) {
+      this.health['boss-health'] = this.add.image(
+        0,
+        0,
+        'icons',
+        'enemies/hp-meter/willow/willowHP(400x60)-2.png'
+      );
+    }
+    if (hp === 30) {
+      this.health['boss-health'] = this.add.image(
+        0,
+        0,
+        'icons',
+        'enemies/hp-meter/willow/willowHP(400x60)-3.png'
+      );
+    }
+    if (hp === 20) {
+      this.health['boss-health'] = this.add.image(
+        0,
+        0,
+        'icons',
+        'enemies/hp-meter/willow/willowHP(400x60)-4.png'
+      );
+    }
+    if (hp === 10) {
+      this.health['boss-health'] = this.add.image(
+        0,
+        0,
+        'icons',
+        'enemies/hp-meter/willow/willowHP(400x60)-5.png'
+      );
+    }
+    if (hp === 0) {
+      this.health['boss-health'] = this.add.image(
+        0,
+        0,
+        'icons',
+        'enemies/hp-meter/willow/willowHP(400x60)-6.png'
+      );
+    }
+    this.layoutBossHealth();
+  }
+
+  layoutBossHealth(): void {
+    this.grid.add(this.health['boss-health'].setScale(0.5), {
+      column: 3,
+      row: 0,
+      padding: {
+        top: 10,
+      },
+      expand: false,
+    });
+    this.grid.layout();
+  }
+
+  removeBossHealth(): void {
+    this.grid.removeAt(3, 0);
   }
 
   update() {}

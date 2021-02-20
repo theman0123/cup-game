@@ -1,5 +1,6 @@
 import Prefab from '../Prefab';
 import { PrefabSpriteProperties, GameScene, XY, Item } from 'interfaces';
+import { BehaviorSubject } from 'rxjs';
 
 class Player extends Prefab {
   items: Item | undefined;
@@ -7,6 +8,7 @@ class Player extends Prefab {
   walking_speed: number;
   body: Phaser.Physics.Arcade.Body;
   blockAnimation: boolean = false;
+  hp: BehaviorSubject<number> = new BehaviorSubject(100);
 
   constructor(
     scene: GameScene,

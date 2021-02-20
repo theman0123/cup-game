@@ -93,7 +93,6 @@ class WorldScene extends JSONLevelScene {
             (zone, item: ItemBase) => {
               // working
               if (this.boss) {
-                this.boss.hp -= 10;
                 this.boss.hit(item);
                 item.markAsDead();
                 debugger; // destroy item

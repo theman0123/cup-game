@@ -1,5 +1,6 @@
 import Prefab from '../Prefab';
 import { PrefabSpriteProperties, GameScene, XY, Item } from 'interfaces';
+import { BehaviorSubject } from 'rxjs';
 
 class Boss extends Prefab {
   items: Item | undefined;
@@ -7,8 +8,9 @@ class Boss extends Prefab {
   // walking_speed: number;
   body: Phaser.Physics.Arcade.Body;
   blockAnimation: boolean = false;
-  hp: number = 0;
+  hp: BehaviorSubject<number> = new BehaviorSubject(100);
   shake: any;
+  totalHp: number = 0;
 
   constructor(
     scene: GameScene,
@@ -64,8 +66,10 @@ class Boss extends Prefab {
     // this.setupItems();
 
     // stats
-    this.hp = properties.hp;
+    this.hp.next(this.properties.hp);
+    this.totalHp = this.properties.hp;
 
+    // animations (tweens)
     this.shake = this.scene.tweens.add({
       targets: this,
       angle: { from: -5, to: 5 },
@@ -107,25 +111,8 @@ class Boss extends Prefab {
   }
 
   handleHealth(item: { damage: number }): void {
-    this.hp -= item.damage;
-    this.handleHealthUI();
-  }
-
-  handleHealthUI(): void {
-    // thinking like rxjs:
-    // subscribe to the healthbar
-    // when it changes change the graphic
-    // @ts-ignore
-    // this.scene.health['boss-health'] = this.add.image(0, 0, 'health-icon');
-    // // @ts-ignore
-    // this.grid.add(this.health['boss-health'].setScale(0.5), {
-    //   column: 3,
-    //   row: 0,
-    //   padding: {
-    //     top: 10,
-    //   },
-    //   expand: false,
-    // });
+    const newHealth = this.hp.getValue() - item.damage;
+    this.hp.next(newHealth);
   }
 
   hit(item: { damage: number }): void {
