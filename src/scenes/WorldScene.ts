@@ -9,6 +9,7 @@ import { ItemBase } from 'interfaces/Item';
 class WorldScene extends JSONLevelScene {
   light: Phaser.GameObjects.Light | undefined;
   goal: Phaser.GameObjects.Zone | undefined;
+  sceneLights: Phaser.GameObjects.Light | undefined;
 
   constructor() {
     super('WorldScene');
