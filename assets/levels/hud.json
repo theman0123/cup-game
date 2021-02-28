@@ -3,17 +3,17 @@
   "groups": ["icons"],
   "sprites": {
     "player_icon": {
-      "type": "image",
+      "type": "tilemap-subset",
       "group": "playerIcon",
-      "source": "assets/images/core/icons/characters/fox(480x480).png",
+      "source": ["icons", "characters/fox(480x480).png"],
       "asset_name": "fox-icon",
       "frame_width": 480,
       "frame_height": 480
     },
     "enemy_icon": {
-      "type": "image",
+      "type": "tilemap-subset",
       "group": "enemyIcon",
-      "source": "assets/images/core/icons/enemies/willow-spring(480x480).png",
+      "source": ["icons", "enemies/willow-spring(480x480)0.png"],
       "asset_name": "willow-icon",
       "frame_width": 480,
       "frame_height": 480

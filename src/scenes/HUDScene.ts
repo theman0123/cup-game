@@ -5,8 +5,8 @@ type PlayerIconType = 'fox-icon';
 type EnemyIconType = 'willow-icon';
 
 class HUDScene extends JSONLevelScene {
-  playerIcon: Record<PlayerIconType, Phaser.GameObjects.Image> | undefined;
-  enemyIcon: Record<EnemyIconType, Phaser.GameObjects.Image> | undefined;
+  playerIcon: Phaser.GameObjects.Image | undefined;
+  enemyIcon: Phaser.GameObjects.Image | undefined;
   rexUI: any; //plugin without typedefs... :(
   grid: any;
   lowerGrid: any;
@@ -112,7 +112,15 @@ class HUDScene extends JSONLevelScene {
     //   left: 10,
     // });
     if (this.playerIcon) {
-      this.grid.add(this.playerIcon['fox-icon'].setScale(0.2), {
+      // @ts-ignore
+      // this.playerIcon['fox-icon'] = this.add.image(
+      //   0,
+      //   0,
+      //   'icons',
+      //   'enemies/characters/fox(480x480).png'
+      // );
+      debugger;
+      this.grid.add(this.playerIcon.setScale(0.2), {
         column: 0,
         row: 0,
         padding: {
@@ -121,17 +129,16 @@ class HUDScene extends JSONLevelScene {
         },
         expand: false,
       });
-      // this.playerIcon['fox-icon'].setScale(0.25).setPosition(50, 50);
     }
     if (this.enemyIcon) {
       // @ts-ignore
-      this.enemyIcon['willow-icon'] = this.add.image(
-        0,
-        0,
-        'icons',
-        'enemies/willow-spring(480x480)0.png'
-      );
-      this.grid.add(this.enemyIcon['willow-icon'].setScale(0.2), {
+      // this.enemyIcon['willow-icon'] = this.add.image(
+      //   0,
+      //   0,
+      //   'icons',
+      //   'enemies/willow-spring(480x480)0.png'
+      // );
+      this.grid.add(this.enemyIcon.setScale(0.2), {
         column: 4,
         row: 0,
         padding: {

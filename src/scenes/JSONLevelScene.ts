@@ -65,6 +65,18 @@ export class JSONLevelScene extends Phaser.Scene {
             // @ts-ignore
             this[group][name] = this.add.image(0, 0, name);
           }
+          if (sprite_data.type === 'tilemap-subset') {
+            // see what other images you have in 'east' and copy that methodology
+            const { asset_name: name, group, source } = sprite_data;
+            // this[name]
+            // @ts-ignore
+            if (!this[group]) {
+              // @ts-ignore
+              this[group] = {};
+            }
+            // @ts-ignore
+            this[group] = this.add.image(0, 0, source[0], source[1]);
+          }
           if (sprite_data.type === 'tilemap') {
             this.MapClass = new this.prefab_classes[sprite_data.group](
               this,
