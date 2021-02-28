@@ -124,6 +124,13 @@ class HUDScene extends JSONLevelScene {
       // this.playerIcon['fox-icon'].setScale(0.25).setPosition(50, 50);
     }
     if (this.enemyIcon) {
+      // @ts-ignore
+      this.enemyIcon['willow-icon'] = this.add.image(
+        0,
+        0,
+        'icons',
+        'enemies/willow-spring(480x480)0.png'
+      );
       this.grid.add(this.enemyIcon['willow-icon'].setScale(0.2), {
         column: 4,
         row: 0,
