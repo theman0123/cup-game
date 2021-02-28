@@ -13,7 +13,8 @@ class HUDScene extends JSONLevelScene {
   health: any;
   interactive: {
     'touch-icon': Phaser.GameObjects.Image | undefined;
-  } = { 'touch-icon': undefined };
+    jump: Phaser.GameObjects.Image | undefined;
+  } = { 'touch-icon': undefined, jump: undefined };
   worldScene: WorldScene | undefined;
 
   constructor() {
@@ -34,9 +35,38 @@ class HUDScene extends JSONLevelScene {
   }
 
   setupTouchControls(): void {
+    // Jump Icon
+    this.interactive.jump = this.add.image(
+      0,
+      0,
+      'icons',
+      'items/blue-ball(64x64).png'
+    );
+    this.interactive.jump.setInteractive();
+
+    this.interactive.jump.on(
+      'pointerdown',
+      (pointer: any, dragX: any, dragY: any) => {
+        if (this.worldScene?.players[0]) {
+          this.worldScene.players[0].jump();
+        }
+      }
+    );
+
+    // Jump Icon Poistion
+    this.lowerGrid.add(this.interactive.jump!.setAlpha(0.4), {
+      column: 1,
+      row: 0,
+      // padding: { bottom: 10, left: 10 },
+      align: 'left',
+      expand: false,
+    });
+    this.lowerGrid.layout();
+
+    // Move Pad
     if (this.interactive['touch-icon']) {
       this.interactive['touch-icon'].setInteractive();
-      // listen to pointer up or when touch leaves the graphic?
+      // listen to pointer up or when touch leaves the graphic
       // @ts-ignore
       this.interactive['touch-icon'].on(
         'pointermove',
@@ -111,15 +141,20 @@ class HUDScene extends JSONLevelScene {
     //   top: 10,
     //   left: 10,
     // });
+
+    this.items = this.add.image(0, 0, 'icons', 'items/blue-ball(64x64).png');
+
+    this.grid.add(this.items, {
+      column: 2,
+      row: 0,
+      padding: {
+        top: 10,
+        left: 10,
+      },
+      expand: false,
+    });
+
     if (this.playerIcon) {
-      // @ts-ignore
-      // this.playerIcon['fox-icon'] = this.add.image(
-      //   0,
-      //   0,
-      //   'icons',
-      //   'enemies/characters/fox(480x480).png'
-      // );
-      debugger;
       this.grid.add(this.playerIcon.setScale(0.2), {
         column: 0,
         row: 0,
@@ -131,13 +166,6 @@ class HUDScene extends JSONLevelScene {
       });
     }
     if (this.enemyIcon) {
-      // @ts-ignore
-      // this.enemyIcon['willow-icon'] = this.add.image(
-      //   0,
-      //   0,
-      //   'icons',
-      //   'enemies/willow-spring(480x480)0.png'
-      // );
       this.grid.add(this.enemyIcon.setScale(0.2), {
         column: 4,
         row: 0,
@@ -157,15 +185,12 @@ class HUDScene extends JSONLevelScene {
         },
         expand: false,
       });
-      // this.health['boss-health'] = this.add.image(0, 0, 'health-icon');
-      // using tilemap here....
       this.health['boss-health'] = this.add.image(
         0,
         0,
         'icons',
         'enemies/hp-meter/willow/willowHP(400x60)-0.png'
       );
-      // console.log(this.health['boss-health']);
       this.grid.add(this.health['boss-health'].setScale(0.5), {
         column: 3,
         row: 0,
@@ -176,6 +201,7 @@ class HUDScene extends JSONLevelScene {
       });
     }
 
+    // Move Pad Position
     this.lowerGrid.add(
       this.interactive['touch-icon']!.setScale(6, 3).setAlpha(0.4),
       {
