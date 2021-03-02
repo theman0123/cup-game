@@ -14,7 +14,8 @@ class HUDScene extends JSONLevelScene {
   interactive: {
     'touch-icon': Phaser.GameObjects.Image | undefined;
     jump: Phaser.GameObjects.Image | undefined;
-  } = { 'touch-icon': undefined, jump: undefined };
+    use: Phaser.GameObjects.Image | undefined;
+  } = { 'touch-icon': undefined, jump: undefined, use: undefined };
   worldScene: WorldScene | undefined;
 
   constructor() {
@@ -61,13 +62,11 @@ class HUDScene extends JSONLevelScene {
       align: 'left',
       expand: false,
     });
-    this.lowerGrid.layout();
 
     // Move Pad
     if (this.interactive['touch-icon']) {
       this.interactive['touch-icon'].setInteractive();
       // listen to pointer up or when touch leaves the graphic
-      // @ts-ignore
       this.interactive['touch-icon'].on(
         'pointermove',
         (pointer: any, dragX: any, dragY: any) => {
@@ -81,7 +80,7 @@ class HUDScene extends JSONLevelScene {
           }
         }
       );
-      // @ts-ignore
+
       this.interactive['touch-icon'].on(
         'pointerup',
         (pointer: any, dragX: any, dragY: any) => {
@@ -91,6 +90,36 @@ class HUDScene extends JSONLevelScene {
         }
       );
     }
+    // END MOVE PAD
+
+    // THROW
+    this.interactive.use = this.add.image(
+      0,
+      0,
+      'icons',
+      'items/blue-ball(64x64).png'
+    );
+    this.interactive.use.setInteractive();
+
+    this.lowerGrid.add(this.interactive.use.setAlpha(0.4), {
+      column: 2,
+      row: 0,
+      padding: { bottom: 10, left: 10 },
+      align: 'left',
+      expand: false,
+    });
+
+    this.interactive.use.on(
+      'pointerdown',
+      (pointer: any, dragX: any, dragY: any) => {
+        if (this.worldScene?.players[0]) {
+          this.worldScene.players[0].throw();
+        }
+      }
+    );
+    // END THROW
+
+    this.lowerGrid.layout();
   }
 
   setupIcons() {
