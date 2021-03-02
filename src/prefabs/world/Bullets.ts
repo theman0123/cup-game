@@ -24,7 +24,7 @@ export class Bullet extends Phaser.Physics.Arcade.Sprite {
       this.setVelocityX(300);
       // disable 'bullet' after 4 seconds
       this.killTimer = this.scene.time.addEvent({
-        delay: 4000,
+        delay: 1500,
         callback: this.markAsDead,
         callbackScope: this,
       });
